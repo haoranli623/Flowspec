@@ -1,0 +1,29 @@
+task_indices: [0, 10, 20, 30]
+train_episode_ranks: [0, 1, 2, 3]
+validation_episode_rank: 4
+train_anchors_per_episode: 8
+validation_anchors_per_episode: 8
+chunk_size: 50
+transforms:
+  - official
+  - local
+  - group_scaled
+group_scaled_diagonal: [0.5, 0.5, 0.5, 2.0, 2.0, 2.0, 1.0]
+seed: 430001
+bootstrap_seed: 440001
+bootstrap_resamples: 10000
+batch_size: 1
+updates: 64
+eval_updates: [0, 16, 32, 48, 64]
+optimizer:
+  name: adamw
+  lr: 0.0001
+  betas: [0.9, 0.95]
+  eps: 0.00000001
+  weight_decay: 0.0000000001
+  grad_clip_norm: 10.0
+precision: bfloat16_autocast_float32_loss
+max_aggregate_gpu_hours: 2.0
+strong_relative_rmse: 0.10
+neutral_band: 0.02
+weak_relative_rmse: 0.02

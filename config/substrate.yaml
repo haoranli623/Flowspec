@@ -1,0 +1,21 @@
+source:
+  url: https://github.com/huggingface/lerobot.git
+  commit: 8b256a6c0d4769c3cc3e7e98f04940126398a391
+checkpoint:
+  repo_id: lerobot/smolvla_libero
+  revision: 31d453f7edd78c839a8bbc39744a292686daf0de
+  local_path: /mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_libero-31d453f7
+backbone:
+  repo_id: HuggingFaceTB/SmolVLM2-500M-Video-Instruct
+  revision: 7b375e1b73b11138ff12fe22c8f2822d8fe03467
+dataset:
+  repo_id: lerobot/libero
+  revision: a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+  task_metadata_parent_revision: 1595a93b43aa055e55c127a4f0b4a99bb8035447
+  local_path: /mnt/NAS/data/hl5757/datasets/flowspec-vla/lerobot-libero-a1aaacb7
+dimensions:
+  valid_action: 7
+  internal_action: 32
+  state_payload: 8
+  chunk: 50
+  flow_steps: 10

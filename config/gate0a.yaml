@@ -1,0 +1,19 @@
+task_indices: [0, 10, 20, 30]
+episode_rank_per_task: 0
+states_per_task: 16
+position_denominator: 17
+k_pad: 16
+k_valid: 16
+noise_seed_base: 410000
+bootstrap_seed: 420001
+bootstrap_resamples: 10000
+valid_dim: 7
+internal_dim: 32
+chunk_size: 50
+strong_rms: 0.01
+strong_variance_ratio: 0.01
+weak_variance_ratio: 0.0001
+absolute_floor: 0.0001
+floor_multiple: 10.0
+repeat_max_abs_limit: 0.00001
+positive_control_min_rms: 0.0001
