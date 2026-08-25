@@ -4,9 +4,7 @@ Last updated: 2026-08-25
 
 ## PLANNED
 
-- Commit the completed Phase -1 audit and frozen Gate-0 protocol.
-- Materialize the deterministic state/anchor manifests and validate tensor paths.
-- Run Gate 0A, then the matched three-condition Gate 0B pilot.
+- None within authorized scope. Stop after the completed Gate-0 report.
 
 ## MEASURED
 
@@ -17,8 +15,15 @@ Last updated: 2026-08-25
   `31d453f7edd78c839a8bbc39744a292686daf0de`.
 - Official `lerobot/libero` payload is frozen at revision
   `a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4`.
-- Phase -1 source audit is complete. No Gate-0 mechanism result has been run or
-  inspected.
+- Phase -1 source audit is complete. All Gate-0 results were run after protocol
+  freeze, and the frozen scientific settings were not altered.
+- Gate 0A: 64 states, four tasks, 16 pad draws and 16 valid draws per state;
+  `A1_STRONG_SIGNAL` with median standardized padded RMS `0.0104702` and
+  variance ratio `0.0572968`.
+- Gate 0B: 128 training anchors, 32 validation anchors, three transforms, two
+  seeds, 64 updates per run (384 total); `B2_WEAK_SIGNAL` after the strongest
+  primary-seed effect failed to replicate.
+- Aggregate measured experimental GPU usage: `0.0725613 GPU-hours`.
 
 ## INTERPRETATION
 
@@ -27,9 +32,14 @@ Last updated: 2026-08-25
   the supervised-loss/output boundary. This supports testability, not a result.
 - Current dataset task metadata lost language labels; labels are recoverable
   exactly from parent revision `1595a93b...` without changing payload data.
+- Padded source coordinates create stable executable-coordinate variation under
+  the frozen official checkpoint.
+- Coordinate convention changes pretrained behavior and early optimization, but
+  the largest short-pilot difference is seed-sensitive and the pilot degrades
+  all conditions.
 
 ## DECISION
 
-- The substrate is valid for the preregistered tests.
-- Do not inspect final Gate results until `GATE0_PROTOCOL.md` is committed and
-  its hash is recorded.
+- Overall verdict: `STRONG GO`, due to independent Gate 0A A1 evidence.
+- Stop. Do not implement a solution or full downstream post-training under this
+  project authorization.
