@@ -96,10 +96,13 @@ def generate_physical(policy, preprocessor, validation, randomness, mean, scale)
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--transform", required=True, choices=TRANSFORMS)
+    parser.add_argument("--seed", type=int, default=430001)
     args = parser.parse_args()
 
-    torch.manual_seed(430001)
-    torch.cuda.manual_seed_all(430001)
+    if args.seed not in (430001, 430002):
+        raise ValueError("Only the primary seed and its deterministic +1 replicate are preregistered")
+    torch.manual_seed(args.seed)
+    torch.cuda.manual_seed_all(args.seed)
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.backends.cudnn.allow_tf32 = False
     torch.backends.cudnn.benchmark = False
@@ -186,7 +189,8 @@ def main() -> None:
     process_seconds = time.perf_counter() - process_started
     targets = torch.stack([sample["action"] for sample in frozen["validation"]]).numpy()
 
-    npz_path = ARTIFACT_DIR / f"gate0b_{args.transform}.npz"
+    suffix = args.transform if args.seed == 430001 else f"{args.transform}_seed{args.seed}"
+    npz_path = ARTIFACT_DIR / f"gate0b_{suffix}.npz"
     np.savez_compressed(
         npz_path,
         baseline_physical=baseline_predictions,
@@ -198,7 +202,7 @@ def main() -> None:
         "transform": args.transform,
         "updates": 64,
         "batch_size": 1,
-        "seed": 430001,
+        "seed": args.seed,
         "trainable_parameters": sum(parameter.numel() for parameter in trainable),
         "total_parameters": sum(parameter.numel() for parameter in policy.parameters()),
         "optimizer": {
@@ -221,7 +225,7 @@ def main() -> None:
         "environment": {"torch": torch.__version__, "python": platform.python_version()},
         "arrays": str(npz_path),
     }
-    json_path = ARTIFACT_DIR / f"gate0b_{args.transform}_run.json"
+    json_path = ARTIFACT_DIR / f"gate0b_{suffix}_run.json"
     json_path.write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps({"json": str(json_path), "npz": str(npz_path), "active_seconds": active_seconds}))
 
