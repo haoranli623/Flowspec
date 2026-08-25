@@ -15,6 +15,8 @@ from flowspec_vla.data import load_dataset
 from flowspec_vla.phase1 import (
     configure_libero_policy,
     load_phase1_config,
+    load_split_manifest,
+    make_phase1_processors,
     project_executable_subspace,
     validate_method,
 )
@@ -106,7 +108,7 @@ def main() -> None:
         if args.seed is not None:
             raise ValueError("Initial-base audit does not take a training seed")
         policy = configure_libero_policy(config)
-        processor_path = config["paths"]["libero_recipe_checkpoint"]
+        preprocessor, _ = make_phase1_processors(policy, load_split_manifest(config))
         suffix = f"initial_{method}"
     else:
         if args.seed not in config["training"]["seeds"]:
@@ -120,11 +122,12 @@ def main() -> None:
         processor_path = str(checkpoint)
         suffix = f"{method}_seed{args.seed}"
     policy.eval()
-    preprocessor, _ = make_pre_post_processors(
-        policy.config,
-        processor_path,
-        preprocessor_overrides={"device_processor": {"device": "cuda"}},
-    )
+    if not args.initial_base:
+        preprocessor, _ = make_pre_post_processors(
+            policy.config,
+            processor_path,
+            preprocessor_overrides={"device_processor": {"device": "cuda"}},
+        )
     dataset = load_dataset(with_action_chunk=False)
     arrays = {name: [] for name in ["pad_trace", "valid_trace", "native_trace", "repeat_trace", "zero_trace"]}
     operational_padded_rms = []

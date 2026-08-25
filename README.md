@@ -12,12 +12,13 @@ Gate 0 is complete. The frozen overall verdict is **STRONG GO**, driven by a
 stable A1 padded-source coupling result; coordinate sensitivity was B2 after a
 second-seed replicate. See `GATE0_REPORT.md` for the bounded interpretation.
 
-Phase 1 is active under `PHASE1_PROTOCOL.md`. It compares exactly M0 official
-flow matching, M1 padded-source masking, and M2 padded-source masking plus
-per-Euler-step subspace projection. The fixed study uses the official base
-checkpoint, all 40 LIBERO tasks, 53,762 training frames, 400 held-out validation
-states, 5,000 updates, and three matched seeds per method. No additional method
-is authorized.
+Phase 1 is complete with **P6. NO-GO — TRAINING / SUBSTRATE INVALID**. The
+official-baseline reproduction and all nine planned primary runs completed, but
+independent M1/M2 runs violated the frozen `1e-6` checkpoint reproducibility
+tolerance. A same-physical-GPU recovery still differed by `0.02034` at update
+1,000, so the comparison was halted before trained-checkpoint leakage or LIBERO
+rollouts. Descriptive validation values are retained but do not support a method
+claim. See `PHASE1_REPORT.md`.
 
 Key commits:
 

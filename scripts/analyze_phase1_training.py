@@ -70,6 +70,7 @@ def main() -> None:
         final = []
         aulc = []
         component_final = {"translation": [], "rotation": [], "gripper": []}
+        chunk_final = []
         for seed in seeds:
             log = runs[(method, seed)]["validation_log"]
             if [row["update"] for row in log] != updates:
@@ -83,6 +84,8 @@ def main() -> None:
             component_final["translation"].append(log[-1]["translation_rmse"])
             component_final["rotation"].append(log[-1]["rotation_rmse"])
             component_final["gripper"].append(log[-1]["gripper_rmse"])
+            chunk_final.append(log[-1]["chunk_normalized_physical_rmse"])
+        chunk_final_array = np.asarray(chunk_final, dtype=np.float64)
         metrics_by_method[method] = {
             "seeds": seeds,
             "validation_updates": updates,
@@ -93,6 +96,9 @@ def main() -> None:
             "final_translation_rmse": mean_std(component_final["translation"]),
             "final_rotation_rmse": mean_std(component_final["rotation"]),
             "final_gripper_rmse": mean_std(component_final["gripper"]),
+            "final_chunk_normalized_physical_rmse_by_seed": chunk_final_array.tolist(),
+            "final_chunk_normalized_physical_rmse_mean": chunk_final_array.mean(axis=0).tolist(),
+            "final_chunk_normalized_physical_rmse_std": chunk_final_array.std(axis=0, ddof=1).tolist(),
         }
 
     comparisons = {}

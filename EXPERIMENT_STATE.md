@@ -4,9 +4,8 @@ Last updated: 2026-08-25
 
 ## PLANNED
 
-- Phase 1 is active under the frozen M0/M1/M2 protocol. The next required gate
-  is the 250-update official M0 baseline reproduction. M1/M2 primary training
-  is prohibited unless that gate passes.
+- Phase 1 is closed. No further method, rollout, leakage audit, or training is
+  authorized under the current protocol.
 
 ## MEASURED
 
@@ -41,6 +40,16 @@ Last updated: 2026-08-25
   loss `2.1890`/`0.7607`, validation physical NRMSE `1.3045` to `0.8862`,
   fixed-noise flow MSE `2.3713` to `0.6807`, no non-finite values, and peak
   allocated memory `18.21 GiB`.
+- Nine primary runs completed: M0/M1/M2 × seeds 520001/520002/520003, each at
+  5,000 updates and 160,000 examples seen.
+- Descriptive final physical NRMSE means were M0 `0.71295`, M1 `0.72192`, and
+  M2 `0.71653`; these values are invalid for causal comparison.
+- Final matched M1/M2 checkpoints differed by maximum absolute parameter values
+  `0.02718`, `0.03040`, and `0.02802`, above the frozen `1e-6` tolerance.
+- Same-device recovery for seed 520001 still differed by `0.02034` at update
+  1,000; reproducibility could not be restored.
+- Trained-checkpoint leakage and rollout evaluation were not run due to the
+  preregistered P6 stop condition.
 
 ## INTERPRETATION
 
@@ -57,10 +66,13 @@ Last updated: 2026-08-25
 - Official SmolVLA training evaluates one flow time and has no ODE rollout.
   Consequently M1 and M2 have identical training objectives; their isolated
   additional difference is M2 projection during sampling/evaluation.
+- The shared-input M1/M2 objective is exactly equal, but independent training
+  execution is not reproducible to the frozen checkpoint tolerance. Physical
+  GPU assignment alone does not explain the divergence.
 
 ## DECISION
 
 - Gate-0 verdict remains `STRONG GO`, due to independent Gate 0A A1 evidence.
-- Phase-1 verdict: pending the frozen baseline gate and matched comparison.
-- Phase-1 verdict: pending completion of the nine matched primary runs,
-  mechanism audit, and rollouts. The baseline gate authorizes continuation.
+- Phase-1 verdict: **P6. NO-GO — TRAINING / SUBSTRATE INVALID**.
+- Phase 1 stops here. Descriptive primary metrics cannot support an M0/M1/M2
+  method ordering, and no further variants are authorized.
