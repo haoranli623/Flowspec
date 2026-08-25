@@ -4,7 +4,9 @@ Last updated: 2026-08-25
 
 ## PLANNED
 
-- None within authorized scope. Stop after the completed Gate-0 report.
+- Phase 1 is active under the frozen M0/M1/M2 protocol. The next required gate
+  is the 250-update official M0 baseline reproduction. M1/M2 primary training
+  is prohibited unless that gate passes.
 
 ## MEASURED
 
@@ -24,6 +26,17 @@ Last updated: 2026-08-25
   seeds, 64 updates per run (384 total); `B2_WEAK_SIGNAL` after the strongest
   primary-seed effect failed to replicate.
 - Aggregate measured experimental GPU usage: `0.0725613 GPU-hours`.
+- Phase-1 implementation revision:
+  `19cb03d7de4eb68a4cb10e2dbe82797765f9f560`.
+- Phase-1 protocol-freeze commit:
+  `beb292024fcb37d321338474249d03598cfa5e90`.
+- Official `lerobot/smolvla_base` is frozen at revision
+  `c83c3163b8ca9b7e67c509fffd9121e66cb96205`.
+- The Phase-1 split was frozen before training: all 40 tasks, 320 training
+  episodes, 53,762 training frames (19.659554%), 200 held-out episodes, and
+  400 validation states. Split-manifest SHA-256:
+  `b3150f3a4893f7f20167186a47f9f41a372eda0e95e1f91b6a6cb0851d32def0`.
+- Pre-training M0/M1/M2 implementation and physical-equivalence checks passed.
 
 ## INTERPRETATION
 
@@ -37,9 +50,11 @@ Last updated: 2026-08-25
 - Coordinate convention changes pretrained behavior and early optimization, but
   the largest short-pilot difference is seed-sensitive and the pilot degrades
   all conditions.
+- Official SmolVLA training evaluates one flow time and has no ODE rollout.
+  Consequently M1 and M2 have identical training objectives; their isolated
+  additional difference is M2 projection during sampling/evaluation.
 
 ## DECISION
 
-- Overall verdict: `STRONG GO`, due to independent Gate 0A A1 evidence.
-- Stop. Do not implement a solution or full downstream post-training under this
-  project authorization.
+- Gate-0 verdict remains `STRONG GO`, due to independent Gate 0A A1 evidence.
+- Phase-1 verdict: pending the frozen baseline gate and matched comparison.
