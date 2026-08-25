@@ -1,0 +1,9 @@
+project: /mnt/NAS/data/hl5757/projects/flowspec-vla
+artifacts: /mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla
+gate0_artifacts: /mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0
+datasets: /mnt/NAS/data/hl5757/datasets/flowspec-vla
+models: /mnt/NAS/data/hl5757/models/flowspec-vla
+hf_cache: /mnt/NAS/data/hl5757/cache/huggingface
+torch_cache: /mnt/NAS/data/hl5757/cache/torch
+environment: /mnt/NAS/data/hl5757/conda_envs/flowspec-vla
+
