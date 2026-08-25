@@ -37,6 +37,10 @@ Last updated: 2026-08-25
   400 validation states. Split-manifest SHA-256:
   `b3150f3a4893f7f20167186a47f9f41a372eda0e95e1f91b6a6cb0851d32def0`.
 - Pre-training M0/M1/M2 implementation and physical-equivalence checks passed.
+- The frozen 250-update M0 reproduction gate passed: first/last 50-update mean
+  loss `2.1890`/`0.7607`, validation physical NRMSE `1.3045` to `0.8862`,
+  fixed-noise flow MSE `2.3713` to `0.6807`, no non-finite values, and peak
+  allocated memory `18.21 GiB`.
 
 ## INTERPRETATION
 
@@ -58,3 +62,5 @@ Last updated: 2026-08-25
 
 - Gate-0 verdict remains `STRONG GO`, due to independent Gate 0A A1 evidence.
 - Phase-1 verdict: pending the frozen baseline gate and matched comparison.
+- Phase-1 verdict: pending completion of the nine matched primary runs,
+  mechanism audit, and rollouts. The baseline gate authorizes continuation.
