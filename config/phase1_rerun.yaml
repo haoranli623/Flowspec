@@ -1,0 +1,143 @@
+project: FlowSpec-VLA
+phase: phase1_rerun
+
+revisions:
+  audited_repository_commit: 67baa3ad689a158dd34fdd1b751387bf338671c2
+  original_phase1_protocol_commit: beb292024fcb37d321338474249d03598cfa5e90
+  resume_gate_protocol_commit: a2a37dd9a5e6a8549fea54d165727b9864650acf
+  resume_gate_final_commit: 67baa3ad689a158dd34fdd1b751387bf338671c2
+  gate0_protocol_commit: 337c95305698e527ef09db6f53040fb377a9d6a5
+  gate0_final_commit: d17670f51169478a8dcd3b48ac7354baa6deac13
+  lerobot_source_commit: 8b256a6c0d4769c3cc3e7e98f04940126398a391
+  base_checkpoint_repo: lerobot/smolvla_base
+  base_checkpoint_revision: c83c3163b8ca9b7e67c509fffd9121e66cb96205
+  libero_recipe_checkpoint_repo: lerobot/smolvla_libero
+  libero_recipe_checkpoint_revision: 31d453f7edd78c839a8bbc39744a292686daf0de
+  dataset_repo: lerobot/libero
+  dataset_revision: a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+
+paths:
+  base_checkpoint: /mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_base-c83c3163
+  libero_recipe_checkpoint: /mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_libero-31d453f7
+  dataset: /mnt/NAS/data/hl5757/datasets/flowspec-vla/lerobot-libero-a1aaacb7
+  frozen_split_manifest: /mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1/split_manifest.json
+  gate0_artifacts: /mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0
+  artifacts: /mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun
+  trained_models: /mnt/NAS/data/hl5757/models/flowspec-vla/phase1_rerun
+  hf_cache: /mnt/NAS/data/hl5757/cache/huggingface
+
+methods: [m0, m1, m2]
+dimensions:
+  executable: 7
+  internal: 32
+  chunk: 50
+  flow_steps: 10
+
+split:
+  manifest_sha256: b3150f3a4893f7f20167186a47f9f41a372eda0e95e1f91b6a6cb0851d32def0
+  selection_seed: 510001
+  tasks: 40
+  held_out_episodes_per_task: 5
+  training_episodes_per_task: 8
+  training_episode_count: 320
+  training_frame_count: 53762
+  validation_episode_count: 200
+  validation_anchors_per_episode: 2
+  validation_anchor_fractions: [0.25, 0.60]
+  validation_state_count: 400
+
+training:
+  seeds: [520001, 520002, 520003]
+  updates: 5000
+  examples_seen: 160000
+  microbatch_size: 16
+  gradient_accumulation: 2
+  effective_batch_size: 32
+  num_workers: 4
+  persistent_workers: true
+  prefetch_factor: 2
+  optimizer: AdamW
+  learning_rate: 0.0001
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  weight_decay: 1.0e-10
+  gradient_clip_norm: 10.0
+  scheduler: cosine_decay_with_warmup
+  warmup_updates: 200
+  decay_updates: 5000
+  final_learning_rate: 2.5e-6
+  precision: bfloat16_autocast
+  checkpoint_updates: [1000, 2500, 5000]
+  validation_updates: [0, 250, 500, 1000, 2000, 3000, 4000, 5000]
+
+determinism:
+  single_process: true
+  single_gpu_per_run: true
+  cublas_workspace_config: ":4096:8"
+  torch_deterministic_algorithms: true
+  cudnn_deterministic: true
+  cudnn_benchmark: false
+  cuda_matmul_tf32: false
+  cudnn_tf32: false
+  grad_scaler: false
+  explicit_sampler_offset: true
+  complete_rng_checkpoint: true
+
+smoke_gate:
+  seed: 519001
+  updates: 250
+  examples_seen: 8000
+  checkpoint_update: 125
+  resume_end_update: 130
+  trace_updates: [126, 127, 128, 129, 130]
+  validation_states: 64
+  validation_updates: [0, 50, 100, 250]
+  max_parameter_difference_exclusive: 1.0e-6
+
+full_run_spotcheck:
+  seeds: [520001]
+  checkpoint_update: 1000
+  resume_end_update: 1005
+  trace_updates: [1001, 1002, 1003, 1004, 1005]
+  max_parameter_difference_exclusive: 1.0e-6
+
+validation:
+  generation_noise_seed: 530001
+  flow_noise_seed: 530002
+  flow_time_seed: 530003
+  bootstrap_seed: 530004
+  bootstrap_resamples: 10000
+
+leakage_audit:
+  states: 64
+  padded_interventions: 16
+  valid_interventions: 16
+  noise_seed_base: 410000
+
+rollout:
+  suites: [libero_spatial, libero_object, libero_goal, libero_10]
+  episodes_per_task: 5
+  tasks_per_suite: 10
+  episodes_per_checkpoint: 200
+  total_checkpoints: 9
+  total_episodes: 1800
+  checkpoint_update: 5000
+  episode_seed: 540001
+
+thresholds:
+  practical_final_relative_reduction: 0.05
+  practical_aulc_relative_reduction: 0.03
+  seed_direction_count: 2
+  equivalence_relative_band: 0.02
+  mechanism_rms_floor: 0.0001
+  mechanism_ratio_floor: 0.0001
+  mechanism_partial_relative_reduction: 0.50
+  rollout_supportive_absolute_improvement: 0.05
+  baseline_final_to_initial_nrmse_max: 1.05
+  baseline_final_to_initial_flow_mse_max: 0.95
+  baseline_last_to_first_train_loss_max: 1.00
+  baseline_peak_memory_gib_max: 23.0
+  resume_max_parameter_difference_exclusive: 1.0e-6
+
+compute:
+  max_total_device_hours: 72.0
