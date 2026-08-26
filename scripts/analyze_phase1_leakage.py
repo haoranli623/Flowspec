@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
@@ -42,7 +43,10 @@ def metrics(path: Path, bootstrap_seed: int, resamples: int) -> dict:
 
 
 def main() -> None:
-    config = load_phase1_config()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=Path)
+    args = parser.parse_args()
+    config = load_phase1_config(args.config) if args.config else load_phase1_config()
     root = Path(config["paths"]["artifacts"])
     leakage_root = root / "leakage"
     seeds = config["training"]["seeds"]

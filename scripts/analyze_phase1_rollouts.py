@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
@@ -19,7 +20,10 @@ def wilson(successes: int, episodes: int, z: float = 1.96) -> list[float]:
 
 
 def main() -> None:
-    config = load_phase1_config()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=Path)
+    args = parser.parse_args()
+    config = load_phase1_config(args.config) if args.config else load_phase1_config()
     root = Path(config["paths"]["artifacts"])
     rollout_root = root / "rollouts"
     seeds = config["training"]["seeds"]

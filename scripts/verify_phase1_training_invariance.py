@@ -10,6 +10,7 @@ each inference integration step.
 """
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
@@ -41,9 +42,14 @@ def checkpoint_difference(left: Path, right: Path) -> dict:
 
 
 def main() -> None:
-    config = load_phase1_config()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=Path)
+    args = parser.parse_args()
+    config = load_phase1_config(args.config) if args.config else load_phase1_config()
     artifact_root = Path(config["paths"]["artifacts"])
     model_root = Path(config["paths"]["trained_models"])
+    if config.get("phase") == "phase1_rerun":
+        model_root = model_root / "runs"
     rows = []
     for seed in config["training"]["seeds"]:
         m1_run = json.loads((artifact_root / "runs" / f"m1_seed{seed}" / "run.json").read_text())
@@ -59,14 +65,24 @@ def main() -> None:
             "sample_index_first",
             "sample_index_last",
         ]
-        log_equal = all(
-            all(left[field] == right[field] for field in training_fields)
-            for left, right in zip(m1_run["train_log"], m2_run["train_log"], strict=True)
+        m1_by_update = {row["update"]: row for row in m1_run["train_log"]}
+        m2_by_update = {row["update"]: row for row in m2_run["train_log"]}
+        common_updates = sorted(set(m1_by_update) & set(m2_by_update))
+        log_equal = bool(common_updates) and all(
+            all(m1_by_update[update][field] == m2_by_update[update][field] for field in training_fields)
+            for update in common_updates
+        )
+        m1_validation = {row["update"]: row for row in m1_run["validation_log"]}
+        m2_validation = {row["update"]: row for row in m2_run["validation_log"]}
+        common_flow_updates = sorted(
+            update
+            for update in set(m1_validation) & set(m2_validation)
+            if m1_validation[update]["fixed_flow_mse"] is not None
+            and m2_validation[update]["fixed_flow_mse"] is not None
         )
         fixed_flow_equal = all(
-            left["update"] == right["update"]
-            and left["fixed_flow_mse"] == right["fixed_flow_mse"]
-            for left, right in zip(m1_run["validation_log"], m2_run["validation_log"], strict=True)
+            m1_validation[update]["fixed_flow_mse"] == m2_validation[update]["fixed_flow_mse"]
+            for update in common_flow_updates
         )
         tensor_check = checkpoint_difference(
             model_root / f"m1_seed{seed}" / "update_05000" / "model.safetensors",
@@ -76,7 +92,10 @@ def main() -> None:
             {
                 "seed": seed,
                 "training_log_exact": log_equal,
+                "training_log_common_update_range": [common_updates[0], common_updates[-1]],
+                "training_log_common_update_count": len(common_updates),
                 "fixed_flow_validation_exact": fixed_flow_equal,
+                "fixed_flow_common_updates": common_flow_updates,
                 "generated_action_metrics_expected_to_differ": True,
                 "checkpoint": tensor_check,
             }

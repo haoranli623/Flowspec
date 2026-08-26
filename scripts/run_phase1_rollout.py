@@ -70,18 +70,18 @@ def install_sampler(policy: SmolVLAPolicy, method: str) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=Path)
     parser.add_argument("--method", required=True, choices=["m0", "m1", "m2"])
     parser.add_argument("--seed", required=True, type=int)
     args = parser.parse_args()
     method = validate_method(args.method)
-    config = load_phase1_config()
+    config = load_phase1_config(args.config) if args.config else load_phase1_config()
     if args.seed not in config["training"]["seeds"]:
         raise ValueError("Unknown primary training seed")
-    checkpoint = (
-        Path(config["paths"]["trained_models"])
-        / f"{method}_seed{args.seed}"
-        / "update_05000"
-    )
+    model_root = Path(config["paths"]["trained_models"])
+    if config.get("phase") == "phase1_rerun":
+        model_root = model_root / "runs"
+    checkpoint = model_root / f"{method}_seed{args.seed}" / "update_05000"
     policy = SmolVLAPolicy.from_pretrained(checkpoint, local_files_only=True)
     policy.eval()
     install_sampler(policy, method)

@@ -95,12 +95,13 @@ def interventions(source: torch.Tensor) -> dict[str, torch.Tensor]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=Path)
     parser.add_argument("--method", required=True, choices=["m0", "m1", "m2"])
     parser.add_argument("--seed", type=int)
     parser.add_argument("--initial-base", action="store_true")
     args = parser.parse_args()
     method = validate_method(args.method)
-    config = load_phase1_config()
+    config = load_phase1_config(args.config) if args.config else load_phase1_config()
     artifact_root = Path(config["paths"]["artifacts"])
     gate0_root = artifact_root.parent / "gate0"
     manifest = json.loads((gate0_root / "state_manifest.json").read_text())
@@ -113,11 +114,10 @@ def main() -> None:
     else:
         if args.seed not in config["training"]["seeds"]:
             raise ValueError("A frozen primary training seed is required")
-        checkpoint = (
-            Path(config["paths"]["trained_models"])
-            / f"{method}_seed{args.seed}"
-            / "update_05000"
-        )
+        model_root = Path(config["paths"]["trained_models"])
+        if config.get("phase") == "phase1_rerun":
+            model_root = model_root / "runs"
+        checkpoint = model_root / f"{method}_seed{args.seed}" / "update_05000"
         policy = SmolVLAPolicy.from_pretrained(checkpoint, local_files_only=True)
         processor_path = str(checkpoint)
         suffix = f"{method}_seed{args.seed}"
