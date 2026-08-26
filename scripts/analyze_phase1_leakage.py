@@ -84,9 +84,32 @@ def main() -> None:
                 )
             ),
         }
+    matched_suppression = {}
+    m0_padded = np.asarray(method_summary["m0"]["median_padded_rms_by_seed"])
+    m0_ratio = np.asarray(method_summary["m0"]["r_leak_by_seed"])
+    for method in ("m1", "m2"):
+        candidate_padded = np.asarray(method_summary[method]["median_padded_rms_by_seed"])
+        candidate_ratio = np.asarray(method_summary[method]["r_leak_by_seed"])
+        padded_reduction = (m0_padded - candidate_padded) / m0_padded
+        ratio_reduction = (m0_ratio - candidate_ratio) / m0_ratio
+        matched_suppression[f"{method}_vs_m0"] = {
+            "padded_rms_relative_reduction_by_seed": padded_reduction.tolist(),
+            "r_leak_relative_reduction_by_seed": ratio_reduction.tolist(),
+            "partial_suppression_seed_count": int(
+                np.sum(
+                    (padded_reduction >= thresholds["mechanism_partial_relative_reduction"])
+                    & (ratio_reduction >= thresholds["mechanism_partial_relative_reduction"])
+                )
+            ),
+        }
+    protocol_freeze = (
+        "82dfe670e6073bc30397d699ee612c0386932a00"
+        if config.get("phase") == "phase1_rerun"
+        else "beb292024fcb37d321338474249d03598cfa5e90"
+    )
     summary = {
         "status": "COMPLETE",
-        "protocol_freeze_commit": "beb292024fcb37d321338474249d03598cfa5e90",
+        "protocol_freeze_commit": protocol_freeze,
         "counts": {"states": 64, "padded_interventions": 16, "valid_interventions": 16, "seeds": 3},
         "gate0_task_checkpoint_reference": {
             "median_padded_rms": gate0["primary"]["median_rms_pad_standardized"],
@@ -96,12 +119,21 @@ def main() -> None:
         "base_initial": initial,
         "trained": final,
         "method_summary": method_summary,
+        "matched_suppression": matched_suppression,
         "thresholds": {
             "mechanism_rms_floor": thresholds["mechanism_rms_floor"],
             "mechanism_ratio_floor": thresholds["mechanism_ratio_floor"],
+            "mechanism_partial_relative_reduction": thresholds[
+                "mechanism_partial_relative_reduction"
+            ],
         },
     }
-    (root / "leakage_audit_summary.json").write_text(json.dumps(summary, indent=2) + "\n")
+    summary_name = (
+        "leakage_reaudit_summary.json"
+        if config.get("phase") == "phase1_rerun"
+        else "leakage_audit_summary.json"
+    )
+    (root / summary_name).write_text(json.dumps(summary, indent=2) + "\n")
 
     colors = {"m0": "#4C78A8", "m1": "#F58518", "m2": "#54A24B"}
     fig, axes = plt.subplots(1, 2, figsize=(10, 4))
@@ -126,7 +158,7 @@ def main() -> None:
     fig.tight_layout()
     fig.savefig(root / "leakage_and_padded_state.png", dpi=220)
     plt.close(fig)
-    print(json.dumps({"summary": str(root / "leakage_audit_summary.json")}, indent=2))
+    print(json.dumps({"summary": str(root / summary_name)}, indent=2))
 
 
 if __name__ == "__main__":
