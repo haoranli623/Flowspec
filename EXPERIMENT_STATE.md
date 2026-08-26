@@ -6,6 +6,8 @@ Last updated: 2026-08-25
 
 - Phase 1 is closed. No further method, rollout, leakage audit, or training is
   authorized under the current protocol.
+- The bounded M0 forensic audit is closed. Any production determinism/resume
+  repair or Phase-1 rerun requires new authorization.
 
 ## MEASURED
 
@@ -50,6 +52,23 @@ Last updated: 2026-08-25
   1,000; reproducibility could not be restored.
 - Trained-checkpoint leakage and rollout evaluation were not run due to the
   preregistered P6 stop condition.
+- M0 forensic protocol-freeze commit:
+  `e1cc6d1eb8011dffbf9038bc71b08f9160780570`.
+- Two five-update fresh M0 runs matched exactly through inputs, preprocessing,
+  all audited RNG states, explicit flow tensors, forward outputs, and loss, but
+  first diverged in update-1 backward gradients. The final five-update
+  checkpoint maximum parameter difference was `7.62939453125e-6`.
+- Default same-process one-step rollback reproduced the backward boundary: 180
+  of 489 gradient tensors differed, with maximum absolute difference
+  `7.32421875e-4`.
+- With deterministic algorithms and `CUBLAS_WORKSPACE_CONFIG=:4096:8`, the
+  same-process replay and two independent-process one-update runs were bitwise
+  exact; independent final parameter maximum difference was `0`.
+- Historical Phase-1 checkpoints are model/processor-only and omit optimizer,
+  update/LR, RNG, dedicated generators, sampler offset, model mode, and
+  accumulation state; exact short resume remains untested.
+- The forensic audit used `0.0824591` accounted device-hours, including a
+  conservative 56-second failed-instrumentation allowance.
 
 ## INTERPRETATION
 
@@ -69,6 +88,12 @@ Last updated: 2026-08-25
 - The shared-input M1/M2 objective is exactly equal, but independent training
   execution is not reproducible to the frozen checkpoint tolerance. Physical
   GPU assignment alone does not explain the divergence.
+- The first reproducible instability occurs before checkpointing: official
+  default CUDA execution produces nondeterministic backward gradients despite
+  exact data, RNG, forward outputs, and loss. Deterministic CUDA/cuBLAS controls
+  eliminate it in bounded replay and independent-process tests.
+- Checkpoint-state omission is a separate confirmed resume limitation, not the
+  first cause of the fresh-run divergence.
 
 ## DECISION
 
@@ -76,3 +101,7 @@ Last updated: 2026-08-25
 - Phase-1 verdict: **P6. NO-GO — TRAINING / SUBSTRATE INVALID**.
 - Phase 1 stops here. Descriptive primary metrics cannot support an M0/M1/M2
   method ordering, and no further variants are authorized.
+- Forensic verdict: **F-C — HARDWARE/NUMERICAL NONDETERMINISM IDENTIFIED**.
+- Phase 1 is not technically safe to rerun until an opt-in production
+  deterministic configuration and a full-state M0 resume gate are implemented
+  and verified under new authorization.
