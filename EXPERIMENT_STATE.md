@@ -8,6 +8,8 @@ Last updated: 2026-08-25
   authorized under the current protocol.
 - The bounded M0 forensic audit is closed. Any production determinism/resume
   repair or Phase-1 rerun requires new authorization.
+- The deterministic M0 resume gate is closed. Phase 1 remains stopped; a clean
+  scientific rerun requires separate authorization.
 
 ## MEASURED
 
@@ -69,6 +71,23 @@ Last updated: 2026-08-25
   accumulation state; exact short resume remains untested.
 - The forensic audit used `0.0824591` accounted device-hours, including a
   conservative 56-second failed-instrumentation allowance.
+- Resume-gate protocol-freeze commit:
+  `a2a37dd9a5e6a8549fea54d165727b9864650acf`.
+- A new versioned complete checkpoint was saved post-update 50 with model/mode,
+  full AdamW, manual scheduler position/LR, AMP applicability, all global and
+  dedicated RNG, materialized-order hash, and explicit sampler/accumulation
+  position. Serialization preserved every audited RNG hash.
+- The primary fresh-process M0 continuation from update 50 through 100 matched
+  its uninterrupted reference on all 50 batches, processed tensors, flow
+  timesteps/noise, forward outputs, losses, gradients, optimizer updates, RNG,
+  and positions.
+- At update 100, all 500 model tensors and 1,467 AdamW tensors were bitwise
+  identical; maximum, mean, and L2 differences were all `0`.
+- An optional four-worker/persistent-worker/prefetch-factor-2 checkpoint at
+  update 5 also resumed exactly through update 10 for the current
+  augmentation-free dataset path.
+- The resume gate used `0.3152193` accounted device-hours, including a
+  conservative 52.5-second comparator-only failed attempt.
 
 ## INTERPRETATION
 
@@ -94,6 +113,10 @@ Last updated: 2026-08-25
   eliminate it in bounded replay and independent-process tests.
 - Checkpoint-state omission is a separate confirmed resume limitation, not the
   first cause of the fresh-run divergence.
+- The newly implemented complete-state format plus the verified deterministic
+  CUDA/cuBLAS configuration restores exact fresh-process resume for M0.
+- Multi-worker resume is verified only for the current augmentation-free data
+  path; future stochastic worker transforms would require their own state gate.
 
 ## DECISION
 
@@ -102,6 +125,8 @@ Last updated: 2026-08-25
 - Phase 1 stops here. Descriptive primary metrics cannot support an M0/M1/M2
   method ordering, and no further variants are authorized.
 - Forensic verdict: **F-C — HARDWARE/NUMERICAL NONDETERMINISM IDENTIFIED**.
-- Phase 1 is not technically safe to rerun until an opt-in production
-  deterministic configuration and a full-state M0 resume gate are implemented
-  and verified under new authorization.
+- Resume-gate verdict: **R-A — RESUME GATE PASSED**.
+- Phase 1 is technically eligible for a clean rerun only under the exact
+  deterministic and complete-checkpoint configuration in
+  `RESUME_GATE_REPORT.md`; no such rerun is currently authorized, and the prior
+  P6 result remains unchanged.
