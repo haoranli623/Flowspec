@@ -37,6 +37,7 @@ from flowspec_vla.resume_gate import (
     load_complete_checkpoint,
     optimizer_digest,
     optimizer_for,
+    restore_rng_state,
     rng_record,
     save_complete_checkpoint,
     scheduler_record,
@@ -138,12 +139,58 @@ def deterministic_record(seed: int) -> dict:
     }
 
 
+def reconstruct_physical_validation(path: Path, split: dict, update: int) -> dict:
+    """Recover the preregistered physical metrics from a durable validation array artifact.
+
+    The fixed-flow loss cannot be recovered from the stored prediction/target arrays, so it is
+    recorded explicitly as unavailable rather than inferred or fabricated.
+    """
+    with np.load(path) as arrays:
+        prediction = arrays["prediction_physical"].astype(np.float64)
+        target = arrays["target_physical"].astype(np.float64)
+        keep = arrays["valid_chunk_mask"].astype(bool)[..., None]
+    squared = np.square(prediction - target)
+    standard_deviation = np.asarray(
+        split["normalization_stats_raw"]["action"]["std"], dtype=np.float64
+    )
+    standardized = squared / np.square(standard_deviation)
+    physical_sse = (squared * keep).sum(axis=(0, 1))
+    coordinate_count = np.broadcast_to(keep.sum(axis=(0, 1)), physical_sse.shape)
+    chunk_sse = (standardized * keep).sum(axis=(0, 2))
+    chunk_count = keep.sum(axis=0).reshape(-1) * prediction.shape[-1]
+    per_dim_rmse = np.sqrt(physical_sse / coordinate_count)
+    return {
+        "states": int(prediction.shape[0]),
+        "whole_action_normalized_physical_rmse": float(
+            np.sqrt((standardized * keep).sum() / coordinate_count.sum())
+        ),
+        "fixed_flow_mse": None,
+        "fixed_flow_mse_status": "UNAVAILABLE_AFTER_PROCESS_INTERRUPTION",
+        "translation_rmse": float(
+            np.sqrt(physical_sse[:3].sum() / coordinate_count[:3].sum())
+        ),
+        "rotation_rmse": float(
+            np.sqrt(physical_sse[3:6].sum() / coordinate_count[3:6].sum())
+        ),
+        "gripper_rmse": float(per_dim_rmse[6]),
+        "per_dimension_physical_rmse": per_dim_rmse.tolist(),
+        "chunk_normalized_physical_rmse": np.sqrt(chunk_sse / chunk_count).tolist(),
+        "valid_action_values": int(coordinate_count.sum()),
+        "all_outputs_finite": bool(np.isfinite(prediction).all()),
+        "update": update,
+        "reconstructed_from": str(path),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--method", required=True, choices=["m0", "m1", "m2"])
     parser.add_argument("--seed", required=True, type=int)
     parser.add_argument("--mode", required=True, choices=["smoke", "primary"])
-    parser.add_argument("--role", default="reference", choices=["reference", "resumed"])
+    parser.add_argument(
+        "--role", default="reference", choices=["reference", "resumed", "continuation"]
+    )
+    parser.add_argument("--checkpoint-update", type=int)
     args = parser.parse_args()
 
     config = load_phase1_config(CONFIG)
@@ -157,6 +204,8 @@ def main() -> None:
         raise ValueError(f"Seed {args.seed} is not frozen for {args.mode}: {expected_seeds}")
     if args.role == "resumed" and args.mode == "primary" and args.seed not in config["full_run_spotcheck"]["seeds"]:
         raise ValueError("Primary resume spot checks are frozen to seed 520001")
+    if args.role == "continuation" and args.mode != "primary":
+        raise ValueError("Production continuation is defined only for interrupted primary runs")
     if torch.cuda.device_count() != 1:
         raise RuntimeError("Each rerun process must see exactly one GPU through CUDA_VISIBLE_DEVICES")
 
@@ -195,6 +244,14 @@ def main() -> None:
         if smoke
         else int(config["full_run_spotcheck"]["checkpoint_update"])
     )
+    if args.role == "continuation":
+        if args.checkpoint_update is None:
+            raise ValueError("--checkpoint-update is required for a production continuation")
+        comparison_checkpoint = int(args.checkpoint_update)
+        if comparison_checkpoint not in checkpoint_updates or comparison_checkpoint >= total_updates:
+            raise ValueError(
+                f"Continuation checkpoint must be a frozen non-final checkpoint: {checkpoint_updates}"
+            )
     trace_updates = set(
         int(value)
         for value in (
@@ -211,10 +268,18 @@ def main() -> None:
     run_name = f"{method}_seed{args.seed}"
     artifact_root = Path(config["paths"]["artifacts"])
     model_root = Path(config["paths"]["trained_models"])
+    primary_run_root = artifact_root / ("smoke" if smoke else "runs") / run_name
     if args.role == "reference":
         run_root = artifact_root / ("smoke" if smoke else "runs") / run_name
-    else:
+    elif args.role == "resumed":
         run_root = artifact_root / ("smoke_resume" if smoke else "spotchecks") / run_name
+    else:
+        run_root = (
+            artifact_root
+            / "recoveries"
+            / run_name
+            / f"from_update_{comparison_checkpoint:05d}"
+        )
     if run_root.exists():
         raise FileExistsError(f"Refusing to overwrite rerun output: {run_root}")
     run_root.mkdir(parents=True)
@@ -234,7 +299,7 @@ def main() -> None:
     order_hash = sha256_ints(full_order)
     checkpoint_offset = comparison_checkpoint * effective_batch
     start_update = 1 if args.role == "reference" else comparison_checkpoint + 1
-    end_update = total_updates if args.role == "reference" else resumed_end
+    end_update = total_updates if args.role in ("reference", "continuation") else resumed_end
     sampler_order = full_order if args.role == "reference" else full_order[checkpoint_offset:]
     loader_generator = torch.Generator().manual_seed(args.seed + 102)
     flow_generator = torch.Generator().manual_seed(args.seed + 103)
@@ -249,7 +314,8 @@ def main() -> None:
         / "complete_state.pt"
     )
     restore_audit = None
-    if args.role == "resumed":
+    checkpoint_payload = None
+    if args.role in ("resumed", "continuation"):
         payload, restore_audit = load_complete_checkpoint(
             path=checkpoint_path,
             policy=policy,
@@ -283,13 +349,14 @@ def main() -> None:
         (run_root / "restore_audit.json").write_text(json.dumps(restore_audit, indent=2) + "\n")
         if not restore_audit["all_exact"]:
             raise RuntimeError("Complete checkpoint restoration audit failed")
+        checkpoint_payload = payload
 
     validation_batches = None
     validation_indices: list[int] = []
     generation_noise = validation_flow_noise = validation_flow_time = None
     validation_updates: set[int] = set()
     validation_log: list[dict] = []
-    if args.role == "reference":
+    if args.role in ("reference", "continuation"):
         validation_indices = list(split["validation_indices"])
         if smoke:
             validation_indices = validation_indices[: int(config["smoke_gate"]["validation_states"])]
@@ -313,20 +380,43 @@ def main() -> None:
             torch.rand((n_validation,), generator=validation_time_generator).pow(2.0 / 3.0) * 0.999
             + 0.001
         )
-        metrics, arrays = evaluate(
-            policy,
-            preprocessor,
-            validation_batches,
-            method,
-            split,
-            generation_noise,
-            validation_flow_noise,
-            validation_flow_time,
-        )
-        metrics["update"] = 0
-        validation_log.append(metrics)
-        np.savez_compressed(run_root / "validation_update00000.npz", **arrays)
-        print(json.dumps({"run": run_name, "validation": metrics}), flush=True)
+        if args.role == "reference":
+            metrics, arrays = evaluate(
+                policy,
+                preprocessor,
+                validation_batches,
+                method,
+                split,
+                generation_noise,
+                validation_flow_noise,
+                validation_flow_time,
+            )
+            metrics["update"] = 0
+            validation_log.append(metrics)
+            np.savez_compressed(run_root / "validation_update00000.npz", **arrays)
+            print(json.dumps({"run": run_name, "validation": metrics}), flush=True)
+        else:
+            for prior_update in sorted(value for value in validation_updates if value <= comparison_checkpoint):
+                prior_path = primary_run_root / f"validation_update{prior_update:05d}.npz"
+                if not prior_path.exists():
+                    raise FileNotFoundError(f"Missing durable pre-interruption validation: {prior_path}")
+                validation_log.append(
+                    reconstruct_physical_validation(prior_path, split, prior_update)
+                )
+            # Validation loader construction can consume global RNG. Reapply the exact checkpoint
+            # boundary state before the first continued optimizer update.
+            restore_rng_state(checkpoint_payload["rng"], flow_generator, loader_generator)
+            post_setup_rng = rng_record(flow_generator, loader_generator)
+            expected_rng = checkpoint_payload["boundary_records"]["rng"]
+            restore_audit["post_validation_setup_rng_exact"] = post_setup_rng == expected_rng
+            restore_audit["all_exact"] = bool(
+                restore_audit["all_exact"] and restore_audit["post_validation_setup_rng_exact"]
+            )
+            (run_root / "restore_audit.json").write_text(
+                json.dumps(restore_audit, indent=2) + "\n"
+            )
+            if not restore_audit["all_exact"]:
+                raise RuntimeError("Post-validation-setup RNG restoration failed")
 
     representatives = representative_parameter_names(policy)
     captured: dict[str, torch.Tensor] = {}
@@ -479,7 +569,7 @@ def main() -> None:
         if update == start_update or update % 25 == 0 or update == end_update:
             print(json.dumps({"run": run_name, "role": args.role, "train": record}), flush=True)
 
-        if args.role == "reference" and update in validation_updates:
+        if args.role in ("reference", "continuation") and update in validation_updates:
             metrics, arrays = evaluate(
                 policy,
                 preprocessor,
@@ -492,10 +582,14 @@ def main() -> None:
             )
             metrics["update"] = update
             validation_log.append(metrics)
-            np.savez_compressed(run_root / f"validation_update{update:05d}.npz", **arrays)
+            validation_path_root = primary_run_root if args.role == "continuation" else run_root
+            validation_path = validation_path_root / f"validation_update{update:05d}.npz"
+            if validation_path.exists():
+                raise FileExistsError(f"Refusing to overwrite validation artifact: {validation_path}")
+            np.savez_compressed(validation_path, **arrays)
             print(json.dumps({"run": run_name, "validation": metrics}), flush=True)
 
-        if args.role == "reference" and update in checkpoint_updates:
+        if args.role in ("reference", "continuation") and update in checkpoint_updates:
             training_state = complete_training_state(
                 update, effective_batch, accumulation, order_hash, full_order, config
             )
@@ -536,7 +630,11 @@ def main() -> None:
             if not inventory["serialization_rng_exact"] or not inventory["model_export_rng_exact"]:
                 raise RuntimeError("Checkpoint or model export changed RNG state")
             checkpoint_inventories[str(update)] = inventory
-            (run_root / f"checkpoint_update{update:05d}_inventory.json").write_text(
+            inventory_root = primary_run_root if args.role == "continuation" else run_root
+            inventory_path = inventory_root / f"checkpoint_update{update:05d}_inventory.json"
+            if inventory_path.exists():
+                raise FileExistsError(f"Refusing to overwrite checkpoint inventory: {inventory_path}")
+            inventory_path.write_text(
                 json.dumps(inventory, indent=2) + "\n"
             )
 
@@ -550,6 +648,19 @@ def main() -> None:
         "run_name": run_name,
         "mode": args.mode,
         "role": args.role,
+        "interruption_recovery": (
+            {
+                "status": "CONTINUED_FROM_COMPLETE_CHECKPOINT",
+                "checkpoint_update": comparison_checkpoint,
+                "initial_segment": [1, comparison_checkpoint],
+                "continued_segment": [start_update, end_update],
+                "train_log_available_segment": [start_update, end_update],
+                "pre_interruption_physical_validation_reconstructed_from_durable_arrays": True,
+                "pre_interruption_fixed_flow_mse_available": False,
+            }
+            if args.role == "continuation"
+            else None
+        ),
         "method": method,
         "seed": args.seed,
         "protocol_freeze_commit": PROTOCOL_FREEZE,
@@ -597,6 +708,11 @@ def main() -> None:
         "model_root": str(model_root / ("smoke" if smoke else "runs") / run_name),
     }
     (run_root / "run.json").write_text(json.dumps(result, indent=2) + "\n")
+    if args.role == "continuation":
+        primary_run_json = primary_run_root / "run.json"
+        if primary_run_json.exists():
+            raise FileExistsError(f"Refusing to overwrite primary run result: {primary_run_json}")
+        primary_run_json.write_text(json.dumps(result, indent=2) + "\n")
     print(
         json.dumps(
             {
