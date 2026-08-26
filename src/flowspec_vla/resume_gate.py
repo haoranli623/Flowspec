@@ -20,13 +20,13 @@ ROOT = Path("/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/resume_gate")
 PROTOCOL_FREEZE = "a2a37dd9a5e6a8549fea54d165727b9864650acf"
 
 
-def configure_determinism() -> None:
+def configure_determinism(seed: int = SEED) -> None:
     if os.environ.get("CUBLAS_WORKSPACE_CONFIG") != ":4096:8":
         raise RuntimeError("Resume gate requires CUBLAS_WORKSPACE_CONFIG=:4096:8 before CUDA initialization")
-    random.seed(SEED)
-    np.random.seed(SEED)
-    torch.manual_seed(SEED)
-    torch.cuda.manual_seed_all(SEED)
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.backends.cudnn.allow_tf32 = False
     torch.backends.cudnn.benchmark = False

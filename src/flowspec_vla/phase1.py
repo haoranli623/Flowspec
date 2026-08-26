@@ -78,9 +78,13 @@ def tensor_stats(stats: dict[str, Any]) -> dict[str, dict[str, Tensor]]:
     }
 
 
-def make_phase1_processors(policy: SmolVLAPolicy, split_manifest: dict[str, Any]):
+def make_phase1_processors(
+    policy: SmolVLAPolicy,
+    split_manifest: dict[str, Any],
+    config: dict[str, Any] | None = None,
+):
     stats = tensor_stats(split_manifest["normalization_stats_renamed"])
-    config = load_phase1_config()
+    config = load_phase1_config() if config is None else config
     rename_map = {
         "observation.images.image": "observation.images.camera1",
         "observation.images.image2": "observation.images.camera2",
@@ -277,7 +281,8 @@ def normalized_physical_squared_error(
 
 
 def load_split_manifest(config: dict[str, Any]) -> dict[str, Any]:
-    path = Path(config["paths"]["artifacts"]) / "split_manifest.json"
+    explicit = config["paths"].get("frozen_split_manifest")
+    path = Path(explicit) if explicit else Path(config["paths"]["artifacts"]) / "split_manifest.json"
     return json.loads(path.read_text())
 
 

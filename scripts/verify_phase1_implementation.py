@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 from __future__ import annotations
 
+import argparse
 import json
+import os
 from pathlib import Path
 
 import numpy as np
@@ -21,6 +23,7 @@ from flowspec_vla.phase1 import (
     sample_actions_with_trace,
     unnormalize_actions,
 )
+from flowspec_vla.resume_gate import configure_determinism
 
 
 def check(name: str, condition: bool, details: dict, results: dict) -> None:
@@ -30,16 +33,15 @@ def check(name: str, condition: bool, details: dict, results: dict) -> None:
 
 
 def main() -> None:
-    config = load_phase1_config()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=Path)
+    parser.add_argument("--output", type=Path)
+    args = parser.parse_args()
+    config = load_phase1_config(args.config) if args.config else load_phase1_config()
     split = load_split_manifest(config)
-    torch.manual_seed(550001)
-    torch.cuda.manual_seed_all(550001)
-    torch.backends.cuda.matmul.allow_tf32 = False
-    torch.backends.cudnn.allow_tf32 = False
-    torch.backends.cudnn.benchmark = False
-    torch.backends.cudnn.deterministic = True
+    configure_determinism(550001)
     policy = configure_libero_policy(config)
-    preprocessor, _ = make_phase1_processors(policy, split)
+    preprocessor, _ = make_phase1_processors(policy, split, config)
     dataset = load_dataset(with_action_chunk=True)
     raw = next(
         iter(
@@ -208,13 +210,28 @@ def main() -> None:
 
     summary = {
         "status": "PASS",
+        "protocol_freeze_commit": (
+            "82dfe670e6073bc30397d699ee612c0386932a00"
+            if config.get("phase") == "phase1_rerun"
+            else None
+        ),
+        "execution_commit": os.environ.get("FLOWSPEC_EXECUTION_COMMIT"),
+        "determinism": {
+            "cublas_workspace_config": os.environ.get("CUBLAS_WORKSPACE_CONFIG"),
+            "torch_deterministic_algorithms": torch.are_deterministic_algorithms_enabled(),
+            "cudnn_deterministic": torch.backends.cudnn.deterministic,
+            "cudnn_benchmark": torch.backends.cudnn.benchmark,
+            "tf32_matmul": torch.backends.cuda.matmul.allow_tf32,
+            "tf32_cudnn": torch.backends.cudnn.allow_tf32,
+        },
         "checks": results,
         "m0_trace": m0_trace,
         "m2_trace": m2_trace,
         "checkpoint": config["paths"]["base_checkpoint"],
         "validation_dataset_indices": split["validation_indices"][:2],
     }
-    output = Path(config["paths"]["artifacts"]) / "implementation_verification.json"
+    output = args.output or Path(config["paths"]["artifacts"]) / "implementation_verification.json"
+    output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(summary, indent=2) + "\n")
     print(json.dumps(summary, indent=2))
 
