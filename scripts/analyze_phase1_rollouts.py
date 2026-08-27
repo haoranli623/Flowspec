@@ -72,9 +72,14 @@ def main() -> None:
             "mean_percentage_point_difference": float(differences.mean() * 100),
             "favors_candidate_seed_count": int(np.sum(differences > 0)),
         }
+    protocol_freeze = (
+        "82dfe670e6073bc30397d699ee612c0386932a00"
+        if config.get("phase") == "phase1_rerun"
+        else "beb292024fcb37d321338474249d03598cfa5e90"
+    )
     summary = {
         "status": "COMPLETE",
-        "protocol_freeze_commit": "beb292024fcb37d321338474249d03598cfa5e90",
+        "protocol_freeze_commit": protocol_freeze,
         "counts": {
             "runs": 9,
             "episodes_per_run": config["rollout"]["episodes_per_checkpoint"],
