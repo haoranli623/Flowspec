@@ -1,0 +1,712 @@
+{
+  "asset_count": 7,
+  "assets": [
+    {
+      "browser_download_url": "https://github.com/haoranli623/Flowspec/releases/download/flowspec-vla-recovery-assets-v1/flowspec_m0_seed520001_update05000_model.safetensors",
+      "filename": "flowspec_m0_seed520001_update05000_model.safetensors",
+      "method": "m0",
+      "role": "unique final inference weights",
+      "seed": 520001,
+      "sha256": "7672e2d51e76b64919bb65306dfa3d827f5133baff32b8df54ba1f556c684042",
+      "size_bytes": 906712552,
+      "update": 5000
+    },
+    {
+      "browser_download_url": "https://github.com/haoranli623/Flowspec/releases/download/flowspec-vla-recovery-assets-v1/flowspec_m0_seed520002_update05000_model.safetensors",
+      "filename": "flowspec_m0_seed520002_update05000_model.safetensors",
+      "method": "m0",
+      "role": "unique final inference weights",
+      "seed": 520002,
+      "sha256": "b59dbd06cdafaeacdf779b95c32d4ef1515ebeabcc0115fd308a04a69b8560d9",
+      "size_bytes": 906712552,
+      "update": 5000
+    },
+    {
+      "browser_download_url": "https://github.com/haoranli623/Flowspec/releases/download/flowspec-vla-recovery-assets-v1/flowspec_m0_seed520003_update05000_model.safetensors",
+      "filename": "flowspec_m0_seed520003_update05000_model.safetensors",
+      "method": "m0",
+      "role": "unique final inference weights",
+      "seed": 520003,
+      "sha256": "f86232db0d78a78ff5cea8a515d0d79661562582c69ef5c74434636e75f200e0",
+      "size_bytes": 906712552,
+      "update": 5000
+    },
+    {
+      "browser_download_url": "https://github.com/haoranli623/Flowspec/releases/download/flowspec-vla-recovery-assets-v1/flowspec_m1_seed520001_update05000_model.safetensors",
+      "filename": "flowspec_m1_seed520001_update05000_model.safetensors",
+      "method": "m1",
+      "role": "unique final inference weights",
+      "seed": 520001,
+      "sha256": "facb2f67e2385f6b6b7486faeee1d328460d528766f3602a0a114253e06c209e",
+      "size_bytes": 906712552,
+      "update": 5000
+    },
+    {
+      "browser_download_url": "https://github.com/haoranli623/Flowspec/releases/download/flowspec-vla-recovery-assets-v1/flowspec_m1_seed520002_update05000_model.safetensors",
+      "filename": "flowspec_m1_seed520002_update05000_model.safetensors",
+      "method": "m1",
+      "role": "unique final inference weights",
+      "seed": 520002,
+      "sha256": "1abc847165326a4718bee3bd3b1a1b900ec15c82956da56ff75c1f0192a0a563",
+      "size_bytes": 906712552,
+      "update": 5000
+    },
+    {
+      "browser_download_url": "https://github.com/haoranli623/Flowspec/releases/download/flowspec-vla-recovery-assets-v1/flowspec_m1_seed520003_update05000_model.safetensors",
+      "filename": "flowspec_m1_seed520003_update05000_model.safetensors",
+      "method": "m1",
+      "role": "unique final inference weights",
+      "seed": 520003,
+      "sha256": "8a0ccf8992193ec247f73635cdfca9d9e2b7ac8b4e8395a09740fe796f13a213",
+      "size_bytes": 906712552,
+      "update": 5000
+    },
+    {
+      "browser_download_url": "https://github.com/haoranli623/Flowspec/releases/download/flowspec-vla-recovery-assets-v1/flowspec_vla_raw_numerical_arrays_v1.tar",
+      "contents": [
+        {
+          "archive_path": "raw/gate0/gate0a_raw_shard0.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0a_raw_shard0.npz",
+          "scientific_role": "Gate-0 raw numerical audit",
+          "sha256": "cfb91823e7b08828678358101519adff08b13fadb3d29c8b2154271420fcda92",
+          "size_bytes": 29118944
+        },
+        {
+          "archive_path": "raw/gate0/gate0a_raw_shard1.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0a_raw_shard1.npz",
+          "scientific_role": "Gate-0 raw numerical audit",
+          "sha256": "8537ab6b0de2e7583cc3dea3139db1baef5f0b24eb5b9063b9110c5e52e1dd45",
+          "size_bytes": 29121728
+        },
+        {
+          "archive_path": "raw/gate0/gate0b_frozen_data.pt",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_frozen_data.pt",
+          "scientific_role": "Gate-0 frozen/raw tensor evidence",
+          "sha256": "09b616fcd21cbc08ccc6e5ff8b23531a99226f84a7a21f4aa0423656a836233c",
+          "size_bytes": 252116129
+        },
+        {
+          "archive_path": "raw/gate0/gate0b_randomness.pt",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_randomness.pt",
+          "scientific_role": "Gate-0 frozen/raw tensor evidence",
+          "sha256": "1c4a3da6f0bcb96ef5f2937e93590238819595abffd216f2efe46df6cbe030b5",
+          "size_bytes": 823181
+        },
+        {
+          "archive_path": "raw/phase1_leakage/initial_m0.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/initial_m0.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "463b81c33d3282188c03bad2095999a91e43c3f091ed63a49d61069717b762a4",
+          "size_bytes": 56780961
+        },
+        {
+          "archive_path": "raw/phase1_leakage/initial_m1.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/initial_m1.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "0808010612ce1e901607f1225d05af022a2338c56e89695e511116b81508f3e6",
+          "size_bytes": 56776188
+        },
+        {
+          "archive_path": "raw/phase1_leakage/initial_m2.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/initial_m2.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "8922c8958d596623a5fa2ce18d8f567b2c185b84fc25fe7aba735ef98e0463a7",
+          "size_bytes": 45720744
+        },
+        {
+          "archive_path": "raw/phase1_leakage/m0_seed520001.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/m0_seed520001.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "2749a5bdd8ae7d389dca709116654ff3e43a50559e4b742699ba1de6e57b9bdc",
+          "size_bytes": 56599805
+        },
+        {
+          "archive_path": "raw/phase1_leakage/m0_seed520002.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/m0_seed520002.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "6b1f608d74bed1278d558363f922867cfe7b22742c331a75b59cb73882929fb9",
+          "size_bytes": 56623392
+        },
+        {
+          "archive_path": "raw/phase1_leakage/m0_seed520003.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/m0_seed520003.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "c5b6e4551b353caa626b0936d64eb2f773b92f082734922cc220b6ecf8345cff",
+          "size_bytes": 56586810
+        },
+        {
+          "archive_path": "raw/phase1_leakage/m1_seed520001.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/m1_seed520001.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "afa56811a25c6340b485e2479bbc71a8d8654a2c60f0cd15643f3fa2f10fda8b",
+          "size_bytes": 57375885
+        },
+        {
+          "archive_path": "raw/phase1_leakage/m1_seed520002.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/m1_seed520002.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "485fecf017a3d81a17d8b1c0260ad62b214a9bad34aeb9be5a359bb56d31a617",
+          "size_bytes": 57373193
+        },
+        {
+          "archive_path": "raw/phase1_leakage/m1_seed520003.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/m1_seed520003.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "0170d207f5b2accd1c3028a3b85374d76a730a8160fd52d7aa0b9f5e8feec5c3",
+          "size_bytes": 57367710
+        },
+        {
+          "archive_path": "raw/phase1_leakage/m2_seed520001.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/m2_seed520001.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "cf2b4373fd2f366d983f7a4f6369e97f060c3717553348c9308b3ebf7c105afa",
+          "size_bytes": 45721083
+        },
+        {
+          "archive_path": "raw/phase1_leakage/m2_seed520002.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/m2_seed520002.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "0e0a34f3484079593ba6c7844f60a83f04ed11142e562e64adacde2afd7b165f",
+          "size_bytes": 45721556
+        },
+        {
+          "archive_path": "raw/phase1_leakage/m2_seed520003.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/m2_seed520003.npz",
+          "scientific_role": "Clean rerun leakage mechanism arrays",
+          "sha256": "2c73a8b7d9a11f69fc61e0d14617469f3fa20930f19ed7ac00c6afe3fd82be70",
+          "size_bytes": 45724429
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520001/validation_update00000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520001/validation_update00000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "2369162e3f73e93d7bfd795ad951b1c1938b8013e7a397830bce1c55e5f6e0bb",
+          "size_bytes": 716926
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520001/validation_update00250.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520001/validation_update00250.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "67f889660a37d843c362253645ba1b6800e9c4df9bd7aed895b8f375a413279d",
+          "size_bytes": 721824
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520001/validation_update00500.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520001/validation_update00500.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "22817149dcf11e5cb02da82870465e480c3f1a144e9ff126deacc6e338398d48",
+          "size_bytes": 722130
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520001/validation_update01000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520001/validation_update01000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "9c6ab9f97a5288bb9fc04a347535dbbde981c133bfbf6976ab382e47f5271d0c",
+          "size_bytes": 722698
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520001/validation_update02000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520001/validation_update02000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "832786809fa6b41b3dfeb1d6836d2565733cb6ef69fa436cf69b5bbf68e5e494",
+          "size_bytes": 723283
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520001/validation_update03000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520001/validation_update03000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "ab7871df9d91161d6349aab8f2810537aa0a574f2919e626260b0082fd6d465a",
+          "size_bytes": 723222
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520001/validation_update04000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520001/validation_update04000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "d7fe7a7bdc528f45cc05827b0e017c366d39c75d7adc19f02bc5870eb10aa6f5",
+          "size_bytes": 723343
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520001/validation_update05000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520001/validation_update05000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "cba746c7c0d5d24df4208b4b1c0b52d10675240bc394b45b980aecda039c1d4c",
+          "size_bytes": 723331
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520002/validation_update00000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520002/validation_update00000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "2369162e3f73e93d7bfd795ad951b1c1938b8013e7a397830bce1c55e5f6e0bb",
+          "size_bytes": 716926
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520002/validation_update00250.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520002/validation_update00250.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "5d8559f874678949395bbff43dc210cc5614a18a63560bcea1250f6d8408f1c5",
+          "size_bytes": 721922
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520002/validation_update00500.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520002/validation_update00500.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "d5da57e3782aa565593595d8711d1fd08f435064f5272a812418a5eebb57f1ea",
+          "size_bytes": 722697
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520002/validation_update01000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520002/validation_update01000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "87447902ebf68d289d753d5d2e0980055d338b818452b25f81cc1910c36ede4b",
+          "size_bytes": 723129
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520002/validation_update02000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520002/validation_update02000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "51154b4cd788ed03eabf441a3d55afd3af53e2bb759ce0d4a09e42f6c2f08f88",
+          "size_bytes": 723101
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520002/validation_update03000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520002/validation_update03000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "cef7bbea1f8d7ed4b53b0b86fefc66bce3052432e5f626f016bab12b031286eb",
+          "size_bytes": 723477
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520002/validation_update04000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520002/validation_update04000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "220238c483b7cfe99586aca755bbd03b5882350bbc57f47878b0c16dc9bf2d5c",
+          "size_bytes": 723364
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520002/validation_update05000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520002/validation_update05000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "95bd6ae2055777c41e5b122e21468c14d9c36ca3af9f3c5988a97a5611de122a",
+          "size_bytes": 723285
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520003/validation_update00000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520003/validation_update00000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "2369162e3f73e93d7bfd795ad951b1c1938b8013e7a397830bce1c55e5f6e0bb",
+          "size_bytes": 716926
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520003/validation_update00250.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520003/validation_update00250.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "9fac2c776da14bfb556e3c8ec4cae462b6f259979a73e18f140e12072b42f921",
+          "size_bytes": 722355
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520003/validation_update00500.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520003/validation_update00500.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "e161c7f00c519d5b4cd7580aac8ff6ad694e1b36e6078683a8c91499b9c019b3",
+          "size_bytes": 722625
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520003/validation_update01000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520003/validation_update01000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "95d4c18265731bfe7a39bf9710928342a84d091228a9136565dfae0e359f6437",
+          "size_bytes": 722867
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520003/validation_update02000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520003/validation_update02000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "35e3cc2c1d139e7b9b61d9950fbc3a22b1e87668e0159cf24cebd66079948e1b",
+          "size_bytes": 723402
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520003/validation_update03000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520003/validation_update03000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "2ed80daf786e9cc64ff58e2dcd1e5eb06bf2953ed1588a4a949f5302a0e35fbb",
+          "size_bytes": 723467
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520003/validation_update04000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520003/validation_update04000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "e42debf0f730ffaac405f0149cfb09245461d988a4cf23f98e0e5a9e896002a3",
+          "size_bytes": 723316
+        },
+        {
+          "archive_path": "raw/phase1_validation/m0_seed520003/validation_update05000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m0_seed520003/validation_update05000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "aedffbde66a7398601d7460cce7e59bcef64d498eb893519d984557d284e307e",
+          "size_bytes": 723245
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520001/validation_update00000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520001/validation_update00000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "3453fe16cb2b5d99586fa3d9d8e1ddbac57039b82567b6c8cb857dc7c86c4808",
+          "size_bytes": 716659
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520001/validation_update00250.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520001/validation_update00250.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "8596df03bb5586c0f62b2fd0ea5b38beff12c637c1880110baddfb2a80889e29",
+          "size_bytes": 722098
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520001/validation_update00500.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520001/validation_update00500.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "13650763e6b2004d13d3a2d3768a2c3ff612b0f0ffbff6efbdb27af5c23fbd04",
+          "size_bytes": 722316
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520001/validation_update01000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520001/validation_update01000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "494219b4ca8d67082f9cec45dd1d3c11d429135281d71491545101dc5b439c7a",
+          "size_bytes": 722992
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520001/validation_update02000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520001/validation_update02000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "15fc8ea55cfe99266859cd5197e7d3ce37c5a08c2355f6f9330b63b17226fe5f",
+          "size_bytes": 723205
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520001/validation_update03000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520001/validation_update03000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "2d73cdfafc91335c43d7bf226c3e2b6023a0e02ca9f4209f52a8bb56254e08b4",
+          "size_bytes": 723455
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520001/validation_update04000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520001/validation_update04000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "5450cde62d7726f1d2967d30f61183534e716329350f85c4e53d8ed856c33889",
+          "size_bytes": 723468
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520001/validation_update05000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520001/validation_update05000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "17c3083d19dc224a24e98a3142dfde9dbe6e2e83c48cd3f9ca1f63ce7c04f9da",
+          "size_bytes": 723506
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520002/validation_update00000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520002/validation_update00000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "3453fe16cb2b5d99586fa3d9d8e1ddbac57039b82567b6c8cb857dc7c86c4808",
+          "size_bytes": 716659
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520002/validation_update00250.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520002/validation_update00250.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "069c27d9ee4c1d818800469477116dd4442c78f4e40493cac692c9471857227e",
+          "size_bytes": 721350
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520002/validation_update00500.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520002/validation_update00500.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "796669f5a33aa7c9f969aaae99e48193f355b4e9fbbebd7f52cfad2566f0c6ca",
+          "size_bytes": 722796
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520002/validation_update01000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520002/validation_update01000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "cc8b7fe276df4cda204c5edccf1bab5c2538bc928f8112b056ecdf141a0893e0",
+          "size_bytes": 722985
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520002/validation_update02000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520002/validation_update02000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "f35f59aa0430f4f53635470864b705d8f39b26a42907c0ea68c400bbdf45ef0a",
+          "size_bytes": 723093
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520002/validation_update03000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520002/validation_update03000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "586bff404c9370cc4c85d0c364c3b8cb20bac813770ccee0d4a31f6783967777",
+          "size_bytes": 723600
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520002/validation_update04000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520002/validation_update04000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "54cbc8143ae57e36229b5ad4c06b1f138b22ebcc6ce2a5864a663386d4acfb3b",
+          "size_bytes": 723400
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520002/validation_update05000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520002/validation_update05000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "d5b44ea9cb1a6c718024d45d8ce354aed67b48b3b3de86846ed432982e5457e0",
+          "size_bytes": 723544
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520003/validation_update00000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520003/validation_update00000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "3453fe16cb2b5d99586fa3d9d8e1ddbac57039b82567b6c8cb857dc7c86c4808",
+          "size_bytes": 716659
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520003/validation_update00250.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520003/validation_update00250.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "b463357e201910e022cdc991969a791c2694fed9d2d82b73e27a075794497207",
+          "size_bytes": 722328
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520003/validation_update00500.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520003/validation_update00500.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "6b30b4f54057ece60c0e79a263c952687dfead3c9b27723a3f0fcc778c89f209",
+          "size_bytes": 722376
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520003/validation_update01000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520003/validation_update01000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "7d3251b32c7f979807698e539e14cc7ec7246c5cb0ff69afa2c885e8eee6bd25",
+          "size_bytes": 723042
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520003/validation_update02000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520003/validation_update02000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "e4340bf90c00e343089816c6afb2a8f353188b8a509a05f266c91647b612afa8",
+          "size_bytes": 723406
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520003/validation_update03000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520003/validation_update03000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "6c8f2ed2f3c5b47ef8434b9b4f8dc049234f3a62f540ea0f874e1e3703509e9d",
+          "size_bytes": 723443
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520003/validation_update04000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520003/validation_update04000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "b6b79e1f4ad0b4189feecdd2a32b555118726f753d59436bf722b2eb95a3579f",
+          "size_bytes": 723472
+        },
+        {
+          "archive_path": "raw/phase1_validation/m1_seed520003/validation_update05000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m1_seed520003/validation_update05000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "b3a72197225662b0aaa268e7d5b7a55fb11df036782fa65ae8eaba6ac057d0c2",
+          "size_bytes": 723430
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520001/validation_update00000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520001/validation_update00000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "78c04adecb04c7660955d7f66a6cada80fe8a134727f90e629aaad83ba79582f",
+          "size_bytes": 716633
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520001/validation_update00250.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520001/validation_update00250.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "46d46ed399b119aa3e0478316caf21ce960ebf8a8c2dd975ab03ff50cf1908e4",
+          "size_bytes": 722092
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520001/validation_update00500.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520001/validation_update00500.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "1fe288a8ae32610d1f986b73297e7d1b1fd25280a7baf2a27152f192e5f88dfc",
+          "size_bytes": 722197
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520001/validation_update01000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520001/validation_update01000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "3f0f53142075cdddf1558fbfe4b271dba17905d0bc96b749e2fabbfd6c308c75",
+          "size_bytes": 723034
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520001/validation_update02000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520001/validation_update02000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "c7a12b731df464d62c4619213b1d31ead6d29454214f0d0065e059ac814391c3",
+          "size_bytes": 723112
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520001/validation_update03000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520001/validation_update03000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "78c79a65a1420929965fa320bd12e32c71cac792aa552b64a9ab1fbe8e35d8e5",
+          "size_bytes": 723229
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520001/validation_update04000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520001/validation_update04000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "33bbaee76b3c82cfe0112f8b8a445348f2058f536615e9c11e001ee61f02b7eb",
+          "size_bytes": 723184
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520001/validation_update05000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520001/validation_update05000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "ebc2835c967aa0660354ad49c72168dce9f0b304113b24923dc618748b7bc924",
+          "size_bytes": 723119
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520002/validation_update00000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520002/validation_update00000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "78c04adecb04c7660955d7f66a6cada80fe8a134727f90e629aaad83ba79582f",
+          "size_bytes": 716633
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520002/validation_update00250.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520002/validation_update00250.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "e9f2c772156de3a94eb27d309a28c7800ab254ae191c76a3a52bf32d00449f4e",
+          "size_bytes": 721393
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520002/validation_update00500.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520002/validation_update00500.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "d95c3ccdcf31e2695b5c2246d6fbfb7a87bb1cc3e16d45d834f08d64227f2adb",
+          "size_bytes": 722714
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520002/validation_update01000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520002/validation_update01000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "59e309f43008e180bd2c24d44bc83b4dc07c73c670ab09bda031a58175e9de58",
+          "size_bytes": 722917
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520002/validation_update02000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520002/validation_update02000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "5ab92a99277efd7aee9bb97a784826ba0273f03ae084315542fe7bd4eec6081c",
+          "size_bytes": 722989
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520002/validation_update03000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520002/validation_update03000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "32d5c7e6e6fb75f264e8144ed56d0a273616cfa69b2e8991e1c756d0082a7996",
+          "size_bytes": 723213
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520002/validation_update04000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520002/validation_update04000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "bc7f393b16bc48ae33747b9549c25917245b58c2414610b78cd52bc63bb5d79e",
+          "size_bytes": 723166
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520002/validation_update05000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520002/validation_update05000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "b49d2e8caa29a8746ff5cebc3b6d977058c2f8ccac6846ee5cb7660d4508c22d",
+          "size_bytes": 723365
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520003/validation_update00000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520003/validation_update00000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "78c04adecb04c7660955d7f66a6cada80fe8a134727f90e629aaad83ba79582f",
+          "size_bytes": 716633
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520003/validation_update00250.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520003/validation_update00250.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "f25f8c9350f6a2ad9ec3f7c86ae057e45d5d8fcc878ff7b167cebe79aaa511b8",
+          "size_bytes": 722376
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520003/validation_update00500.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520003/validation_update00500.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "f612c8ab2815bb080b03bf8a35f2cd3b1e10f97cc0d2830663bd7faf01502456",
+          "size_bytes": 722293
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520003/validation_update01000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520003/validation_update01000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "87f6857ec7b391d9da55f58c34309f7ca8f858742e788a84d7c3fd762052b88d",
+          "size_bytes": 722896
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520003/validation_update02000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520003/validation_update02000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "4e21fcff0d567c76bb4939a9ca60043401855f4589b8c8b695a672a3e7ad07d9",
+          "size_bytes": 723419
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520003/validation_update03000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520003/validation_update03000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "3813518850012fd93078e55d16d4b07a466e6e8a0e58bd58e41d495c8fa160e5",
+          "size_bytes": 723401
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520003/validation_update04000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520003/validation_update04000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "83755c16ce2259530f350370ebdf6d25ddf30c1923b3a0ce0bcda3e601ee64c7",
+          "size_bytes": 723152
+        },
+        {
+          "archive_path": "raw/phase1_validation/m2_seed520003/validation_update05000.npz",
+          "original_path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/runs/m2_seed520003/validation_update05000.npz",
+          "scientific_role": "Clean rerun physical validation arrays",
+          "sha256": "17f9e4bd932007155f68d279876ecfdf3a88a89e46d2b61dc12ae725dc3fee3c",
+          "size_bytes": 722997
+        }
+      ],
+      "filename": "flowspec_vla_raw_numerical_arrays_v1.tar",
+      "internal_manifest": "raw/RAW_ASSET_MANIFEST.tsv",
+      "original_payload_bytes": 1001548038,
+      "original_payload_files": 88,
+      "role": "frozen raw numerical arrays",
+      "sha256": "ed1dac8dc80087784405e0764b7d2cc76cb770feabc67b81951d5cc60801657e",
+      "size_bytes": 1001646080
+    }
+  ],
+  "generated_at_utc": "2026-08-31T16:19:40.970518+00:00",
+  "intentionally_excluded": [
+    "complete_state.pt",
+    "intermediate and invalid checkpoints",
+    "venv and Hugging Face cache",
+    "LIBERO dataset",
+    "upstream pretrained model snapshots"
+  ],
+  "lfs_used": false,
+  "m2_weight_recovery": "M2 reuses the same-seed M1 asset and must enable inference projection.",
+  "recovery_commit": "cf2a8115dc3e8665cbab285927cf36c9c4717692",
+  "release_tag": "flowspec-vla-recovery-assets-v1",
+  "release_title": "FlowSpec-VLA Recovery Assets v1",
+  "release_url": "https://github.com/haoranli623/Flowspec/releases/tag/flowspec-vla-recovery-assets-v1",
+  "repository": "haoranli623/Flowspec",
+  "repository_visibility": "PRIVATE",
+  "schema_version": 1,
+  "tag_object_sha": "b88cbf5a13260c092ef772d23cf3d982328a45e1",
+  "total_remote_asset_bytes": 6441921392
+}

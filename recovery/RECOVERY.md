@@ -59,7 +59,7 @@ Download `lerobot/libero` at its exact revision. The archived `results/frozen/ph
 
 ## 9. Checkpoint reconstruction
 
-`checkpoints/checkpoint_map.json` inventories every update-1,000, update-2,500, and update-5,000 checkpoint state using archived inventory hashes. `checkpoints/LFS_CANDIDATES.tsv` lists the six unique final inference weight files (3 M0 and 3 M1). M2 same-seed tensors are identical to M1, but M2 must be invoked with projection. Copy independently retained weights to each listed `expected_recovery_destination`, verify SHA256, and never substitute a checkpoint selected after observing results.
+`checkpoints/checkpoint_map.json` inventories every update-1,000, update-2,500, and update-5,000 checkpoint state using archived inventory hashes. `checkpoints/LFS_CANDIDATES.tsv` lists the six unique final inference weight files (3 M0 and 3 M1). M2 same-seed tensors are identical to M1, but M2 must be invoked with projection. Retrieve the six files from the private recovery Release documented in `recovery/release_asset_manifest.json`, place them at the listed `expected_recovery_destination` paths, verify SHA256, and never substitute a checkpoint selected after observing results.
 
 Full training resume requires the matching `complete_state.pt`, including optimizer/RNG/sampler state. These files are intentionally omitted from PASS 2A; their complete-state hashes and sizes remain in the checkpoint map and archived inventories.
 
@@ -80,7 +80,7 @@ After upstreams, environment, dataset, and base assets are reconstructed, follow
 
 ## 12. Intentionally omitted large artifacts
 
-Ordinary Git excludes all model weights, `complete_state.pt`, large Gate-0 raw arrays, clean validation/leakage NPZ files, dataset bytes, Hugging Face cache, LeRobot checkout, venv, simulator outputs, videos, and large logs. The six minimum unique final inference weights and deep-audit arrays are fully hashed in manifests for a later private/LFS asset pass. Upstreams are revision-pinned and regenerable. Aggregate analysis does not need omitted NPZ files or videos.
+Ordinary Git excludes all model weights, `complete_state.pt`, large Gate-0 raw arrays, clean validation/leakage NPZ files, dataset bytes, Hugging Face cache, LeRobot checkout, venv, simulator outputs, videos, and large logs. The six minimum unique final inference weights and deep-audit arrays are stored outside Git and Git LFS in the private recovery Release documented below. Upstream pretrained assets and the LIBERO dataset remain revision-pinned and regenerable. Aggregate analysis does not need the Release binaries or videos.
 
 ## 13. Historical invalid Phase-1 results
 
@@ -91,3 +91,9 @@ The first Phase-1 run was invalidated after resume/reproducibility investigation
 First, final documents and the machine-readable decision record use **P2 — MECHANISM CONFIRMED, PRACTICAL BENEFIT WEAK**, while a literal application of the original frozen decision-tree wording appears to map the observed lack of downstream improvement to **P5 — NO-GO, LEAKAGE NOT PRACTICALLY HARMFUL**. This is a terminology/decision-tree consistency issue, not data corruption. Preserve both facts; do not silently relabel historical reports.
 
 Second, the displayed NRMSE formula in the rerun protocol is not textually identical to the original protocol and actual implementation. Final reported values use the implemented original metric: divide each physical-coordinate error by that coordinate's frozen training-split standard deviation, square, average across valid 7D chunk coordinates, then take the square root. The numerical artifacts and final report consistently use that implementation. This is a formula-documentation discrepancy, not altered result data.
+
+## 15. Private recovery Release
+
+The private repository is `haoranli623/Flowspec`. Its Release **FlowSpec-VLA Recovery Assets v1**, attached to tag `flowspec-vla-recovery-assets-v1`, contains exactly seven assets totaling `6,441,921,392` bytes: six unique update-5,000 final inference weights (three M0 and three M1) and one deterministic raw-numerical TAR. M2 reuses the same-seed M1 weight bytes and differs through inference projection, so no duplicate M2 weights are required. The TAR contains 88 frozen raw files (86 NPZ and 2 PT) with `1,001,548,038` original payload bytes and an internal path/size/SHA-256 manifest.
+
+`recovery/release_asset_manifest.json` is the authoritative asset inventory, including filenames, sizes, SHA-256 digests, roles, and all 88 TAR member mappings. Verify every downloaded asset against it before use. Full `complete_state.pt` optimizer/resume states and intermediate checkpoints are intentionally omitted. Upstream pretrained model assets and the LIBERO dataset are reconstructed from the exact pinned provenance in `recovery/UPSTREAMS.yaml` rather than from this Release.
