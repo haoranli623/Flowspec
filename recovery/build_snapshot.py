@@ -13,13 +13,29 @@ import json
 import os
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 
 REPO = Path(__file__).resolve().parents[1]
-ARTIFACTS = Path("/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla")
-MODELS = Path("/mnt/NAS/data/hl5757/models/flowspec-vla")
+ARTIFACTS = Path(
+    os.environ.get(
+        "FLOWSPEC_ARTIFACT_ROOT",
+        REPO.parent / "generated_artifacts" / "flowspec-vla",
+    )
+)
+MODELS = Path(
+    os.environ.get(
+        "FLOWSPEC_MODEL_ROOT",
+        REPO.parent / "models" / "flowspec-vla",
+    )
+)
 FROZEN = REPO / "results" / "frozen"
+
+
+def is_cache_artifact(path: Path) -> bool:
+    """Return true for interpreter caches that must never enter recovery metadata."""
+    return "__pycache__" in path.parts or path.suffix in {".pyc", ".pyo"}
 
 
 def sha256(path: Path) -> str:
@@ -219,7 +235,7 @@ def build_checkpoint_manifests() -> None:
 
 def export_current_package_state() -> None:
     """Export versions only; this is evidence, not a portable lock file."""
-    python = Path("/mnt/NAS/data/hl5757/conda_envs/flowspec-vla/bin/python")
+    python = Path(os.environ.get("FLOWSPEC_PYTHON", sys.executable))
     result = subprocess.run(
         [str(python), "-m", "pip", "list", "--format=freeze", "--disable-pip-version-check"],
         check=True,
@@ -322,7 +338,11 @@ def build_integrity_files() -> None:
     # Add authored recovery metadata and scripts present at generation time.
     for base in (REPO / "recovery", REPO / "checkpoints"):
         for path in sorted(base.rglob("*")):
-            if not path.is_file() or path.name in {"SHA256SUMS", "artifact_manifest.tsv"}:
+            if (
+                not path.is_file()
+                or path.name in {"SHA256SUMS", "artifact_manifest.tsv"}
+                or is_cache_artifact(path)
+            ):
                 continue
             relative = path.relative_to(REPO).as_posix()
             rows.append(
@@ -419,7 +439,10 @@ def build_integrity_files() -> None:
 
     checksum_paths: set[Path] = set()
     for base in (FROZEN, REPO / "recovery", REPO / "checkpoints"):
-        checksum_paths.update(path for path in base.rglob("*") if path.is_file())
+        checksum_paths.update(
+            path for path in base.rglob("*")
+            if path.is_file() and not is_cache_artifact(path)
+        )
     checksum_paths.add(raw_manifest)
     checksum_paths.discard(REPO / "recovery" / "SHA256SUMS")
     checksum_lines = [
