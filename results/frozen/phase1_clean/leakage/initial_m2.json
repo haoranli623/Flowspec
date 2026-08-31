@@ -1,0 +1,13 @@
+{
+  "method": "m2",
+  "seed": null,
+  "initial_base": true,
+  "states": 64,
+  "padded_interventions": 16,
+  "valid_interventions": 16,
+  "flow_steps": 10,
+  "array": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun/leakage/initial_m2.npz",
+  "gpu_seconds": 103.0992426816374,
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "cuda_visible_devices": "0"
+}

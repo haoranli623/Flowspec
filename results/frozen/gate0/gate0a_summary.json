@@ -1,0 +1,136 @@
+{
+  "protocol_commit": "337c95305698e527ef09db6f53040fb377a9d6a5",
+  "verdict": "A1_STRONG_SIGNAL",
+  "implementation_valid": true,
+  "counts": {
+    "states": 64,
+    "tasks": 4,
+    "k_pad": 16,
+    "k_valid": 16,
+    "flow_steps": 10
+  },
+  "primary": {
+    "median_rms_pad_standardized": 0.010470231994986534,
+    "median_rms_pad_bootstrap_95ci": [
+      0.009601770900189877,
+      0.011180084198713303
+    ],
+    "median_rms_valid_standardized": 0.043740563094615936,
+    "median_rms_valid_bootstrap_95ci": [
+      0.038697365671396255,
+      0.045083317905664444
+    ],
+    "r_leak_ratio_of_median_variances": 0.05729682371020317,
+    "median_rms_pad_raw_physical_coordinates": 0.0030263536609709263,
+    "median_max_pairwise_rms_standardized": 0.017627698369324207
+  },
+  "controls": {
+    "repeat_rms_standardized": 0.0,
+    "repeat_max_abs_standardized": 0.0,
+    "decision_floor_standardized": 0.0001,
+    "median_zero_pad_rms_standardized": 0.018983714282512665
+  },
+  "per_dimension": {
+    "pad_rms_standardized": [
+      0.011416834779083729,
+      0.00941404514014721,
+      0.011258412152528763,
+      0.01429064478725195,
+      0.013518007472157478,
+      0.009439715184271336,
+      0.03058863990008831
+    ],
+    "valid_rms_standardized": [
+      0.04051509499549866,
+      0.03224356472492218,
+      0.0364844910800457,
+      0.057752788066864014,
+      0.053547609597444534,
+      0.031097324565052986,
+      0.049309711903333664
+    ]
+  },
+  "by_task": {
+    "0": {
+      "states": 16,
+      "median_rms_pad_standardized": 0.010819797869771719,
+      "median_rms_valid_standardized": 0.044769708067178726,
+      "median_state_variance_ratio": 0.06841075420379639
+    },
+    "10": {
+      "states": 16,
+      "median_rms_pad_standardized": 0.012256061658263206,
+      "median_rms_valid_standardized": 0.04522579163312912,
+      "median_state_variance_ratio": 0.06893391534686089
+    },
+    "20": {
+      "states": 16,
+      "median_rms_pad_standardized": 0.008619766216725111,
+      "median_rms_valid_standardized": 0.033879004418849945,
+      "median_state_variance_ratio": 0.06602581962943077
+    },
+    "30": {
+      "states": 16,
+      "median_rms_pad_standardized": 0.010664464440196753,
+      "median_rms_valid_standardized": 0.044173771515488625,
+      "median_state_variance_ratio": 0.0631512999534607
+    }
+  },
+  "by_euler_step": {
+    "step": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "pad_rms_standardized": [
+      1.2301627805300086e-07,
+      0.003491439390927553,
+      0.006046984810382128,
+      0.008094051852822304,
+      0.009658409282565117,
+      0.01079298835247755,
+      0.011568651534616947,
+      0.012108220718801022,
+      0.01262128259986639,
+      0.01374468207359314,
+      0.01584501937031746
+    ],
+    "valid_rms_standardized": [
+      1.000934362411499,
+      0.9008259177207947,
+      0.8011729717254639,
+      0.7014550566673279,
+      0.6018431186676025,
+      0.5023607015609741,
+      0.40304669737815857,
+      0.3041718602180481,
+      0.20638470351696014,
+      0.11254462599754333,
+      0.044099658727645874
+    ]
+  },
+  "timing": {
+    "aggregate_gpu_seconds_approx": 63.257872611284256,
+    "aggregate_gpu_hours_approx": 0.017571631280912294,
+    "parallel_wall_seconds_max": 36.03961010091007,
+    "gpus": [
+      "NVIDIA GeForce RTX 3090",
+      "NVIDIA GeForce RTX 3090"
+    ]
+  },
+  "thresholds": {
+    "strong_rms": 0.01,
+    "strong_ratio": 0.01,
+    "weak_ratio": 0.0001,
+    "absolute_floor": 0.0001,
+    "repeat_multiple": 10.0
+  }
+}

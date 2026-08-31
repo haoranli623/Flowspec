@@ -1,0 +1,2578 @@
+{
+  "status": "PASS",
+  "verdict": "SMOKE GATE PASSED",
+  "scientific_comparison_permitted": true,
+  "seed": 519001,
+  "methods": {
+    "m0": {
+      "status": "PASS",
+      "finite_losses_gradients_outputs": true,
+      "first_50_train_loss_mean": 2.1890772700309755,
+      "last_50_train_loss_mean": 0.7509610629081727,
+      "last_to_first_train_loss_ratio": 0.3430491345321705,
+      "initial_validation": {
+        "states": 64,
+        "whole_action_normalized_physical_rmse": 1.304749960077297,
+        "fixed_flow_mse": 2.3708052280970984,
+        "translation_rmse": 0.539009424075307,
+        "rotation_rmse": 0.08421108504089932,
+        "gripper_rmse": 1.0059481908604004,
+        "per_dimension_physical_rmse": [
+          0.483688229404663,
+          0.5377398598892937,
+          0.5903177259303733,
+          0.044989730338636416,
+          0.088884288693435,
+          0.10653650979272604,
+          1.0059481908604004
+        ],
+        "chunk_normalized_physical_rmse": [
+          1.2764590204583581,
+          1.2782423892194155,
+          1.2872254331515913,
+          1.2827529996976061,
+          1.2925589170833351,
+          1.3137476304574607,
+          1.3308896053447263,
+          1.3401906090008164,
+          1.3456924441216445,
+          1.354682540444488,
+          1.358553583429926,
+          1.3627742616289418,
+          1.365419675786931,
+          1.3597690656280854,
+          1.356542282302827,
+          1.3527207392730025,
+          1.3471931878246137,
+          1.3320487524256293,
+          1.315305811824198,
+          1.303471490496685,
+          1.2915856838476079,
+          1.282982641605786,
+          1.2766303673900152,
+          1.2837492196981044,
+          1.2826841084017913,
+          1.2800630793823702,
+          1.2755796851093295,
+          1.2763715638246103,
+          1.2787824788395041,
+          1.284780363700791,
+          1.2926964866247876,
+          1.2910982645106595,
+          1.3061175833992809,
+          1.3134358760875176,
+          1.3142759932134804,
+          1.3099074026888118,
+          1.3024969450378991,
+          1.29874922925574,
+          1.3008444045359,
+          1.2976792118662082,
+          1.2854621182003547,
+          1.275235617528834,
+          1.26602128971272,
+          1.2593207400700883,
+          1.2676078159785533,
+          1.275132264294591,
+          1.2772013400291085,
+          1.2934027854177381,
+          1.3100877769456996,
+          1.3145449012583468
+        ],
+        "valid_action_values": 22400,
+        "all_outputs_finite": true,
+        "update": 0
+      },
+      "final_validation": {
+        "states": 64,
+        "whole_action_normalized_physical_rmse": 0.887550110045117,
+        "fixed_flow_mse": 0.6759217398507255,
+        "translation_rmse": 0.32382541988210795,
+        "rotation_rmse": 0.05989767759358622,
+        "gripper_rmse": 0.7649902078837082,
+        "per_dimension_physical_rmse": [
+          0.2911826311217359,
+          0.28707912986420464,
+          0.3839100887120639,
+          0.042152575324218435,
+          0.061582986985765344,
+          0.07206865789483491,
+          0.7649902078837082
+        ],
+        "chunk_normalized_physical_rmse": [
+          1.1046595531542858,
+          1.0639030665194007,
+          0.9948092943872784,
+          0.9602365274202462,
+          0.9249105653277002,
+          0.9092655278917787,
+          0.8884930537038384,
+          0.8562695661105251,
+          0.8229879178271247,
+          0.8344712072823979,
+          0.8393119522387879,
+          0.8393919835453572,
+          0.8301942016480077,
+          0.8158675507025864,
+          0.8187919121334615,
+          0.8144874735401467,
+          0.8261504990203127,
+          0.8058440564714296,
+          0.791557473585226,
+          0.7750968252952144,
+          0.7760672347141239,
+          0.7752326290978504,
+          0.7712533063259032,
+          0.7784924368952529,
+          0.7603905580620851,
+          0.7564884186031879,
+          0.7571055242429081,
+          0.7839395168519762,
+          0.8224418148474943,
+          0.8664861073976527,
+          0.857626669868818,
+          0.9003577993276739,
+          0.928660939953635,
+          0.9401163287345354,
+          0.9308592840747733,
+          0.9276812958411812,
+          0.94620478110064,
+          0.9790334166403075,
+          0.9886154178493812,
+          1.0053164727251802,
+          0.9958099602097591,
+          0.9842114647897671,
+          0.9224202573295176,
+          0.9134131606580427,
+          0.9081407001095724,
+          0.9266486814997442,
+          0.9240867646723557,
+          0.9294442800894981,
+          0.961871934484138,
+          0.9408273233984955
+        ],
+        "valid_action_values": 22400,
+        "all_outputs_finite": true,
+        "update": 250
+      },
+      "plausible_validation_direction": true,
+      "updates": 250,
+      "examples_seen": 8000,
+      "peak_memory_gib": 18.263230323791504,
+      "padded_source_max_abs": 4.305553436279297,
+      "restore_audit_exact": true,
+      "resume_comparison": {
+        "exact": true,
+        "max_parameter_difference": 0.0,
+        "first_divergence": null,
+        "trace_updates": [
+          126,
+          127,
+          128,
+          129,
+          130
+        ],
+        "comparisons": [
+          {
+            "update": 126,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "sample_offset_after",
+            "exact": true
+          }
+        ]
+      },
+      "checkpoint_serialization_rng_exact": true,
+      "model_export_rng_exact": true,
+      "gpu_hours_reference": 0.1570356608872923,
+      "gpu_hours_resumed": 0.023343931526307843
+    },
+    "m1": {
+      "status": "PASS",
+      "finite_losses_gradients_outputs": true,
+      "first_50_train_loss_mean": 2.21544019818306,
+      "last_50_train_loss_mean": 0.749110826253891,
+      "last_to_first_train_loss_ratio": 0.3381318199734104,
+      "initial_validation": {
+        "states": 64,
+        "whole_action_normalized_physical_rmse": 1.2917962759594057,
+        "fixed_flow_mse": 2.4089417811802454,
+        "translation_rmse": 0.5329839585295653,
+        "rotation_rmse": 0.08271649219021801,
+        "gripper_rmse": 1.0055821068093624,
+        "per_dimension_physical_rmse": [
+          0.4822207234594217,
+          0.5339050948499197,
+          0.5784671327820677,
+          0.044588023101357184,
+          0.08940319016843012,
+          0.10268900634626642,
+          1.0055821068093624
+        ],
+        "chunk_normalized_physical_rmse": [
+          1.2762098566693731,
+          1.274352003569037,
+          1.2803486567807159,
+          1.2769466664543072,
+          1.2858999190213312,
+          1.3078899776637445,
+          1.3254843096644433,
+          1.3332834802117697,
+          1.3395116379327436,
+          1.3514101177218385,
+          1.3544945009121248,
+          1.3597955162929356,
+          1.3590914425817593,
+          1.356052227555297,
+          1.353377342040996,
+          1.349710394055995,
+          1.3429985099518837,
+          1.3274951627456921,
+          1.309334863515135,
+          1.2957098449219961,
+          1.2827638594640731,
+          1.2724037086441335,
+          1.2662220644878586,
+          1.2689763258555455,
+          1.2671254731305361,
+          1.263733771137617,
+          1.2616313109369561,
+          1.2613339484798085,
+          1.2620400277444808,
+          1.2663897402241824,
+          1.2727554594406072,
+          1.269520706300653,
+          1.2829525763727678,
+          1.2885770073396245,
+          1.2907535574719318,
+          1.2853549765530479,
+          1.2805944220982748,
+          1.277347936327579,
+          1.2794282702211546,
+          1.2744160936628586,
+          1.2636142211349108,
+          1.2548165982956538,
+          1.2469108557266257,
+          1.2394810451574412,
+          1.248337477945678,
+          1.2559245308138722,
+          1.2595078721078161,
+          1.274553390094438,
+          1.2927753170436866,
+          1.2976874270573149
+        ],
+        "valid_action_values": 22400,
+        "all_outputs_finite": true,
+        "update": 0
+      },
+      "final_validation": {
+        "states": 64,
+        "whole_action_normalized_physical_rmse": 0.900480547783451,
+        "fixed_flow_mse": 0.6819922746930803,
+        "translation_rmse": 0.3362363216685868,
+        "rotation_rmse": 0.05964602005836949,
+        "gripper_rmse": 0.796000376907336,
+        "per_dimension_physical_rmse": [
+          0.293482311511842,
+          0.31747227179729876,
+          0.39018467614348,
+          0.04112995176701033,
+          0.06143647299477644,
+          0.07215836735968847,
+          0.796000376907336
+        ],
+        "chunk_normalized_physical_rmse": [
+          1.0965260290177965,
+          1.0658496180477328,
+          0.9881617917065292,
+          0.9634801651070166,
+          0.938932904150195,
+          0.9308090497306882,
+          0.9129340317204566,
+          0.8866328779427879,
+          0.8560106187481392,
+          0.8631511262203184,
+          0.8642043176433105,
+          0.8704838594076667,
+          0.8631451233727515,
+          0.8451593627501606,
+          0.8431619431621681,
+          0.8435315651690255,
+          0.8444295699718478,
+          0.8294016772942783,
+          0.812623145653819,
+          0.795597141751196,
+          0.7918138677897671,
+          0.784687463513289,
+          0.7810952442026153,
+          0.7984803855582823,
+          0.7872398238617879,
+          0.7901223388195302,
+          0.7901524484794524,
+          0.819163440204962,
+          0.8485730896603693,
+          0.8931336792083016,
+          0.8789136032523501,
+          0.9050238822790623,
+          0.938440441549627,
+          0.9398052438264072,
+          0.927619130713642,
+          0.924033181104879,
+          0.9459519953640808,
+          0.9787786308155781,
+          0.9966144771424692,
+          1.0090584303648054,
+          0.9929370473315894,
+          0.9820785377546122,
+          0.9254953081925175,
+          0.921713392302952,
+          0.9061436661222891,
+          0.9187464240387333,
+          0.9233573744186683,
+          0.931881718316659,
+          0.9691119330964929,
+          0.954257720827513
+        ],
+        "valid_action_values": 22400,
+        "all_outputs_finite": true,
+        "update": 250
+      },
+      "plausible_validation_direction": true,
+      "updates": 250,
+      "examples_seen": 8000,
+      "peak_memory_gib": 18.263689041137695,
+      "padded_source_max_abs": 0.0,
+      "restore_audit_exact": true,
+      "resume_comparison": {
+        "exact": true,
+        "max_parameter_difference": 0.0,
+        "first_divergence": null,
+        "trace_updates": [
+          126,
+          127,
+          128,
+          129,
+          130
+        ],
+        "comparisons": [
+          {
+            "update": 126,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "sample_offset_after",
+            "exact": true
+          }
+        ]
+      },
+      "checkpoint_serialization_rng_exact": true,
+      "model_export_rng_exact": true,
+      "gpu_hours_reference": 0.1607542334132207,
+      "gpu_hours_resumed": 0.02437642718717042
+    },
+    "m2": {
+      "status": "PASS",
+      "finite_losses_gradients_outputs": true,
+      "first_50_train_loss_mean": 2.21544019818306,
+      "last_50_train_loss_mean": 0.749110826253891,
+      "last_to_first_train_loss_ratio": 0.3381318199734104,
+      "initial_validation": {
+        "states": 64,
+        "whole_action_normalized_physical_rmse": 1.292086929885902,
+        "fixed_flow_mse": 2.4089417811802454,
+        "translation_rmse": 0.533022638312524,
+        "rotation_rmse": 0.08275027583963206,
+        "gripper_rmse": 1.0057534360928857,
+        "per_dimension_physical_rmse": [
+          0.4822626408630325,
+          0.5341398558332823,
+          0.5783223655532834,
+          0.044608701727574814,
+          0.08942134325908194,
+          0.10274585906267601,
+          1.0057534360928857
+        ],
+        "chunk_normalized_physical_rmse": [
+          1.2756671693327584,
+          1.2741659289302103,
+          1.2802938023427652,
+          1.2773353373065925,
+          1.2859724122499376,
+          1.3080201671165541,
+          1.325549486257258,
+          1.3333809338882978,
+          1.3396084732604228,
+          1.3516065494279808,
+          1.3547552750850087,
+          1.3602991705303968,
+          1.359496338288148,
+          1.3564017215367976,
+          1.3537349362045354,
+          1.3500548190133177,
+          1.3431829859403908,
+          1.3279450366764802,
+          1.3095309742405403,
+          1.2958209535856966,
+          1.282971027084935,
+          1.2728940721964814,
+          1.2668525353876465,
+          1.269402439164046,
+          1.2675177870271184,
+          1.2641296837702918,
+          1.262175958424345,
+          1.2617197623031584,
+          1.262332771912824,
+          1.2671281073263665,
+          1.2732991603963038,
+          1.2698214356495057,
+          1.2834298467940344,
+          1.2891173379966843,
+          1.2911214395577943,
+          1.285857022400444,
+          1.281064023333717,
+          1.2775049137088166,
+          1.2792930278491432,
+          1.2744484448401483,
+          1.2635669963740144,
+          1.254959350083927,
+          1.2473319462314123,
+          1.2398161759118775,
+          1.2488173885046725,
+          1.2561581689907522,
+          1.2601326138586684,
+          1.2749683229267292,
+          1.2931111487423976,
+          1.2981238597726068
+        ],
+        "valid_action_values": 22400,
+        "all_outputs_finite": true,
+        "update": 0
+      },
+      "final_validation": {
+        "states": 64,
+        "whole_action_normalized_physical_rmse": 0.9026901488015162,
+        "fixed_flow_mse": 0.6819922746930803,
+        "translation_rmse": 0.3360364002462322,
+        "rotation_rmse": 0.05967731256990845,
+        "gripper_rmse": 0.815027560370702,
+        "per_dimension_physical_rmse": [
+          0.2937574547978282,
+          0.31644904329996426,
+          0.3902921311230565,
+          0.04107056843222728,
+          0.06145778210575944,
+          0.07225160436969126,
+          0.815027560370702
+        ],
+        "chunk_normalized_physical_rmse": [
+          1.0955119518705783,
+          1.0666519432953399,
+          0.9880117935405633,
+          0.962458595135501,
+          0.9374290802788525,
+          0.9322712452796449,
+          0.9135585508905721,
+          0.886870268641365,
+          0.8555954244032711,
+          0.8628328881445702,
+          0.8632278573823615,
+          0.8689948141823435,
+          0.8629285194095361,
+          0.8458265002505081,
+          0.8442786140203271,
+          0.8446867047458299,
+          0.8456491511636594,
+          0.8314526987882246,
+          0.8146606578185362,
+          0.7982097208045542,
+          0.7943859764336362,
+          0.7869927970073968,
+          0.7840543550762129,
+          0.801415450806163,
+          0.791321392940745,
+          0.7942677863343255,
+          0.7937991192512553,
+          0.8233349658458242,
+          0.8530167327802354,
+          0.896068240149558,
+          0.8827546265895221,
+          0.9097373835877477,
+          0.9418463455572855,
+          0.9442813703675337,
+          0.9306656361828061,
+          0.9267092348500566,
+          0.9480315088464641,
+          0.9816675993163738,
+          0.9990189542484675,
+          1.0108365538084598,
+          0.9949799665924923,
+          0.9846096364685113,
+          0.9284704423318919,
+          0.9266941106662081,
+          0.9090198787893843,
+          0.9231713442316908,
+          0.9280322705175629,
+          0.9362673785168159,
+          0.9742299413458854,
+          0.959668995865659
+        ],
+        "valid_action_values": 22400,
+        "all_outputs_finite": true,
+        "update": 250
+      },
+      "plausible_validation_direction": true,
+      "updates": 250,
+      "examples_seen": 8000,
+      "peak_memory_gib": 18.263689041137695,
+      "padded_source_max_abs": 0.0,
+      "restore_audit_exact": true,
+      "resume_comparison": {
+        "exact": true,
+        "max_parameter_difference": 0.0,
+        "first_divergence": null,
+        "trace_updates": [
+          126,
+          127,
+          128,
+          129,
+          130
+        ],
+        "comparisons": [
+          {
+            "update": 126,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 126,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 127,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 128,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 129,
+            "field": "sample_offset_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "lr",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "sample_offset_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "model_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_parameters_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_optimizer_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "scheduler_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "rng_before",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "raw_identifiers",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "raw_actions",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "processed",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "flow_noise",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "effective_source",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "valid_source",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "padded_source_max_abs",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "flow_timestep",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "action_projection",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "losses",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "gradients",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_gradients",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "gradient_norm_pre_clip",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "model_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_parameters_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "selected_optimizer_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "rng_after",
+            "exact": true
+          },
+          {
+            "update": 130,
+            "field": "sample_offset_after",
+            "exact": true
+          }
+        ]
+      },
+      "checkpoint_serialization_rng_exact": true,
+      "model_export_rng_exact": true,
+      "gpu_hours_reference": 0.14257464185124263,
+      "gpu_hours_resumed": 0.023581388240369656
+    }
+  },
+  "matched_checks": {
+    "initial_model_exact": true,
+    "initial_valid_parameters_exact": true,
+    "training_order_exact": true,
+    "all_update_batch_sequences_exact": true,
+    "first_update_raw_noise_exact": true,
+    "first_update_valid_source_exact": true,
+    "first_update_timestep_exact": true,
+    "m1_m2_full_train_log_exact_including_runtime": false,
+    "m1_m2_numerical_training_exact": true,
+    "m1_m2_final_model_exact": true
+  },
+  "thresholds": {
+    "max_parameter_difference_exclusive": 1e-06,
+    "baseline_final_to_initial_nrmse_max": 1.05,
+    "baseline_final_to_initial_flow_mse_max": 0.95,
+    "baseline_last_to_first_train_loss_max": 1.0,
+    "baseline_peak_memory_gib_max": 23.0
+  },
+  "note": "The 250-update runs are an engineering gate and were not interpreted as a method comparison."
+}

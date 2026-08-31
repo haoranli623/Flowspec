@@ -1,0 +1,222 @@
+{
+  "status": "COMPLETE",
+  "protocol_freeze_commit": "82dfe670e6073bc30397d699ee612c0386932a00",
+  "runs": 9,
+  "total_optimizer_updates": 45000,
+  "total_examples_seen": 1440000,
+  "methods": {
+    "m0": {
+      "520001": {
+        "first_100_loss_mean": 1.5851105418801308,
+        "first_100_loss_status": "AVAILABLE",
+        "last_100_loss_mean": 0.2854502435028553,
+        "median_gradient_norm": 1.5384413599967957,
+        "max_gradient_norm": 24.676841735839844,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.4696601570390164,
+        "gpu_hours": 2.144851550100009,
+        "peak_memory_gib": 18.263593673706055,
+        "final_valid_velocity_rms": 1.3046092987060547,
+        "final_padded_velocity_rms": 0.28982847929000854,
+        "training_order_sha256": "144d176789f03e1b1ebdf6f5d69ea644a4a0d79f0d1a27b801197baf1ea4188b",
+        "train_log_update_range": [
+          1,
+          5000
+        ],
+        "interruption_recovery": null
+      },
+      "520002": {
+        "first_100_loss_mean": 1.5826657456159592,
+        "first_100_loss_status": "AVAILABLE",
+        "last_100_loss_mean": 0.2889254619926214,
+        "median_gradient_norm": 1.5594176650047302,
+        "max_gradient_norm": 28.27749252319336,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.650602332665585,
+        "gpu_hours": 2.3983538556551665,
+        "peak_memory_gib": 18.263593673706055,
+        "final_valid_velocity_rms": 1.2721171379089355,
+        "final_padded_velocity_rms": 0.2994930148124695,
+        "training_order_sha256": "ee85452817d87bad76620792d13265b09a7f80fb816b3230dec540f47bafaa8a",
+        "train_log_update_range": [
+          1,
+          5000
+        ],
+        "interruption_recovery": null
+      },
+      "520003": {
+        "first_100_loss_mean": null,
+        "first_100_loss_status": "LOST_WITH_INTERRUPTED_PROCESS",
+        "last_100_loss_mean": 0.2832145298272371,
+        "median_gradient_norm": 1.4632595777511597,
+        "max_gradient_norm": 3.197406768798828,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.4606397722191178,
+        "gpu_hours": 1.6891555868666102,
+        "peak_memory_gib": 18.27127981185913,
+        "final_valid_velocity_rms": 1.3687267303466797,
+        "final_padded_velocity_rms": 0.30346962809562683,
+        "training_order_sha256": "bbc90b5142a17dd4ce5a328192c22a963dbc7f7b592ac2552779c7e4b7dc6472",
+        "train_log_update_range": [
+          1001,
+          5000
+        ],
+        "interruption_recovery": {
+          "status": "CONTINUED_FROM_COMPLETE_CHECKPOINT",
+          "checkpoint_update": 1000,
+          "initial_segment": [
+            1,
+            1000
+          ],
+          "continued_segment": [
+            1001,
+            5000
+          ],
+          "train_log_available_segment": [
+            1001,
+            5000
+          ],
+          "pre_interruption_physical_validation_reconstructed_from_durable_arrays": true,
+          "pre_interruption_fixed_flow_mse_available": false
+        }
+      }
+    },
+    "m1": {
+      "520001": {
+        "first_100_loss_mean": 1.595017739534378,
+        "first_100_loss_status": "AVAILABLE",
+        "last_100_loss_mean": 0.2815752080827951,
+        "median_gradient_norm": 1.568507969379425,
+        "max_gradient_norm": 24.06805992126465,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.6682550287669524,
+        "gpu_hours": 2.42448457751242,
+        "peak_memory_gib": 18.25981569290161,
+        "final_valid_velocity_rms": 1.301703929901123,
+        "final_padded_velocity_rms": 0.2475515380501747,
+        "training_order_sha256": "144d176789f03e1b1ebdf6f5d69ea644a4a0d79f0d1a27b801197baf1ea4188b",
+        "train_log_update_range": [
+          1,
+          5000
+        ],
+        "interruption_recovery": null
+      },
+      "520002": {
+        "first_100_loss_mean": 1.5917151018977165,
+        "first_100_loss_status": "AVAILABLE",
+        "last_100_loss_mean": 0.2887945264577866,
+        "median_gradient_norm": 1.5797384977340698,
+        "max_gradient_norm": 28.765806198120117,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.4489674599692226,
+        "gpu_hours": 2.1144243620325707,
+        "peak_memory_gib": 18.267661094665527,
+        "final_valid_velocity_rms": 1.2691051363945007,
+        "final_padded_velocity_rms": 0.26768718659877777,
+        "training_order_sha256": "ee85452817d87bad76620792d13265b09a7f80fb816b3230dec540f47bafaa8a",
+        "train_log_update_range": [
+          1,
+          5000
+        ],
+        "interruption_recovery": null
+      },
+      "520003": {
+        "first_100_loss_mean": null,
+        "first_100_loss_status": "LOST_WITH_INTERRUPTED_PROCESS",
+        "last_100_loss_mean": 0.2757650978118181,
+        "median_gradient_norm": 1.4683650135993958,
+        "max_gradient_norm": 3.34299898147583,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.6714707555104977,
+        "gpu_hours": 1.931445995072265,
+        "peak_memory_gib": 18.27137517929077,
+        "final_valid_velocity_rms": 1.3688252568244934,
+        "final_padded_velocity_rms": 0.26757173240184784,
+        "training_order_sha256": "bbc90b5142a17dd4ce5a328192c22a963dbc7f7b592ac2552779c7e4b7dc6472",
+        "train_log_update_range": [
+          1001,
+          5000
+        ],
+        "interruption_recovery": {
+          "status": "CONTINUED_FROM_COMPLETE_CHECKPOINT",
+          "checkpoint_update": 1000,
+          "initial_segment": [
+            1,
+            1000
+          ],
+          "continued_segment": [
+            1001,
+            5000
+          ],
+          "train_log_available_segment": [
+            1001,
+            5000
+          ],
+          "pre_interruption_physical_validation_reconstructed_from_durable_arrays": true,
+          "pre_interruption_fixed_flow_mse_available": false
+        }
+      }
+    },
+    "m2": {
+      "520001": {
+        "first_100_loss_mean": 1.595017739534378,
+        "first_100_loss_status": "AVAILABLE",
+        "last_100_loss_mean": 0.2815752080827951,
+        "median_gradient_norm": 1.568507969379425,
+        "max_gradient_norm": 24.06805992126465,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.4525176310565322,
+        "gpu_hours": 2.120001877748873,
+        "peak_memory_gib": 18.25981569290161,
+        "final_valid_velocity_rms": 1.301703929901123,
+        "final_padded_velocity_rms": 0.2475515380501747,
+        "training_order_sha256": "144d176789f03e1b1ebdf6f5d69ea644a4a0d79f0d1a27b801197baf1ea4188b",
+        "train_log_update_range": [
+          1,
+          5000
+        ],
+        "interruption_recovery": null
+      },
+      "520002": {
+        "first_100_loss_mean": 1.5917151018977165,
+        "first_100_loss_status": "AVAILABLE",
+        "last_100_loss_mean": 0.2887945264577866,
+        "median_gradient_norm": 1.5797384977340698,
+        "max_gradient_norm": 28.765806198120117,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.6379750499354675,
+        "gpu_hours": 2.380084148733877,
+        "peak_memory_gib": 18.263325691223145,
+        "final_valid_velocity_rms": 1.2691051363945007,
+        "final_padded_velocity_rms": 0.26768718659877777,
+        "training_order_sha256": "ee85452817d87bad76620792d13265b09a7f80fb816b3230dec540f47bafaa8a",
+        "train_log_update_range": [
+          1,
+          5000
+        ],
+        "interruption_recovery": null
+      },
+      "520003": {
+        "first_100_loss_mean": 1.5903178223967551,
+        "first_100_loss_status": "AVAILABLE",
+        "last_100_loss_mean": 0.2757650978118181,
+        "median_gradient_norm": 1.5571300983428955,
+        "max_gradient_norm": 27.40418243408203,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.4215135057607666,
+        "gpu_hours": 2.073942780145444,
+        "peak_memory_gib": 18.25573444366455,
+        "final_valid_velocity_rms": 1.3688252568244934,
+        "final_padded_velocity_rms": 0.26757173240184784,
+        "training_order_sha256": "bbc90b5142a17dd4ce5a328192c22a963dbc7f7b592ac2552779c7e4b7dc6472",
+        "train_log_update_range": [
+          1,
+          5000
+        ],
+        "interruption_recovery": null
+      }
+    }
+  },
+  "aggregate_gpu_hours": 19.276744733867236,
+  "aggregate_gpu_hours_status": "LOWER_BOUND_INTERRUPTED_INITIAL_SEGMENT_NOT_RECORDED"
+}

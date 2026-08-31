@@ -1,0 +1,22 @@
+{
+  "status": "NOT_RUN_BY_FROZEN_STOP_RULE",
+  "reason": "F1 found a pre-checkpoint update-1 backward divergence; FORENSIC_PROTOCOL.md requires proceeding directly to that subsystem and stopping after causal isolation/minimal verification.",
+  "uninterrupted_updates": 0,
+  "resumed_updates": 0,
+  "short_resume_equivalence": "NOT_ESTABLISHED",
+  "historical_phase1_checkpoint_audit": {
+    "format": "model and processor save_pretrained files only",
+    "model_weights": true,
+    "processor_state": true,
+    "model_buffers": "included only insofar as policy.save_pretrained serializes them",
+    "model_train_eval_mode": false,
+    "optimizer_moments_steps_groups": false,
+    "manual_scheduler_update_lr": false,
+    "grad_scaler": "not applicable; no GradScaler is used",
+    "gradient_accumulation_position_or_partial_gradients": false,
+    "python_numpy_torch_cuda_rng": false,
+    "flow_generator": false,
+    "loader_generator_sampler_offset_workers_prefetch": false
+  },
+  "conclusion": "Historical Phase-1 checkpoints do not implement exact training resume. This omission is real but is not the first cause of the independently reproduced pre-checkpoint divergence."
+}

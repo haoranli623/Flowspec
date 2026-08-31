@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "primary_tensor_difference": {
+    "compatible": true,
+    "exact": true,
+    "tensor_count": 1467,
+    "differing_tensor_count": 0,
+    "element_count": 785808681,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "l2": 0.0,
+    "largest_differences": []
+  },
+  "parameter_groups_exact": true,
+  "representative_and_periodic_trace_exact": true,
+  "optional_multiworker": {
+    "tensor_difference": {
+      "compatible": true,
+      "exact": true,
+      "tensor_count": 1467,
+      "differing_tensor_count": 0,
+      "element_count": 785808681,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "l2": 0.0,
+      "largest_differences": []
+    },
+    "parameter_groups_exact": true
+  }
+}

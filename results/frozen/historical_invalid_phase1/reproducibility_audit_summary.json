@@ -1,0 +1,72 @@
+{
+  "status": "FAIL_UNRESOLVED",
+  "protocol_threshold_max_abs": 1e-06,
+  "trigger": "Matched M1/M2 final checkpoints differed above the frozen tolerance for all seeds.",
+  "cross_device_final_check": {
+    "status": "FAIL",
+    "scientific_interpretation": "M1 and M2 training are exactly identical; their frozen distinction is per-step inference projection.",
+    "seeds": [
+      {
+        "seed": 520001,
+        "training_log_exact": false,
+        "fixed_flow_validation_exact": false,
+        "generated_action_metrics_expected_to_differ": true,
+        "checkpoint": {
+          "tensor_count": 500,
+          "differing_tensor_count": 419,
+          "max_abs": 0.027183525264263153
+        }
+      },
+      {
+        "seed": 520002,
+        "training_log_exact": false,
+        "fixed_flow_validation_exact": false,
+        "generated_action_metrics_expected_to_differ": true,
+        "checkpoint": {
+          "tensor_count": 500,
+          "differing_tensor_count": 419,
+          "max_abs": 0.0303955078125
+        }
+      },
+      {
+        "seed": 520003,
+        "training_log_exact": false,
+        "fixed_flow_validation_exact": false,
+        "generated_action_metrics_expected_to_differ": true,
+        "checkpoint": {
+          "tensor_count": 500,
+          "differing_tensor_count": 419,
+          "max_abs": 0.02801513671875
+        }
+      }
+    ]
+  },
+  "same_device_recovery": {
+    "policy": "Rerun all M1 seeds on the physical GPU used by matching M0/M2; continue only if the first update-1000 hard check passes.",
+    "seed_520001": {
+      "device": "0",
+      "checkpoint_update": 1000,
+      "m1_sha256": "7eea6c5cca0fdfb6082974af3a7f84417d9bb64124ba83e45bf3308f492690c4",
+      "m2_sha256": "7c09846eda55dadad3595acac9c10e4b5a951a8747c25f1f3c6a26e5bfa9d53c",
+      "max_abs_parameter_difference": 0.0203399658203125,
+      "differing_tensors": 419,
+      "tensor_count": 500,
+      "passed": false
+    },
+    "seed_520002": {
+      "device": "1",
+      "stopped_after_completed_update": 900,
+      "reason": "Symmetric audit run interrupted once seed 520001 established failure."
+    },
+    "seed_520003": {
+      "status": "NOT_RUN_AFTER_HARD_FAILURE"
+    }
+  },
+  "implementation_code_path": {
+    "m1_m2_training_objective_same_branch": true,
+    "shared_input_loss_test_max_abs": 0.0,
+    "interpretation": "The method implementation is isolated, but the CUDA training substrate did not reproduce identical objectives to the preregistered checkpoint tolerance across independent executions, including same-device rerun."
+  },
+  "decision": "P6. NO-GO \u2014 TRAINING / SUBSTRATE INVALID",
+  "downstream_comparison_valid": false
+}

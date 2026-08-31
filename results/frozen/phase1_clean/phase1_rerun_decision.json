@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "protocol_freeze_commit": "82dfe670e6073bc30397d699ee612c0386932a00",
+  "verdict": "P2. MECHANISM CONFIRMED, PRACTICAL BENEFIT WEAK",
+  "m1_gt_m0_reproduced": false,
+  "m2_gt_m1_reproduced_materially": false,
+  "m2_mechanism_strong_suppression_seed_count": 3,
+  "phase2_authorized_by_conditional_rule": false,
+  "stop_after_phase1": true
+}

@@ -1,0 +1,15 @@
+{
+  "budget_device_hours": 0.5,
+  "primary": {
+    "reference": 488.63842444494367,
+    "resumed": 289.322956033051
+  },
+  "primary_seconds": 777.9613804779947,
+  "optional_multiworker_seconds": 304.32792129926383,
+  "successful_seconds": 1082.2893017772585,
+  "failed_online_comparator_attempt_seconds_accounted": 52.5,
+  "failed_attempt_note": "Conservative process-wall accounting. Restore was exact; an online tuple-versus-JSON-list representation comparison stopped before update 51 training and was fixed without changing checkpoint or training semantics.",
+  "total_seconds": 1134.7893017772585,
+  "total_device_hours": 0.31521925049368293,
+  "budget_exceeded": false
+}

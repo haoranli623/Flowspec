@@ -1,0 +1,22 @@
+{
+  "status": "ACCOUNTED_LOWER_BOUND",
+  "protocol_freeze_commit": "82dfe670e6073bc30397d699ee612c0386932a00",
+  "unit": "device-hours",
+  "components": {
+    "smoke_reference": 0.46036453615175565,
+    "smoke_resume_checks": 0.07130174695384792,
+    "primary_reported": 19.276744733867236,
+    "interrupted_primary_durable_lower_bound": 0.9799393958515592,
+    "primary_spotchecks": 0.07470017807428829,
+    "leakage_reaudit": 0.34603634422412144,
+    "rollout_evaluation": 41.70829248212666
+  },
+  "interrupted_primary_durable_hours_by_method": {
+    "m0": 0.4630654000573688,
+    "m1": 0.5168739957941904
+  },
+  "total_accounted_device_hours_lower_bound": 62.91737941724947,
+  "ceiling_device_hours": 72.0,
+  "below_ceiling_by_at_least_device_hours": 9.082620582750529,
+  "limitation": "M0/M1 seed-520003 performed a short unmetered tail after the last durable trace and before interactive-session termination; method-integrity setup time was also not device-timed. Therefore an exact all-inclusive total is unavailable."
+}

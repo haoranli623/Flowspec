@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "protocol_freeze_commit": "82dfe670e6073bc30397d699ee612c0386932a00",
+  "smoke_resume_gate": "PASS",
+  "primary_update1000_spotchecks": {
+    "m0": {
+      "updates": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005
+      ],
+      "trace_exact": true,
+      "restore_exact": true
+    },
+    "m1": {
+      "updates": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005
+      ],
+      "trace_exact": true,
+      "restore_exact": true
+    },
+    "m2": {
+      "updates": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005
+      ],
+      "trace_exact": true,
+      "restore_exact": true
+    }
+  },
+  "interruption_recovery_spotchecks": {
+    "m0": {
+      "checkpoint_update": 1000,
+      "updates": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005
+      ],
+      "trace_exact": true,
+      "restore_exact": true
+    },
+    "m1": {
+      "checkpoint_update": 1000,
+      "updates": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005
+      ],
+      "trace_exact": true,
+      "restore_exact": true
+    }
+  },
+  "m1_m2_training_invariance": "PASS"
+}

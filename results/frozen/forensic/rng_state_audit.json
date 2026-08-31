@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "seed": 560001,
+  "streams": {
+    "python": "captured and exact across Fresh-A/Fresh-B",
+    "numpy": "captured and exact across Fresh-A/Fresh-B",
+    "torch_cpu": "captured and exact across Fresh-A/Fresh-B",
+    "torch_cuda_all": "captured and exact across Fresh-A/Fresh-B",
+    "flow_generator": "dedicated CPU generator seed+103; exact states and sampled tensors",
+    "loader_generator": "dedicated CPU generator seed+102; exact states"
+  },
+  "fresh_updates_checked": 5,
+  "rng_before_and_after_all_updates_exact": true,
+  "model_internal_rng_consumption": "CUDA RNG hashes before/after forward/backward matched; no dropout was found in the exercised custom SmolVLA path.",
+  "historical_phase1_checkpoint": {
+    "restores_rng": false,
+    "saved_rng_streams": [],
+    "note": "save_checkpoint calls save_pretrained only for policy and processors."
+  }
+}

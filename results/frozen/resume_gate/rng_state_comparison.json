@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checkpoint_restore_exact": true,
+  "per_update_exact": true,
+  "final_exact": true,
+  "streams": [
+    "python",
+    "numpy",
+    "torch_cpu",
+    "torch_cuda_all",
+    "flow_generator",
+    "loader_generator"
+  ]
+}

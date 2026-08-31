@@ -1,0 +1,227 @@
+{
+  "status": "PASS",
+  "protocol_freeze_commit": "82dfe670e6073bc30397d699ee612c0386932a00",
+  "execution_commit": "1a69e586cd0fad70a5fe71f27a33eddaaec38901",
+  "determinism": {
+    "cublas_workspace_config": ":4096:8",
+    "torch_deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false
+  },
+  "checks": {
+    "m0_source_identity": {
+      "passed": true,
+      "max_abs_difference": 0.0
+    },
+    "m1_padded_source_zero": {
+      "passed": true,
+      "padded_max_abs": 0.0
+    },
+    "m1_valid_source_unchanged": {
+      "passed": true,
+      "valid_max_abs_difference": 0.0
+    },
+    "m2_padded_source_zero": {
+      "passed": true,
+      "padded_max_abs": 0.0
+    },
+    "m2_valid_source_unchanged": {
+      "passed": true,
+      "valid_max_abs_difference": 0.0
+    },
+    "valid_source_distribution_unchanged": {
+      "passed": true,
+      "mean": -0.01100693829357624,
+      "std": 1.0011749267578125,
+      "samples": 89600
+    },
+    "m0_matches_official_inference": {
+      "passed": true,
+      "max_abs_difference": 0.0
+    },
+    "m1_padded_state_can_evolve": {
+      "passed": true,
+      "padded_state_rms": [
+        0.0,
+        0.008705358020961285,
+        0.014589347876608372,
+        0.01902306079864502,
+        0.022157950326800346,
+        0.024275070056319237,
+        0.025302201509475708,
+        0.02508615329861641,
+        0.023320330306887627,
+        0.019426794722676277,
+        0.011508920229971409
+      ]
+    },
+    "m2_padded_state_always_zero": {
+      "passed": true,
+      "padded_state_rms": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "output_padded_max_abs": 0.0
+    },
+    "m2_projection_preserves_valid_coordinates_and_gradients": {
+      "passed": true,
+      "valid_projection_max_abs_difference": 0.0,
+      "valid_gradient_max_abs_difference_from_one": 0.0,
+      "padded_gradient_max_abs": 0.0
+    },
+    "m1_no_unintended_loss_change": {
+      "passed": true,
+      "max_abs_difference": 0.0
+    },
+    "m1_m2_training_objective_identical": {
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "reason": "official training has no ODE rollout"
+    },
+    "m2_executable_parameter_gradients_flow": {
+      "passed": true,
+      "valid_output_gradient_norm": 16.692272186279297
+    },
+    "physical_target_round_trip": {
+      "passed": true,
+      "max_abs_error": 2.9802322387695312e-08
+    },
+    "common_executable_target_all_methods": {
+      "passed": true,
+      "methods": [
+        "m0",
+        "m1",
+        "m2"
+      ],
+      "target_sha256": "9a3d52a623d88ec387d8acc1755f05ebdc3bc39e4d77ff054608beb0f56933af",
+      "normalization_shared": true,
+      "unnormalization_shared": true,
+      "executed_action_dim": 7,
+      "output_slicing_shared": true
+    },
+    "all_checks_passed": {
+      "passed": true,
+      "checks_before_summary": 15
+    }
+  },
+  "m0_trace": {
+    "padded_state_rms": [
+      0.9955615997314453,
+      0.8937718272209167,
+      0.7929821014404297,
+      0.6924906373023987,
+      0.5925560593605042,
+      0.49308347702026367,
+      0.39395642280578613,
+      0.2952814996242523,
+      0.19707192480564117,
+      0.09992176294326782,
+      0.011891443282365799
+    ],
+    "valid_state_rms": [
+      1.0142812728881836,
+      0.9191194772720337,
+      0.8354262709617615,
+      0.7638604044914246,
+      0.7065058350563049,
+      0.6657299995422363,
+      0.6459701657295227,
+      0.6500661969184875,
+      0.6787092089653015,
+      0.7296057343482971,
+      0.7988197207450867
+    ],
+    "padded_velocity_rms": [
+      1.022169828414917,
+      1.0110137462615967,
+      1.007741093635559,
+      1.0020077228546143,
+      0.9974318742752075,
+      0.9941580295562744,
+      0.9899960160255432,
+      0.9862530827522278,
+      0.9787329435348511,
+      0.968043863773346
+    ],
+    "valid_velocity_rms": [
+      1.2323216199874878,
+      1.2158383131027222,
+      1.2049654722213745,
+      1.2023181915283203,
+      1.2088462114334106,
+      1.2243473529815674,
+      1.2384463548660278,
+      1.2516915798187256,
+      1.2651382684707642,
+      1.2933077812194824
+    ]
+  },
+  "m2_trace": {
+    "padded_state_rms": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "valid_state_rms": [
+      1.0142812728881836,
+      0.9182121157646179,
+      0.8333031535148621,
+      0.7595108151435852,
+      0.6991300582885742,
+      0.6540470123291016,
+      0.628278911113739,
+      0.6258007884025574,
+      0.6491013169288635,
+      0.6975550651550293,
+      0.7678064107894897
+    ],
+    "padded_velocity_rms": [
+      0.08705472201108932,
+      0.07249467074871063,
+      0.0668880045413971,
+      0.06302402168512344,
+      0.06217407062649727,
+      0.06263770908117294,
+      0.06460782140493393,
+      0.06871642917394638,
+      0.07793821394443512,
+      0.09831137955188751
+    ],
+    "valid_velocity_rms": [
+      1.2701560258865356,
+      1.2075594663619995,
+      1.189193844795227,
+      1.182876467704773,
+      1.182415246963501,
+      1.1951135396957397,
+      1.2115521430969238,
+      1.2333178520202637,
+      1.2533574104309082,
+      1.292975664138794
+    ]
+  },
+  "checkpoint": "/mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_base-c83c3163",
+  "validation_dataset_indices": [
+    82377,
+    82493
+  ]
+}

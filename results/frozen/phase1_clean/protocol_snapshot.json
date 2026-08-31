@@ -1,0 +1,51 @@
+{
+  "status": "FROZEN_BEFORE_RESULTS",
+  "project": "FlowSpec-VLA",
+  "phase": "phase1_rerun",
+  "protocol_freeze_commit": "82dfe670e6073bc30397d699ee612c0386932a00",
+  "execution_commit": "1a69e586cd0fad70a5fe71f27a33eddaaec38901",
+  "audited_starting_commit": "67baa3ad689a158dd34fdd1b751387bf338671c2",
+  "original_phase1_protocol_commit": "beb292024fcb37d321338474249d03598cfa5e90",
+  "resume_gate_protocol_commit": "a2a37dd9a5e6a8549fea54d165727b9864650acf",
+  "resume_gate_final_commit": "67baa3ad689a158dd34fdd1b751387bf338671c2",
+  "scientific_protocol_preserved": true,
+  "allowed_changes_only_reproducibility_infrastructure": true,
+  "old_phase1_results_quarantined": true,
+  "new_artifact_root": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1_rerun",
+  "new_model_root": "/mnt/NAS/data/hl5757/models/flowspec-vla/phase1_rerun",
+  "split_manifest": {
+    "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1/split_manifest.json",
+    "sha256": "b3150f3a4893f7f20167186a47f9f41a372eda0e95e1f91b6a6cb0851d32def0",
+    "training_episodes": 320,
+    "training_frames": 53762,
+    "validation_episodes": 200,
+    "validation_states": 400
+  },
+  "primary_design": {
+    "methods": ["m0", "m1", "m2"],
+    "seeds": [520001, 520002, 520003],
+    "updates_per_run": 5000,
+    "examples_per_run": 160000,
+    "run_count": 9
+  },
+  "smoke_design": {
+    "seed": 519001,
+    "updates_per_method": 250,
+    "checkpoint_update": 125,
+    "resume_updates": [126, 127, 128, 129, 130]
+  },
+  "full_run_spotcheck": {
+    "seed_per_method": 520001,
+    "checkpoint_update": 1000,
+    "resume_updates": [1001, 1002, 1003, 1004, 1005]
+  },
+  "sha256": {
+    "PHASE1_RERUN_PROTOCOL.md": "b517b0f7102873d104a3f651ca31ab892efac14dc31e72697bde0f7b6d36a4cb",
+    "config/phase1_rerun.yaml": "f5d9c22042c3e1f2ad85d037c68285b8261515f6bf6c0e2bc026665e2517f13a",
+    "scripts/run_phase1_rerun_training.py": "f030725db9a6cbcff442c90a75b3ce9972e5b797893af410b984157a207c5848",
+    "scripts/analyze_phase1_rerun_smoke.py": "905f20307493ab4ef4fdc5f7b7370057ce9fb3939b00e32ae5e4cc230735149f",
+    "scripts/verify_phase1_implementation.py": "5938b6ed2d74d9776dea872f0c698a0a83863a8c70935dc3d82f13e5491da9f4",
+    "src/flowspec_vla/phase1.py": "0b36a63425b6417195e409af686e937178933e9fb018e3d0d61d69190ff8c96b",
+    "src/flowspec_vla/resume_gate.py": "f8f2fd88c8ff817b570dc5f78cdb81e62d7f0f67799b6db59fb6674841f79871"
+  }
+}

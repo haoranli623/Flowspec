@@ -1,0 +1,11 @@
+{
+  "status": "NOT_RUN_PREREGISTERED_STOP",
+  "reason": "P6. NO-GO \u2014 TRAINING / SUBSTRATE INVALID",
+  "trained_checkpoint_audits": 0,
+  "before_training_gate0_reference": {
+    "padded_rms": 0.010470231994986534,
+    "valid_rms": 0.043740563094615936,
+    "r_leak": 0.05729682371020317
+  },
+  "after_training": null
+}

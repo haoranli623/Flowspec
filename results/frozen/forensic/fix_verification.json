@@ -1,0 +1,22 @@
+{
+  "production_fix_implemented": false,
+  "diagnostic_mitigation_verified": true,
+  "diagnostic_change": {
+    "torch_use_deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "scientific_model_data_objective_changed": false
+  },
+  "same_process_one_step": {
+    "status": "EXACT",
+    "gradient_max_abs": 0.0,
+    "differing_gradient_tensors": 0,
+    "model_after_exact": true
+  },
+  "independent_process_one_step": {
+    "status": "IDENTICAL",
+    "final_parameter_max_abs": 0.0,
+    "differing_parameter_tensors": 0
+  },
+  "short_resume": "NOT_RUN_BY_FROZEN_F1_STOP_RULE",
+  "production_recommendation": "Do not treat the diagnostic flags as an adopted production fix until a new full-state checkpoint/resume path and bounded resume verification are authorized."
+}

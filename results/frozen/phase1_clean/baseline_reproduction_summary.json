@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "protocol_freeze_commit": "82dfe670e6073bc30397d699ee612c0386932a00",
+  "source": "deterministic clean-rerun M0 smoke/reproduction gate",
+  "seed": 519001,
+  "updates": 250,
+  "examples_seen": 8000,
+  "initial_physical_nrmse": 1.304749960077297,
+  "final_physical_nrmse": 0.887550110045117,
+  "initial_fixed_flow_mse": 2.3708052280970984,
+  "final_fixed_flow_mse": 0.6759217398507255,
+  "first_50_loss_mean": 2.1890772700309755,
+  "last_50_loss_mean": 0.7509610629081727,
+  "peak_memory_gib": 18.263230323791504,
+  "finite": true,
+  "resume_exact": true
+}

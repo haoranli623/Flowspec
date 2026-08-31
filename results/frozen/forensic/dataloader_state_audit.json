@@ -1,0 +1,23 @@
+{
+  "status": "PASS_FOR_FRESH_TEST; HISTORICAL_RESUME_STATE_INCOMPLETE",
+  "sampler": "FixedSampler over a fully materialized deterministic order",
+  "training_order_seed": "seed+101 via numpy.default_rng",
+  "loader_generator_seed": "seed+102",
+  "worker_seed_function": "torch.initial_seed modulo 2^32 copied to NumPy and Python",
+  "num_workers": 4,
+  "persistent_workers": true,
+  "prefetch_factor": 2,
+  "pin_memory": true,
+  "fresh_updates_checked": 5,
+  "sample_identity_exact": true,
+  "raw_actions_exact": true,
+  "processed_tensors_exact": true,
+  "augmentation": "No stochastic augmentation is passed by flowspec_vla.data.load_dataset; PyAV decoding plus processor resize/padding/normalization/tokenization produced exact hashes.",
+  "historical_phase1_checkpoint": {
+    "sampler_offset_saved": false,
+    "loader_generator_saved": false,
+    "worker_state_saved": false,
+    "prefetch_state_saved": false,
+    "resume_capable": false
+  }
+}

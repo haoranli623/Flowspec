@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_WITH_ESTIMATED_INTERRUPTED_AUDIT",
+  "units": "device-hours",
+  "baseline_reproduction": 0.09372428531499787,
+  "m0": 5.671920714261424,
+  "m1": 5.952332673091441,
+  "m2": 5.734288056743228,
+  "leakage_audits": 0.0,
+  "rollout_evaluation": 0.0,
+  "implementation_diagnostics": {
+    "status": "MEASURED_RERUN",
+    "task": "verify_phase1_implementation.py",
+    "gpu_seconds": 32.3,
+    "gpu_hours": 0.008972222222222222,
+    "device_count": 1,
+    "note": "Timed rerun of the frozen implementation/physical-equivalence verification on RTX 3090 after its original untimed pre-training execution."
+  },
+  "reproducibility_audit_estimated": 0.833,
+  "failed_duplicate_start_not_instrumented": true,
+  "exact_logged_gpu_hours": 17.461237951633315,
+  "total_accounted_gpu_hours": 18.294237951633313,
+  "note": "The two interrupted reproducibility-audit processes did not write final timing records; 0.833 device-hours is reconstructed from artifact/process timestamps. The failed pre-update duplicate start is uninstrumented and excluded."
+}

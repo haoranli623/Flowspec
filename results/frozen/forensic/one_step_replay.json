@@ -1,0 +1,118 @@
+{
+  "status": "DIAGNOSED",
+  "default": {
+    "status": "DIVERGED",
+    "first_divergence": "backward",
+    "comparisons": {
+      "model_before_exact": true,
+      "rng_before_exact": true,
+      "forward": [
+        {
+          "compatible": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "l2": 0.0
+        },
+        {
+          "compatible": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "l2": 0.0
+        }
+      ],
+      "loss": [
+        {
+          "compatible": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "l2": 0.0
+        },
+        {
+          "compatible": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "l2": 0.0
+        }
+      ],
+      "gradients": {
+        "exact": false,
+        "tensor_count": 489,
+        "differing_tensor_count": 180,
+        "first_differing_tensor": "model.vlm_with_expert.vlm.model.vision_model.embeddings.patch_embedding.bias",
+        "max_abs": 0.000732421875,
+        "l2": 0.04532199335073896
+      },
+      "model_after_exact": false
+    },
+    "determinism": {
+      "torch_deterministic_algorithms": false,
+      "cublas_workspace_config": null,
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false,
+      "tf32_matmul": false,
+      "tf32_cudnn": false
+    }
+  },
+  "deterministic_diagnostic": {
+    "status": "EXACT",
+    "first_divergence": null,
+    "comparisons": {
+      "model_before_exact": true,
+      "rng_before_exact": true,
+      "forward": [
+        {
+          "compatible": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "l2": 0.0
+        },
+        {
+          "compatible": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "l2": 0.0
+        }
+      ],
+      "loss": [
+        {
+          "compatible": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "l2": 0.0
+        },
+        {
+          "compatible": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "l2": 0.0
+        }
+      ],
+      "gradients": {
+        "exact": true,
+        "tensor_count": 489,
+        "differing_tensor_count": 0,
+        "first_differing_tensor": null,
+        "max_abs": 0.0,
+        "l2": 0.0
+      },
+      "model_after_exact": true
+    },
+    "determinism": {
+      "torch_deterministic_algorithms": true,
+      "cublas_workspace_config": ":4096:8",
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false,
+      "tf32_matmul": false,
+      "tf32_cudnn": false
+    }
+  },
+  "conclusion": "Default CUDA execution diverges first in backward; deterministic algorithms plus deterministic cuBLAS workspace make the full one-step replay bitwise exact."
+}

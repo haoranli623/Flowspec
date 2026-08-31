@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "implementation": "materialized FixedSampler order plus explicit absolute example offset",
+  "checkpoint_offset": 1600,
+  "batch_ids_exact": true,
+  "processed_tensors_exact": true,
+  "final_training_position_exact": true,
+  "primary_num_workers": 0,
+  "optional_multiworker": {
+    "status": "PASS",
+    "batch_ids_exact": true,
+    "processed_tensors_exact": true
+  }
+}

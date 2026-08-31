@@ -1,0 +1,139 @@
+{
+  "status": "INVALID_REPRODUCIBILITY",
+  "protocol_freeze_commit": "beb292024fcb37d321338474249d03598cfa5e90",
+  "runs": 9,
+  "total_optimizer_updates": 45000,
+  "total_examples_seen": 1440000,
+  "methods": {
+    "m0": {
+      "520001": {
+        "first_100_loss_mean": 1.5852804696559906,
+        "last_100_loss_mean": 0.2813831499963999,
+        "median_gradient_norm": 1.5493046641349792,
+        "max_gradient_norm": 24.636795043945312,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.2643112406544388,
+        "gpu_hours": 1.801959615071149,
+        "peak_memory_gib": 18.216005325317383,
+        "final_valid_velocity_rms": 1.304702639579773,
+        "final_padded_velocity_rms": 0.2900341749191284,
+        "training_order_sha256": "144d176789f03e1b1ebdf6f5d69ea644a4a0d79f0d1a27b801197baf1ea4188b"
+      },
+      "520002": {
+        "first_100_loss_mean": 1.582798819243908,
+        "last_100_loss_mean": 0.2917983219027519,
+        "median_gradient_norm": 1.56449556350708,
+        "max_gradient_norm": 28.301258087158203,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.4483589384073392,
+        "gpu_hours": 2.0607747885468415,
+        "peak_memory_gib": 18.213738918304443,
+        "final_valid_velocity_rms": 1.2729072570800781,
+        "final_padded_velocity_rms": 0.30253107845783234,
+        "training_order_sha256": "ee85452817d87bad76620792d13265b09a7f80fb816b3230dec540f47bafaa8a"
+      },
+      "520003": {
+        "first_100_loss_mean": 1.5793198695778847,
+        "last_100_loss_mean": 0.27985754050314426,
+        "median_gradient_norm": 1.542386770248413,
+        "max_gradient_norm": 26.427095413208008,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.2694496775573119,
+        "gpu_hours": 1.8091863106434336,
+        "peak_memory_gib": 18.213738918304443,
+        "final_valid_velocity_rms": 1.3690993785858154,
+        "final_padded_velocity_rms": 0.29842838644981384,
+        "training_order_sha256": "bbc90b5142a17dd4ce5a328192c22a963dbc7f7b592ac2552779c7e4b7dc6472"
+      }
+    },
+    "m1": {
+      "520001": {
+        "first_100_loss_mean": 1.5952988022565842,
+        "last_100_loss_mean": 0.2791380625963211,
+        "median_gradient_norm": 1.5585246682167053,
+        "max_gradient_norm": 24.074365615844727,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.4590811967425048,
+        "gpu_hours": 2.0765545530394753,
+        "peak_memory_gib": 18.213834285736084,
+        "final_valid_velocity_rms": 1.3112906217575073,
+        "final_padded_velocity_rms": 0.24803194403648376,
+        "training_order_sha256": "144d176789f03e1b1ebdf6f5d69ea644a4a0d79f0d1a27b801197baf1ea4188b"
+      },
+      "520002": {
+        "first_100_loss_mean": 1.5916425547003745,
+        "last_100_loss_mean": 0.28952879153192046,
+        "median_gradient_norm": 1.5797144770622253,
+        "max_gradient_norm": 28.755834579467773,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.2733653666639702,
+        "gpu_hours": 1.8145749279647134,
+        "peak_memory_gib": 18.213834285736084,
+        "final_valid_velocity_rms": 1.2642834782600403,
+        "final_padded_velocity_rms": 0.2682139277458191,
+        "training_order_sha256": "ee85452817d87bad76620792d13265b09a7f80fb816b3230dec540f47bafaa8a"
+      },
+      "520003": {
+        "first_100_loss_mean": 1.590244207382202,
+        "last_100_loss_mean": 0.27949830077588556,
+        "median_gradient_norm": 1.5638110041618347,
+        "max_gradient_norm": 27.448863983154297,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.4484823453726248,
+        "gpu_hours": 2.0612031920872527,
+        "peak_memory_gib": 18.213834285736084,
+        "final_valid_velocity_rms": 1.36520254611969,
+        "final_padded_velocity_rms": 0.26890213787555695,
+        "training_order_sha256": "bbc90b5142a17dd4ce5a328192c22a963dbc7f7b592ac2552779c7e4b7dc6472"
+      }
+    },
+    "m2": {
+      "520001": {
+        "first_100_loss_mean": 1.5953392028808593,
+        "last_100_loss_mean": 0.2836737791448832,
+        "median_gradient_norm": 1.5582459568977356,
+        "max_gradient_norm": 24.07976722717285,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.2650960402281954,
+        "gpu_hours": 1.8027434486704361,
+        "peak_memory_gib": 18.213834285736084,
+        "final_valid_velocity_rms": 1.3019746541976929,
+        "final_padded_velocity_rms": 0.2490830048918724,
+        "training_order_sha256": "144d176789f03e1b1ebdf6f5d69ea644a4a0d79f0d1a27b801197baf1ea4188b"
+      },
+      "520002": {
+        "first_100_loss_mean": 1.591707574725151,
+        "last_100_loss_mean": 0.2865195219218731,
+        "median_gradient_norm": 1.56709885597229,
+        "max_gradient_norm": 28.75777816772461,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.4903595643050969,
+        "gpu_hours": 2.120346481582512,
+        "peak_memory_gib": 18.213834285736084,
+        "final_valid_velocity_rms": 1.2681117057800293,
+        "final_padded_velocity_rms": 0.268406480550766,
+        "training_order_sha256": "ee85452817d87bad76620792d13265b09a7f80fb816b3230dec540f47bafaa8a"
+      },
+      "520003": {
+        "first_100_loss_mean": 1.5904978609085083,
+        "last_100_loss_mean": 0.2756899068504572,
+        "median_gradient_norm": 1.554700791835785,
+        "max_gradient_norm": 27.408466339111328,
+        "nonfinite_events": 0,
+        "mean_update_seconds": 1.2716346621975303,
+        "gpu_hours": 1.8111981264902797,
+        "peak_memory_gib": 18.213834285736084,
+        "final_valid_velocity_rms": 1.365436315536499,
+        "final_padded_velocity_rms": 0.26471541821956635,
+        "training_order_sha256": "bbc90b5142a17dd4ce5a328192c22a963dbc7f7b592ac2552779c7e4b7dc6472"
+      }
+    }
+  },
+  "aggregate_gpu_hours": 17.358541444096094,
+  "descriptive_only": true,
+  "scientific_run_count": 9,
+  "completed_reproducibility_audit_runs": 0,
+  "interrupted_reproducibility_audit_runs": 2,
+  "stop_decision": "P6. NO-GO \u2014 TRAINING / SUBSTRATE INVALID",
+  "reproducibility_audit": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/phase1/reproducibility_audit_summary.json"
+}

@@ -1,0 +1,101 @@
+{
+  "status": "COMPLETE",
+  "root": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/forensic",
+  "files": [
+    {
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/forensic/fresh_run_comparison.json",
+      "bytes": 22218,
+      "sha256": "16c56f8580f3d26b7f3289e88fc1b7031bb253fb23611c545a0ce62e1459b7f7"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/forensic/resume_comparison.json",
+      "bytes": 1180,
+      "sha256": "ddf8ca5d440b5441630b6daacd0d19aa1fb65338bd0306f6061dd235d5106dbc"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/forensic/one_step_replay.json",
+      "bytes": 2901,
+      "sha256": "31c17bd533e054fbb466db22cffe806f0d7e0707e9944503627495e93158a03a"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/forensic/one_step_replay_default.json",
+      "bytes": 30031,
+      "sha256": "64355acd119bc70eca60b6d62cd3ecb66ce6a61e396ae2d26885efde5c21240c"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/forensic/one_step_replay_deterministic.json",
+      "bytes": 29903,
+      "sha256": "1b01012038c02fe3a9ae14caf7d5b1dace318032c3a1dabef10f39027349afcb"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/forensic/rng_state_audit.json",
+      "bytes": 886,
+      "sha256": "4604e7200f58e238a8bb542d874fd29f8fff7a2d95c129908741e8424799690a"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/forensic/dataloader_state_audit.json",
+      "bytes": 953,
+      "sha256": "b2a38149acb645e2c08412b9172204ed900c66e6e272ce64856a1c6b4741c285"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/forensic/first_divergence.json",
+      "bytes": 912,
+      "sha256": "e4ab69caf6c57b26a57daf40afea1dfb8df103dd4b4fd70170e97fda195e57dc"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/forensic/fix_verification.json",
+      "bytes": 794,
+      "sha256": "fe5d9d51e9fb47b4ff77d68d5cad6a416f6589fcb9532201b750fe3f741d51dc"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/forensic/gpu_usage.json",
+      "bytes": 1166,
+      "sha256": "aa8073452bcb7a4bdb9635f85f02e2b55fca14c01638a8ca5eee622d99f9edb8"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/FORENSIC_PROTOCOL.md",
+      "bytes": 7265,
+      "sha256": "091b82a56078169ee96f418c2388aaa1c4c0804390b0c114b193958d53de7025"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/FORENSIC_REPORT.md",
+      "bytes": 11328,
+      "sha256": "534d6c193bc07edea8ca84d5dcc389f76e925e58e15081a096c5d86faea16937"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/EXPERIMENT_STATE.md",
+      "bytes": 6041,
+      "sha256": "d2b2ce475dc32bf811a9ffca287c3a4f6554c7f8bbeec3c857c1d1a458623b44"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/config/phase1.yaml",
+      "bytes": 2819,
+      "sha256": "20f20beda1e009131ede162d4b4c4ff630a1a764fedfd4c511c224e89284c259"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/run_forensic_fresh.py",
+      "bytes": 10007,
+      "sha256": "2a12dbe7bc73cc30940656ec235f9f059358ef2ab781cea69019fecefffeae91"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/run_forensic_replay.py",
+      "bytes": 12634,
+      "sha256": "36f3c8dae6f38e2081d1b2b5eb91cef40b83ecf11c719d642ca34e264cdced9e"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/analyze_forensic_fresh.py",
+      "bytes": 6867,
+      "sha256": "faa0aebd81618f592316e63f4b3a301e680f85f9a5a777a787e1eb7146fee174"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/build_forensic_artifacts.py",
+      "bytes": 11919,
+      "sha256": "5e07a0245f938c94ea36daf9b6a3bc405b26f58627eced8f814ea8fc87cddc0b"
+    },
+    {
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/src/flowspec_vla/forensic.py",
+      "bytes": 4755,
+      "sha256": "20be4ac41945990294b8286c6776e383ac6d48c7e0fb7fc99c13571752457ada"
+    }
+  ]
+}

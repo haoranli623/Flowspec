@@ -5,3 +5,30 @@ __pycache__/
 .ruff_cache/
 logs/*.log
 
+# Machine-local environments and caches
+.env
+.env.*
+!recovery/path_map.example.env
+.venv/
+venv/
+conda_envs/
+cache/
+hf_cache/
+
+# Reconstructed upstream data and model trees
+datasets/
+models/
+checkpoints/assets/
+checkpoints/**/*.safetensors
+checkpoints/**/complete_state.pt
+
+# Large binary scientific artifacts are external recovery candidates by default.
+results/**/*.npz
+results/**/*.pt
+!results/frozen/gate0/gate0b_*.npz
+
+# Simulator and transient outputs
+tmp/
+outputs/
+simulator_outputs/
+*.mp4

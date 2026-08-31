@@ -1,0 +1,1803 @@
+{
+  "protocol_commit": "337c95305698e527ef09db6f53040fb377a9d6a5",
+  "selection_before_model_results": true,
+  "dataset_frames": 273465,
+  "gate0a": [
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 12,
+      "dataset_index": 12
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 25,
+      "dataset_index": 25
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 37,
+      "dataset_index": 37
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 50,
+      "dataset_index": 50
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 62,
+      "dataset_index": 62
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 75,
+      "dataset_index": 75
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 87,
+      "dataset_index": 87
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 100,
+      "dataset_index": 100
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 112,
+      "dataset_index": 112
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 125,
+      "dataset_index": 125
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 137,
+      "dataset_index": 137
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 150,
+      "dataset_index": 150
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 162,
+      "dataset_index": 162
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 175,
+      "dataset_index": 175
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 187,
+      "dataset_index": 187
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 200,
+      "dataset_index": 200
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 6,
+      "dataset_index": 101475
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 13,
+      "dataset_index": 101482
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 19,
+      "dataset_index": 101488
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 26,
+      "dataset_index": 101495
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 32,
+      "dataset_index": 101501
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 39,
+      "dataset_index": 101508
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 45,
+      "dataset_index": 101514
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 52,
+      "dataset_index": 101521
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 58,
+      "dataset_index": 101527
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 65,
+      "dataset_index": 101534
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 71,
+      "dataset_index": 101540
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 78,
+      "dataset_index": 101547
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 84,
+      "dataset_index": 101553
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 91,
+      "dataset_index": 101560
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 97,
+      "dataset_index": 101566
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 104,
+      "dataset_index": 101573
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 8,
+      "dataset_index": 153519
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 16,
+      "dataset_index": 153527
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 25,
+      "dataset_index": 153536
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 33,
+      "dataset_index": 153544
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 41,
+      "dataset_index": 153552
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 50,
+      "dataset_index": 153561
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 58,
+      "dataset_index": 153569
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 66,
+      "dataset_index": 153577
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 75,
+      "dataset_index": 153586
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 83,
+      "dataset_index": 153594
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 91,
+      "dataset_index": 153602
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 100,
+      "dataset_index": 153611
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 108,
+      "dataset_index": 153619
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 116,
+      "dataset_index": 153627
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 125,
+      "dataset_index": 153636
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 133,
+      "dataset_index": 153644
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 6,
+      "dataset_index": 220501
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 12,
+      "dataset_index": 220507
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 19,
+      "dataset_index": 220514
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 25,
+      "dataset_index": 220520
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 32,
+      "dataset_index": 220527
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 38,
+      "dataset_index": 220533
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 44,
+      "dataset_index": 220539
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 51,
+      "dataset_index": 220546
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 57,
+      "dataset_index": 220552
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 64,
+      "dataset_index": 220559
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 70,
+      "dataset_index": 220565
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 76,
+      "dataset_index": 220571
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 83,
+      "dataset_index": 220578
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 89,
+      "dataset_index": 220584
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 96,
+      "dataset_index": 220591
+    },
+    {
+      "role": "gate0a_state",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 102,
+      "dataset_index": 220597
+    }
+  ],
+  "gate0b_train": [
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 18,
+      "dataset_index": 18
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 36,
+      "dataset_index": 36
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 54,
+      "dataset_index": 54
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 72,
+      "dataset_index": 72
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 91,
+      "dataset_index": 91
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 109,
+      "dataset_index": 109
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 127,
+      "dataset_index": 127
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 0,
+      "frame_index": 145,
+      "dataset_index": 145
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 18,
+      "frame_index": 25,
+      "dataset_index": 4944
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 18,
+      "frame_index": 50,
+      "dataset_index": 4969
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 18,
+      "frame_index": 75,
+      "dataset_index": 4994
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 18,
+      "frame_index": 100,
+      "dataset_index": 5019
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 18,
+      "frame_index": 125,
+      "dataset_index": 5044
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 18,
+      "frame_index": 150,
+      "dataset_index": 5069
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 18,
+      "frame_index": 175,
+      "dataset_index": 5094
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 18,
+      "frame_index": 200,
+      "dataset_index": 5119
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 22,
+      "frame_index": 23,
+      "dataset_index": 6090
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 22,
+      "frame_index": 47,
+      "dataset_index": 6114
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 22,
+      "frame_index": 71,
+      "dataset_index": 6138
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 22,
+      "frame_index": 94,
+      "dataset_index": 6161
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 22,
+      "frame_index": 118,
+      "dataset_index": 6185
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 22,
+      "frame_index": 142,
+      "dataset_index": 6209
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 22,
+      "frame_index": 165,
+      "dataset_index": 6232
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 22,
+      "frame_index": 189,
+      "dataset_index": 6256
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 33,
+      "frame_index": 23,
+      "dataset_index": 9071
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 33,
+      "frame_index": 46,
+      "dataset_index": 9094
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 33,
+      "frame_index": 69,
+      "dataset_index": 9117
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 33,
+      "frame_index": 92,
+      "dataset_index": 9140
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 33,
+      "frame_index": 116,
+      "dataset_index": 9164
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 33,
+      "frame_index": 139,
+      "dataset_index": 9187
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 33,
+      "frame_index": 162,
+      "dataset_index": 9210
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 33,
+      "frame_index": 185,
+      "dataset_index": 9233
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 6,
+      "dataset_index": 101475
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 13,
+      "dataset_index": 101482
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 20,
+      "dataset_index": 101489
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 27,
+      "dataset_index": 101496
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 34,
+      "dataset_index": 101503
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 41,
+      "dataset_index": 101510
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 48,
+      "dataset_index": 101517
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 379,
+      "frame_index": 55,
+      "dataset_index": 101524
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 422,
+      "frame_index": 4,
+      "dataset_index": 107178
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 422,
+      "frame_index": 8,
+      "dataset_index": 107182
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 422,
+      "frame_index": 12,
+      "dataset_index": 107186
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 422,
+      "frame_index": 16,
+      "dataset_index": 107190
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 422,
+      "frame_index": 20,
+      "dataset_index": 107194
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 422,
+      "frame_index": 24,
+      "dataset_index": 107198
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 422,
+      "frame_index": 28,
+      "dataset_index": 107202
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 422,
+      "frame_index": 32,
+      "dataset_index": 107206
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 426,
+      "frame_index": 5,
+      "dataset_index": 107611
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 426,
+      "frame_index": 11,
+      "dataset_index": 107617
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 426,
+      "frame_index": 17,
+      "dataset_index": 107623
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 426,
+      "frame_index": 23,
+      "dataset_index": 107629
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 426,
+      "frame_index": 29,
+      "dataset_index": 107635
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 426,
+      "frame_index": 35,
+      "dataset_index": 107641
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 426,
+      "frame_index": 41,
+      "dataset_index": 107647
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 426,
+      "frame_index": 47,
+      "dataset_index": 107653
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 431,
+      "frame_index": 6,
+      "dataset_index": 108255
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 431,
+      "frame_index": 12,
+      "dataset_index": 108261
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 431,
+      "frame_index": 18,
+      "dataset_index": 108267
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 431,
+      "frame_index": 24,
+      "dataset_index": 108273
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 431,
+      "frame_index": 31,
+      "dataset_index": 108280
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 431,
+      "frame_index": 37,
+      "dataset_index": 108286
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 431,
+      "frame_index": 43,
+      "dataset_index": 108292
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 431,
+      "frame_index": 49,
+      "dataset_index": 108298
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 10,
+      "dataset_index": 153521
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 20,
+      "dataset_index": 153531
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 31,
+      "dataset_index": 153542
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 41,
+      "dataset_index": 153552
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 51,
+      "dataset_index": 153562
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 62,
+      "dataset_index": 153573
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 72,
+      "dataset_index": 153583
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 807,
+      "frame_index": 82,
+      "dataset_index": 153593
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 829,
+      "frame_index": 9,
+      "dataset_index": 156769
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 829,
+      "frame_index": 19,
+      "dataset_index": 156779
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 829,
+      "frame_index": 28,
+      "dataset_index": 156788
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 829,
+      "frame_index": 38,
+      "dataset_index": 156798
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 829,
+      "frame_index": 47,
+      "dataset_index": 156807
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 829,
+      "frame_index": 57,
+      "dataset_index": 156817
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 829,
+      "frame_index": 66,
+      "dataset_index": 156826
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 829,
+      "frame_index": 76,
+      "dataset_index": 156836
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 832,
+      "frame_index": 9,
+      "dataset_index": 157161
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 832,
+      "frame_index": 19,
+      "dataset_index": 157171
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 832,
+      "frame_index": 28,
+      "dataset_index": 157180
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 832,
+      "frame_index": 38,
+      "dataset_index": 157190
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 832,
+      "frame_index": 47,
+      "dataset_index": 157199
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 832,
+      "frame_index": 57,
+      "dataset_index": 157209
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 832,
+      "frame_index": 66,
+      "dataset_index": 157218
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 832,
+      "frame_index": 76,
+      "dataset_index": 157228
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 835,
+      "frame_index": 8,
+      "dataset_index": 157592
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 835,
+      "frame_index": 17,
+      "dataset_index": 157601
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 835,
+      "frame_index": 26,
+      "dataset_index": 157610
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 835,
+      "frame_index": 35,
+      "dataset_index": 157619
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 835,
+      "frame_index": 43,
+      "dataset_index": 157627
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 835,
+      "frame_index": 52,
+      "dataset_index": 157636
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 835,
+      "frame_index": 61,
+      "dataset_index": 157645
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 835,
+      "frame_index": 70,
+      "dataset_index": 157654
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 6,
+      "dataset_index": 220501
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 13,
+      "dataset_index": 220508
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 20,
+      "dataset_index": 220515
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 26,
+      "dataset_index": 220521
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 33,
+      "dataset_index": 220528
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 40,
+      "dataset_index": 220535
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 46,
+      "dataset_index": 220541
+    },
+    {
+      "role": "gate0b_train_episode_rank_0",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1261,
+      "frame_index": 53,
+      "dataset_index": 220548
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1274,
+      "frame_index": 7,
+      "dataset_index": 222010
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1274,
+      "frame_index": 14,
+      "dataset_index": 222017
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1274,
+      "frame_index": 21,
+      "dataset_index": 222024
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1274,
+      "frame_index": 28,
+      "dataset_index": 222031
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1274,
+      "frame_index": 35,
+      "dataset_index": 222038
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1274,
+      "frame_index": 42,
+      "dataset_index": 222045
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1274,
+      "frame_index": 49,
+      "dataset_index": 222052
+    },
+    {
+      "role": "gate0b_train_episode_rank_1",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1274,
+      "frame_index": 56,
+      "dataset_index": 222059
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1277,
+      "frame_index": 6,
+      "dataset_index": 222390
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1277,
+      "frame_index": 13,
+      "dataset_index": 222397
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1277,
+      "frame_index": 20,
+      "dataset_index": 222404
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1277,
+      "frame_index": 27,
+      "dataset_index": 222411
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1277,
+      "frame_index": 33,
+      "dataset_index": 222417
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1277,
+      "frame_index": 40,
+      "dataset_index": 222424
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1277,
+      "frame_index": 47,
+      "dataset_index": 222431
+    },
+    {
+      "role": "gate0b_train_episode_rank_2",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1277,
+      "frame_index": 54,
+      "dataset_index": 222438
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1291,
+      "frame_index": 8,
+      "dataset_index": 224014
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1291,
+      "frame_index": 16,
+      "dataset_index": 224022
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1291,
+      "frame_index": 25,
+      "dataset_index": 224031
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1291,
+      "frame_index": 33,
+      "dataset_index": 224039
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1291,
+      "frame_index": 41,
+      "dataset_index": 224047
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1291,
+      "frame_index": 50,
+      "dataset_index": 224056
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1291,
+      "frame_index": 58,
+      "dataset_index": 224064
+    },
+    {
+      "role": "gate0b_train_episode_rank_3",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1291,
+      "frame_index": 66,
+      "dataset_index": 224072
+    }
+  ],
+  "gate0b_validation": [
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 58,
+      "frame_index": 22,
+      "dataset_index": 16287
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 58,
+      "frame_index": 45,
+      "dataset_index": 16310
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 58,
+      "frame_index": 67,
+      "dataset_index": 16332
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 58,
+      "frame_index": 90,
+      "dataset_index": 16355
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 58,
+      "frame_index": 112,
+      "dataset_index": 16377
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 58,
+      "frame_index": 135,
+      "dataset_index": 16400
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 58,
+      "frame_index": 157,
+      "dataset_index": 16422
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 0,
+      "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episode_index": 58,
+      "frame_index": 180,
+      "dataset_index": 16445
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 433,
+      "frame_index": 6,
+      "dataset_index": 108465
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 433,
+      "frame_index": 12,
+      "dataset_index": 108471
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 433,
+      "frame_index": 18,
+      "dataset_index": 108477
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 433,
+      "frame_index": 24,
+      "dataset_index": 108483
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 433,
+      "frame_index": 30,
+      "dataset_index": 108489
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 433,
+      "frame_index": 36,
+      "dataset_index": 108495
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 433,
+      "frame_index": 42,
+      "dataset_index": 108501
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 10,
+      "task": "put the bowl on the plate",
+      "episode_index": 433,
+      "frame_index": 48,
+      "dataset_index": 108507
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 837,
+      "frame_index": 8,
+      "dataset_index": 157857
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 837,
+      "frame_index": 16,
+      "dataset_index": 157865
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 837,
+      "frame_index": 25,
+      "dataset_index": 157874
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 837,
+      "frame_index": 33,
+      "dataset_index": 157882
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 837,
+      "frame_index": 41,
+      "dataset_index": 157890
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 837,
+      "frame_index": 50,
+      "dataset_index": 157899
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 837,
+      "frame_index": 58,
+      "dataset_index": 157907
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 20,
+      "task": "pick up the orange juice and place it in the basket",
+      "episode_index": 837,
+      "frame_index": 66,
+      "dataset_index": 157915
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1292,
+      "frame_index": 11,
+      "dataset_index": 224142
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1292,
+      "frame_index": 23,
+      "dataset_index": 224154
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1292,
+      "frame_index": 35,
+      "dataset_index": 224166
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1292,
+      "frame_index": 47,
+      "dataset_index": 224178
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1292,
+      "frame_index": 59,
+      "dataset_index": 224190
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1292,
+      "frame_index": 71,
+      "dataset_index": 224202
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1292,
+      "frame_index": 83,
+      "dataset_index": 224214
+    },
+    {
+      "role": "gate0b_validation_episode_rank_4",
+      "task_index": 30,
+      "task": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episode_index": 1292,
+      "frame_index": 95,
+      "dataset_index": 224226
+    }
+  ]
+}

@@ -1,0 +1,1066 @@
+{
+  "status": "DIVERGED",
+  "runs": [
+    "fresh_a",
+    "fresh_b"
+  ],
+  "updates": 5,
+  "first_divergence": {
+    "update": 1,
+    "stage": "gradients",
+    "exact": false
+  },
+  "stage_comparisons": [
+    {
+      "update": 1,
+      "stage": "lr",
+      "exact": true,
+      "a": 5e-07,
+      "b": 5e-07
+    },
+    {
+      "update": 1,
+      "stage": "model_before",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "buffers_before",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "rng_before_update",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro0.raw_identifiers",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro0.raw_action",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro0.processed",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro0.flow_noise",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro0.flow_timestep",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro0.rng_before_forward",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro0.action_projection",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro0.loss_tensor",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro0.loss",
+      "exact": true,
+      "a": 1.9181864261627197,
+      "b": 1.9181864261627197,
+      "abs": 0.0
+    },
+    {
+      "update": 1,
+      "stage": "micro0.rng_after_forward",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro0.rng_after_backward",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro1.raw_identifiers",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro1.raw_action",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro1.processed",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro1.flow_noise",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro1.flow_timestep",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro1.rng_before_forward",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro1.action_projection",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro1.loss_tensor",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro1.loss",
+      "exact": true,
+      "a": 3.434293031692505,
+      "b": 3.434293031692505,
+      "abs": 0.0
+    },
+    {
+      "update": 1,
+      "stage": "micro1.rng_after_forward",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "micro1.rng_after_backward",
+      "exact": true
+    },
+    {
+      "update": 1,
+      "stage": "gradients",
+      "exact": false
+    },
+    {
+      "update": 1,
+      "stage": "selected_gradients",
+      "exact": false
+    },
+    {
+      "update": 1,
+      "stage": "gradient_norm_pre_clip",
+      "exact": false,
+      "a": 20.319799423217773,
+      "b": 20.32069969177246,
+      "abs": 0.0009002685546875
+    },
+    {
+      "update": 1,
+      "stage": "gradients_after_clip",
+      "exact": false
+    },
+    {
+      "update": 1,
+      "stage": "model_after",
+      "exact": false
+    },
+    {
+      "update": 1,
+      "stage": "optimizer_after",
+      "exact": false
+    },
+    {
+      "update": 1,
+      "stage": "rng_after_update",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "lr",
+      "exact": true,
+      "a": 1e-06,
+      "b": 1e-06
+    },
+    {
+      "update": 2,
+      "stage": "model_before",
+      "exact": false
+    },
+    {
+      "update": 2,
+      "stage": "buffers_before",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "rng_before_update",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro0.raw_identifiers",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro0.raw_action",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro0.processed",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro0.flow_noise",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro0.flow_timestep",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro0.rng_before_forward",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro0.action_projection",
+      "exact": false
+    },
+    {
+      "update": 2,
+      "stage": "micro0.loss_tensor",
+      "exact": false
+    },
+    {
+      "update": 2,
+      "stage": "micro0.loss",
+      "exact": false,
+      "a": 2.4433748722076416,
+      "b": 2.4421539306640625,
+      "abs": 0.0012209415435791016
+    },
+    {
+      "update": 2,
+      "stage": "micro0.rng_after_forward",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro0.rng_after_backward",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro1.raw_identifiers",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro1.raw_action",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro1.processed",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro1.flow_noise",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro1.flow_timestep",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro1.rng_before_forward",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro1.action_projection",
+      "exact": false
+    },
+    {
+      "update": 2,
+      "stage": "micro1.loss_tensor",
+      "exact": false
+    },
+    {
+      "update": 2,
+      "stage": "micro1.loss",
+      "exact": false,
+      "a": 1.929823398590088,
+      "b": 1.9303233623504639,
+      "abs": 0.0004999637603759766
+    },
+    {
+      "update": 2,
+      "stage": "micro1.rng_after_forward",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "micro1.rng_after_backward",
+      "exact": true
+    },
+    {
+      "update": 2,
+      "stage": "gradients",
+      "exact": false
+    },
+    {
+      "update": 2,
+      "stage": "selected_gradients",
+      "exact": false
+    },
+    {
+      "update": 2,
+      "stage": "gradient_norm_pre_clip",
+      "exact": false,
+      "a": 18.30019760131836,
+      "b": 18.294574737548828,
+      "abs": 0.00562286376953125
+    },
+    {
+      "update": 2,
+      "stage": "gradients_after_clip",
+      "exact": false
+    },
+    {
+      "update": 2,
+      "stage": "model_after",
+      "exact": false
+    },
+    {
+      "update": 2,
+      "stage": "optimizer_after",
+      "exact": false
+    },
+    {
+      "update": 2,
+      "stage": "rng_after_update",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "lr",
+      "exact": true,
+      "a": 1.5e-06,
+      "b": 1.5e-06
+    },
+    {
+      "update": 3,
+      "stage": "model_before",
+      "exact": false
+    },
+    {
+      "update": 3,
+      "stage": "buffers_before",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "rng_before_update",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro0.raw_identifiers",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro0.raw_action",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro0.processed",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro0.flow_noise",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro0.flow_timestep",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro0.rng_before_forward",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro0.action_projection",
+      "exact": false
+    },
+    {
+      "update": 3,
+      "stage": "micro0.loss_tensor",
+      "exact": false
+    },
+    {
+      "update": 3,
+      "stage": "micro0.loss",
+      "exact": false,
+      "a": 2.440988302230835,
+      "b": 2.4426231384277344,
+      "abs": 0.001634836196899414
+    },
+    {
+      "update": 3,
+      "stage": "micro0.rng_after_forward",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro0.rng_after_backward",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro1.raw_identifiers",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro1.raw_action",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro1.processed",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro1.flow_noise",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro1.flow_timestep",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro1.rng_before_forward",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro1.action_projection",
+      "exact": false
+    },
+    {
+      "update": 3,
+      "stage": "micro1.loss_tensor",
+      "exact": false
+    },
+    {
+      "update": 3,
+      "stage": "micro1.loss",
+      "exact": false,
+      "a": 3.3850512504577637,
+      "b": 3.3853893280029297,
+      "abs": 0.0003380775451660156
+    },
+    {
+      "update": 3,
+      "stage": "micro1.rng_after_forward",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "micro1.rng_after_backward",
+      "exact": true
+    },
+    {
+      "update": 3,
+      "stage": "gradients",
+      "exact": false
+    },
+    {
+      "update": 3,
+      "stage": "selected_gradients",
+      "exact": false
+    },
+    {
+      "update": 3,
+      "stage": "gradient_norm_pre_clip",
+      "exact": false,
+      "a": 25.18320083618164,
+      "b": 25.228607177734375,
+      "abs": 0.045406341552734375
+    },
+    {
+      "update": 3,
+      "stage": "gradients_after_clip",
+      "exact": false
+    },
+    {
+      "update": 3,
+      "stage": "model_after",
+      "exact": false
+    },
+    {
+      "update": 3,
+      "stage": "optimizer_after",
+      "exact": false
+    },
+    {
+      "update": 3,
+      "stage": "rng_after_update",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "lr",
+      "exact": true,
+      "a": 2e-06,
+      "b": 2e-06
+    },
+    {
+      "update": 4,
+      "stage": "model_before",
+      "exact": false
+    },
+    {
+      "update": 4,
+      "stage": "buffers_before",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "rng_before_update",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro0.raw_identifiers",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro0.raw_action",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro0.processed",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro0.flow_noise",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro0.flow_timestep",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro0.rng_before_forward",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro0.action_projection",
+      "exact": false
+    },
+    {
+      "update": 4,
+      "stage": "micro0.loss_tensor",
+      "exact": false
+    },
+    {
+      "update": 4,
+      "stage": "micro0.loss",
+      "exact": false,
+      "a": 2.724090814590454,
+      "b": 2.7261993885040283,
+      "abs": 0.0021085739135742188
+    },
+    {
+      "update": 4,
+      "stage": "micro0.rng_after_forward",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro0.rng_after_backward",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro1.raw_identifiers",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro1.raw_action",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro1.processed",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro1.flow_noise",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro1.flow_timestep",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro1.rng_before_forward",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro1.action_projection",
+      "exact": false
+    },
+    {
+      "update": 4,
+      "stage": "micro1.loss_tensor",
+      "exact": false
+    },
+    {
+      "update": 4,
+      "stage": "micro1.loss",
+      "exact": false,
+      "a": 2.477598190307617,
+      "b": 2.4770421981811523,
+      "abs": 0.0005559921264648438
+    },
+    {
+      "update": 4,
+      "stage": "micro1.rng_after_forward",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "micro1.rng_after_backward",
+      "exact": true
+    },
+    {
+      "update": 4,
+      "stage": "gradients",
+      "exact": false
+    },
+    {
+      "update": 4,
+      "stage": "selected_gradients",
+      "exact": false
+    },
+    {
+      "update": 4,
+      "stage": "gradient_norm_pre_clip",
+      "exact": false,
+      "a": 25.01981544494629,
+      "b": 24.998119354248047,
+      "abs": 0.021696090698242188
+    },
+    {
+      "update": 4,
+      "stage": "gradients_after_clip",
+      "exact": false
+    },
+    {
+      "update": 4,
+      "stage": "model_after",
+      "exact": false
+    },
+    {
+      "update": 4,
+      "stage": "optimizer_after",
+      "exact": false
+    },
+    {
+      "update": 4,
+      "stage": "rng_after_update",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "lr",
+      "exact": true,
+      "a": 2.5e-06,
+      "b": 2.5e-06
+    },
+    {
+      "update": 5,
+      "stage": "model_before",
+      "exact": false
+    },
+    {
+      "update": 5,
+      "stage": "buffers_before",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "rng_before_update",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro0.raw_identifiers",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro0.raw_action",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro0.processed",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro0.flow_noise",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro0.flow_timestep",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro0.rng_before_forward",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro0.action_projection",
+      "exact": false
+    },
+    {
+      "update": 5,
+      "stage": "micro0.loss_tensor",
+      "exact": false
+    },
+    {
+      "update": 5,
+      "stage": "micro0.loss",
+      "exact": false,
+      "a": 3.9776628017425537,
+      "b": 3.9775726795196533,
+      "abs": 9.012222290039062e-05
+    },
+    {
+      "update": 5,
+      "stage": "micro0.rng_after_forward",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro0.rng_after_backward",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro1.raw_identifiers",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro1.raw_action",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro1.processed",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro1.flow_noise",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro1.flow_timestep",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro1.rng_before_forward",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro1.action_projection",
+      "exact": false
+    },
+    {
+      "update": 5,
+      "stage": "micro1.loss_tensor",
+      "exact": false
+    },
+    {
+      "update": 5,
+      "stage": "micro1.loss",
+      "exact": false,
+      "a": 3.9117958545684814,
+      "b": 3.9131226539611816,
+      "abs": 0.0013267993927001953
+    },
+    {
+      "update": 5,
+      "stage": "micro1.rng_after_forward",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "micro1.rng_after_backward",
+      "exact": true
+    },
+    {
+      "update": 5,
+      "stage": "gradients",
+      "exact": false
+    },
+    {
+      "update": 5,
+      "stage": "selected_gradients",
+      "exact": false
+    },
+    {
+      "update": 5,
+      "stage": "gradient_norm_pre_clip",
+      "exact": false,
+      "a": 24.56937026977539,
+      "b": 24.582515716552734,
+      "abs": 0.01314544677734375
+    },
+    {
+      "update": 5,
+      "stage": "gradients_after_clip",
+      "exact": false
+    },
+    {
+      "update": 5,
+      "stage": "model_after",
+      "exact": false
+    },
+    {
+      "update": 5,
+      "stage": "optimizer_after",
+      "exact": false
+    },
+    {
+      "update": 5,
+      "stage": "rng_after_update",
+      "exact": true
+    }
+  ],
+  "final_checkpoint_difference": {
+    "exact": false,
+    "tensor_count": 500,
+    "differing_tensor_count": 344,
+    "element_count": 450046176,
+    "max_abs": 7.62939453125e-06,
+    "mean_abs": 1.8547922052463368e-09,
+    "l2": 0.0013746294276757642,
+    "largest_differences": [
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.0.mlp.down_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.018893636128837e-09,
+        "l2": 6.89002190483734e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.10.mlp.gate_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.1214612571919247e-09,
+        "l2": 7.212362834252417e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.10.self_attn.q_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 9.931678812691302e-10,
+        "l2": 4.6645374823128805e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.12.mlp.gate_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.1158527435384258e-09,
+        "l2": 7.20874741091393e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.12.mlp.up_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.1364353902365565e-09,
+        "l2": 7.306130282813683e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.14.mlp.up_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.1183055592667301e-09,
+        "l2": 7.180059765232727e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.14.self_attn.v_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 8.87666828930378e-10,
+        "l2": 2.6067940780194476e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.15.self_attn.q_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.2135812355040798e-09,
+        "l2": 5.0607992307050154e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.2.mlp.gate_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.0955069074114476e-09,
+        "l2": 7.153463957365602e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.2.mlp.up_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.1662747434471044e-09,
+        "l2": 7.388261292362586e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.2.self_attn.k_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 6.952420306127749e-10,
+        "l2": 2.3807011530152522e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.3.mlp.up_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.231243662580539e-09,
+        "l2": 7.630336040165275e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.4.mlp.down_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.0014680196235304e-09,
+        "l2": 6.74330149195157e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.5.mlp.down_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.1059467786012078e-09,
+        "l2": 7.130894664442167e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.5.mlp.up_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.1943221966959072e-09,
+        "l2": 7.470625132555142e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.6.self_attn.o_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.2601196752726196e-09,
+        "l2": 5.299918484524824e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.7.mlp.gate_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.2201831767200133e-09,
+        "l2": 7.488389383070171e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.7.self_attn.q_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.243240177473126e-09,
+        "l2": 4.881580389337614e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.8.mlp.gate_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.1370534513943653e-09,
+        "l2": 7.212260970845819e-05
+      },
+      {
+        "name": "model.vlm_with_expert.lm_expert.layers.8.self_attn.q_proj.weight",
+        "compatible": true,
+        "exact": false,
+        "max_abs": 7.62939453125e-06,
+        "mean_abs": 1.0241314463144136e-09,
+        "l2": 4.700684075942263e-05
+      }
+    ]
+  }
+}

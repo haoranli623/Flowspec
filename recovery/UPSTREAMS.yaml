@@ -1,0 +1,103 @@
+schema_version: 1
+status_vocabulary:
+  - EXACTLY_PINNED
+  - PARTIALLY_PINNED
+  - UNKNOWN
+
+source_code:
+  lerobot:
+    type: git
+    url: https://github.com/huggingface/lerobot.git
+    commit: 8b256a6c0d4769c3cc3e7e98f04940126398a391
+    status: EXACTLY_PINNED
+
+huggingface_assets:
+  smolvla_base:
+    repo_id: lerobot/smolvla_base
+    revision: c83c3163b8ca9b7e67c509fffd9121e66cb96205
+    status: EXACTLY_PINNED
+  smolvla_libero_recipe:
+    repo_id: lerobot/smolvla_libero
+    revision: 31d453f7edd78c839a8bbc39744a292686daf0de
+    status: EXACTLY_PINNED
+  smolvlm:
+    repo_id: HuggingFaceTB/SmolVLM2-500M-Video-Instruct
+    revision: 7b375e1b73b11138ff12fe22c8f2822d8fe03467
+    status: EXACTLY_PINNED
+    note: The repo identity is taken from the frozen model/config provenance; verify availability before full reconstruction.
+  libero_dataset:
+    repo_id: lerobot/libero
+    revision: a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4
+    status: EXACTLY_PINNED
+
+python_packages:
+  python:
+    version: 3.12.14
+    status: PARTIALLY_PINNED
+    note: Exact interpreter build and distribution hash were not archived.
+  torch:
+    version: 2.7.1+cu118
+    status: PARTIALLY_PINNED
+    note: Runtime version is observed; wheel hash is unknown.
+  torchvision:
+    version: 0.22.1+cu118
+    status: PARTIALLY_PINNED
+  transformers:
+    version: 5.5.4
+    status: PARTIALLY_PINNED
+  lerobot:
+    version: 0.6.2
+    source_commit: 8b256a6c0d4769c3cc3e7e98f04940126398a391
+    status: EXACTLY_PINNED
+  hf_libero:
+    version: 0.1.4
+    status: PARTIALLY_PINNED
+  robosuite:
+    version: 1.4.0
+    status: PARTIALLY_PINNED
+    clean_wheel_sha256: aba065e7b36745738cede259457b2cb349427f3608728d867ef3a2034cb62994
+    clean_log_utils_sha256: f89259ab1809772f10353bc2c4ce45d29cd4017f27ffde225e5e70c0c60a3199
+    patched_log_utils_sha256: 02be2de43b701b02b7da7f5863c733c35fa00945cc91dbb2e54e3b2413235290
+    patch: recovery/patches/robosuite-1.4.0-log-path.patch
+    note: Package version and modified-file bytes are exact; other wheel/package dependency hashes are not frozen.
+  robomimic:
+    version: 0.2.0
+    status: PARTIALLY_PINNED
+  bddl:
+    version: 1.0.1
+    status: PARTIALLY_PINNED
+  mujoco:
+    version: 3.8.1
+    status: PARTIALLY_PINNED
+
+accelerator_runtime:
+  cuda_build:
+    version: "11.8"
+    status: PARTIALLY_PINNED
+  cudnn:
+    observed_python_package_version: 9.1.0.70
+    summarized_version: 9.1.0
+    status: PARTIALLY_PINNED
+  driver:
+    version: UNKNOWN
+    status: UNKNOWN
+  hardware:
+    value: 2 x NVIDIA RTX 3090 24 GiB
+    status: EXACTLY_PINNED
+
+system_rendering:
+  backend:
+    value: OSMesa headless rendering
+    status: EXACTLY_PINNED
+  osmesa_package_versions:
+    value: UNKNOWN
+    status: UNKNOWN
+  mesa_driver_versions:
+    value: UNKNOWN
+    status: UNKNOWN
+  operating_system_packages:
+    value: UNKNOWN
+    status: UNKNOWN
+  historical_platform:
+    value: Linux 5.15.0-181-generic x86_64 with glibc 2.35
+    status: PARTIALLY_PINNED

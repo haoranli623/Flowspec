@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "scientific_interpretation": "M1 and M2 training are exactly identical; their frozen distinction is per-step inference projection.",
+  "seeds": [
+    {
+      "seed": 520001,
+      "training_log_exact": true,
+      "training_log_common_update_range": [
+        1,
+        5000
+      ],
+      "training_log_common_update_count": 5000,
+      "fixed_flow_validation_exact": true,
+      "fixed_flow_common_updates": [
+        0,
+        250,
+        500,
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "generated_action_metrics_expected_to_differ": true,
+      "checkpoint": {
+        "tensor_count": 500,
+        "differing_tensor_count": 0,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "seed": 520002,
+      "training_log_exact": true,
+      "training_log_common_update_range": [
+        1,
+        5000
+      ],
+      "training_log_common_update_count": 5000,
+      "fixed_flow_validation_exact": true,
+      "fixed_flow_common_updates": [
+        0,
+        250,
+        500,
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "generated_action_metrics_expected_to_differ": true,
+      "checkpoint": {
+        "tensor_count": 500,
+        "differing_tensor_count": 0,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "seed": 520003,
+      "training_log_exact": true,
+      "training_log_common_update_range": [
+        1001,
+        5000
+      ],
+      "training_log_common_update_count": 4000,
+      "fixed_flow_validation_exact": true,
+      "fixed_flow_common_updates": [
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "generated_action_metrics_expected_to_differ": true,
+      "checkpoint": {
+        "tensor_count": 500,
+        "differing_tensor_count": 0,
+        "max_abs": 0.0
+      }
+    }
+  ]
+}

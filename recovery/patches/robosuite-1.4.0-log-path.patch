@@ -1,0 +1,21 @@
+--- a/robosuite/utils/log_utils.py
++++ b/robosuite/utils/log_utils.py
+@@ -2,7 +2,8 @@
+ This file contains utility classes and functions for logging to stdout and stderr
+ Adapted from robomimic: https://github.com/ARISE-Initiative/robomimic/blob/master/robomimic/utils/log_utils.py
+ """
+-import logging
++import logging
++import os
+ 
+ from termcolor import colored
+ 
+@@ -68,7 +69,7 @@
+         logger = logging.getLogger(self.logger_name)
+ 
+         if file_logging_level is not None:
+-            fh = logging.FileHandler("/tmp/robosuite.log")
++            fh = logging.FileHandler(os.environ.get("ROBOSUITE_LOG_PATH", "/tmp/robosuite.log"))
+             fh.setLevel(logging.getLevelName(file_logging_level))
+             file_formatter = FileFormatter()
+             fh.setFormatter(file_formatter)

@@ -1,0 +1,42 @@
+{
+  "budget_device_hours": 2.0,
+  "successful_runs": [
+    {
+      "name": "fresh_a",
+      "updates": 5,
+      "seconds": 64.27932563330978
+    },
+    {
+      "name": "fresh_b",
+      "updates": 5,
+      "seconds": 64.5954374447465
+    },
+    {
+      "name": "same_process_replay_default",
+      "updates_executed": 2,
+      "seconds": 26.974254445172846
+    },
+    {
+      "name": "same_process_replay_deterministic",
+      "updates_executed": 2,
+      "seconds": 28.22763495799154
+    },
+    {
+      "name": "deterministic_fresh_a",
+      "updates": 1,
+      "seconds": 28.373220263049006
+    },
+    {
+      "name": "deterministic_fresh_b",
+      "updates": 1,
+      "seconds": 28.40274582989514
+    }
+  ],
+  "successful_run_seconds": 240.8526185741648,
+  "successful_run_device_hours": 0.06690350515949023,
+  "failed_instrumentation_attempt_seconds_accounted": 56.0,
+  "failed_instrumentation_note": "Conservative wall-time accounting; the run failed before producing metadata due to a scalar-state hashing instrumentation bug.",
+  "total_accounted_seconds": 296.8526185741648,
+  "total_accounted_device_hours": 0.08245906071504577,
+  "budget_exceeded": false
+}

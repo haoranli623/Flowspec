@@ -1,0 +1,378 @@
+{
+  "project": "FlowSpec-VLA",
+  "generated_at": "2026-08-25",
+  "project_git_commit": "d17670f51169478a8dcd3b48ac7354baa6deac13",
+  "protocol_git_commit": "337c95305698e527ef09db6f53040fb377a9d6a5",
+  "source_git_commit": "8b256a6c0d4769c3cc3e7e98f04940126398a391",
+  "checkpoint_revision": "31d453f7edd78c839a8bbc39744a292686daf0de",
+  "dataset_revision": "a1aaacb7f6cd6ee5fb43120f673cebb0cfea7dd4",
+  "entry_count": 61,
+  "entries": [
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/environment.json",
+      "bytes": 10345,
+      "sha256": "2338d3495a53488ec76761b1258ef1089f55f301a448c8269defd2c1d61cb904"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0a_effects.png",
+      "bytes": 137163,
+      "sha256": "27e696ddebb9136b1299767daba3f100f819864bcfb1c69dfb2f22d4d51734e5"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0a_per_state.csv",
+      "bytes": 8830,
+      "sha256": "8cf01c2dde01880044b183012df3afeb579099ab11b87591195aa6c875977e99"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0a_raw_shard0.npz",
+      "bytes": 29118944,
+      "sha256": "cfb91823e7b08828678358101519adff08b13fadb3d29c8b2154271420fcda92"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0a_raw_shard1.npz",
+      "bytes": 29121728,
+      "sha256": "8537ab6b0de2e7583cc3dea3139db1baef5f0b24eb5b9063b9110c5e52e1dd45"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0a_run_shard0.json",
+      "bytes": 10775,
+      "sha256": "7e62e25d8ecbafea82ceb8fc5845bb8fe8c23e14b3f226a18a0f6a63383d8e2a"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0a_run_shard1.json",
+      "bytes": 10781,
+      "sha256": "9caeefe487e994fbbf5c44007093651096c919f164f7b806113020fbc3e53d36"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0a_summary.json",
+      "bytes": 3584,
+      "sha256": "f31e4b966c1ad02a039f5dabfba8f2b3511c6ceabc535cbe88e6eff20459d3e6"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_dynamics.png",
+      "bytes": 188768,
+      "sha256": "aefb0a436db382f8359e9879caffa52ce4eee8f8b6dce1dfe060d3067c69ca7d"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_frozen_data.pt",
+      "bytes": 252116129,
+      "sha256": "09b616fcd21cbc08ccc6e5ff8b23531a99226f84a7a21f4aa0423656a836233c"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_group_scaled.npz",
+      "bytes": 92374,
+      "sha256": "7e60bf982bdd4aa563f2fb19954b0704079e94b3adc7260970b2b63d4f549463"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_group_scaled_run.json",
+      "bytes": 18877,
+      "sha256": "8729ca2893dbabd41cb9544b4f636f5dcaadd74a7c9506f1e8d420411c210108"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_group_scaled_seed430002.npz",
+      "bytes": 92359,
+      "sha256": "30cd62b821ce123510db8b25fa76140c04bbd8bdcaff901cf5dd1ffde3471a91"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_group_scaled_seed430002_run.json",
+      "bytes": 18898,
+      "sha256": "aa9efb570fc24d09c22bd81f7ac69f457191dfa16bbfa11616eef0ad98424308"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_local.npz",
+      "bytes": 92145,
+      "sha256": "f2a4e6dcf8c43096309014bde74b48c09b8243bc7fe18668b3e1d945040a0c2a"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_local_run.json",
+      "bytes": 18896,
+      "sha256": "5a887cd9d0a583302afb9c2b781e0fcab80ca2bf82fa7f730292ca4dd28d7b4d"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_local_seed430002.npz",
+      "bytes": 92081,
+      "sha256": "23fa39c506b8461e57a6505465f2601a270e5f358a7ae69f11818530b3a399bc"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_local_seed430002_run.json",
+      "bytes": 18893,
+      "sha256": "e0cd0a19933cf9ac90e1c34bc6d222865e7b26902c06281abf4b650609ee1a21"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_official.npz",
+      "bytes": 92229,
+      "sha256": "9e38b4af980b9b787b9419b081fe0f9ae02b39d4d97ac832b0a06a163827d3a0"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_official_run.json",
+      "bytes": 18894,
+      "sha256": "35878078ce3a35d5f451fe3bab5efd11f1487ecad122328758e40cb65a25867b"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_official_seed430002.npz",
+      "bytes": 92325,
+      "sha256": "dc361c5647c9d3f9cd19a34637133164ad01c25447e1b068f56506f311022631"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_official_seed430002_run.json",
+      "bytes": 18901,
+      "sha256": "30dc00a4d48e5a98e3c6ec53dc4e46ea3086f8f6e5dc2fd60b7c05f29b9e8698"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_randomness.pt",
+      "bytes": 823181,
+      "sha256": "1c4a3da6f0bcb96ef5f2937e93590238819595abffd216f2efe46df6cbe030b5"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_summary.json",
+      "bytes": 20524,
+      "sha256": "a5a915041b5f211ba29bf42b536593a88fdb2d337fb6b9b1fa16c70b1988007d"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/gate0b_transforms.json",
+      "bytes": 1575,
+      "sha256": "e3765d9457965be71e2cc5535e76f80cb6bf4cdfbd0ae352745caba93851466c"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/state_manifest.json",
+      "bytes": 53304,
+      "sha256": "ea4cfe4bc36768768e41d9d814d456655957bf58a25a587b28cadc85c0085caf"
+    },
+    {
+      "scope": "artifact",
+      "path": "/mnt/NAS/data/hl5757/generated_artifacts/flowspec-vla/gate0/substrate_smoke.json",
+      "bytes": 1163,
+      "sha256": "a28d52d69475eb33ed8589e8777d4f5beac67bcb663c88bbe6857ce918b928e7"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/.gitignore",
+      "bytes": 73,
+      "sha256": "0991a6e08b918efdcc2701fb03178049f9c25102d210699b52f0117a2a5b35f6"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/EXPERIMENT_STATE.md",
+      "bytes": 2005,
+      "sha256": "4778cc3c4362d520774e5deb9b625bcf4a87c4a150bc019ff9a79dca50965196"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/GATE0_PROTOCOL.md",
+      "bytes": 8285,
+      "sha256": "bb272f8fbd59f72b2c8f0e6e2418a1d99e7c7e68a4de176b7eaa924da05715b9"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/GATE0_REPORT.md",
+      "bytes": 11914,
+      "sha256": "2a48a310e9720fceab05b3f1f130a9d0fb8076a5353a00b60f18fb9d00a721aa"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/PHASE_MINUS1_AUDIT.md",
+      "bytes": 5091,
+      "sha256": "6bd954531098b989ccdc65235a630a33786d846b7755e22c388229567b35e253"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/README.md",
+      "bytes": 883,
+      "sha256": "9b6e5a90a9ad0f4dfa9a8e18c400cdc8a56f2168f9d14481d1f218c2af8b5819"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/config/gate0a.yaml",
+      "bytes": 421,
+      "sha256": "1db3c96c4ba2c319d584ff34e112b8308d4d553e0afc3105cfd70ac71a9445f4"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/config/gate0b.yaml",
+      "bytes": 674,
+      "sha256": "23c42aaf81b184880d5db9c920aa5047c317aa844556f55a3c2a6a311eff74f1"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/config/paths.yaml",
+      "bytes": 450,
+      "sha256": "99378a3b381812c7e6a27e0fdfc9a3b4662603541cb6b06ff59ee3b919a7ed47"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/config/substrate.yaml",
+      "bytes": 747,
+      "sha256": "b00f4cac8c5c5a994125357a0e01522054fabec4a992a57b57927b8e7711d899"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/config/task_map.json",
+      "bytes": 2892,
+      "sha256": "c41db143f7d6f85cd033fa836ced4f7c15362622bc404b45e03146f63ef6135f"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/analyze_gate0a.py",
+      "bytes": 7823,
+      "sha256": "3f96152cc8648344dd5ac796098f718b205b74aeedbcfe209a7092f1b7d4f65d"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/analyze_gate0b.py",
+      "bytes": 10062,
+      "sha256": "daedd62c833989cae072e7b0f53e54b51f0789a63447e390ce9e21f7f1745012"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/build_manifests.py",
+      "bytes": 2827,
+      "sha256": "93990863cef3eefae4a1073f951d32e37093aff35ba3a9cf5380edd1f81cc018"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/cache_gate0b_data.py",
+      "bytes": 5154,
+      "sha256": "9e7a760865aeaf81bd773e138f561a3f28075bff2b810795b411481fa8afab61"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/finalize_artifacts.py",
+      "bytes": 3630,
+      "sha256": "8be004cef7fe1124f89645326c90ab1b713139d00bba3f7c54755a4fce1789b2"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/run_gate0a.py",
+      "bytes": 7884,
+      "sha256": "69b8f8405e0af25512a48f4ce53868ead2f9d9a70c4bfa8fa95f26970d9aa422"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/run_gate0b.py",
+      "bytes": 9444,
+      "sha256": "47606ff44b2bcdd1a1b53c8c18eca604aeaee5f62b0e5bf2e1cf5b8368ac0f1c"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/scripts/smoke_substrate.py",
+      "bytes": 2248,
+      "sha256": "e36340e639c0b1922fdcc5608eed1edbf9808b4f01113d9aae21c890e2230dd4"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/src/flowspec_vla/__init__.py",
+      "bytes": 66,
+      "sha256": "031c98587e4e493fd3a17218c54577bb43e42043a64e8cb7901a0372d68ea5b6"
+    },
+    {
+      "scope": "project",
+      "path": "/mnt/NAS/data/hl5757/projects/flowspec-vla/src/flowspec_vla/data.py",
+      "bytes": 1961,
+      "sha256": "8c0576420f97716a6aa24439ba94d7bc20432278e18cd697ca93db854635752b"
+    },
+    {
+      "scope": "checkpoint_input",
+      "path": "/mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_libero-31d453f7/.gitattributes",
+      "bytes": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    {
+      "scope": "checkpoint_input",
+      "path": "/mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_libero-31d453f7/README.md",
+      "bytes": 1686,
+      "sha256": "a20b9db396342b7c37a07125c619266289831ac9fa7b3c759ff7239d2b4362a6"
+    },
+    {
+      "scope": "checkpoint_input",
+      "path": "/mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_libero-31d453f7/config.json",
+      "bytes": 2419,
+      "sha256": "5c9f3ba9f5f37ea7024c9501b0b20b1941f232989c2167853cb46d9071a70dd7"
+    },
+    {
+      "scope": "checkpoint_input",
+      "path": "/mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_libero-31d453f7/model.safetensors",
+      "bytes": 906712520,
+      "sha256": "9a9f6413e42c0f332fccbce9a0dc796af2790f82cf002f791cdbf7e01e1afca8"
+    },
+    {
+      "scope": "checkpoint_input",
+      "path": "/mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_libero-31d453f7/policy_postprocessor.json",
+      "bytes": 660,
+      "sha256": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a"
+    },
+    {
+      "scope": "checkpoint_input",
+      "path": "/mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_libero-31d453f7/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 5676,
+      "sha256": "b0cdde6e8a6f49a8e19eefb376728e47c09d3b3cc20ce3a97c45619fe7a732d9"
+    },
+    {
+      "scope": "checkpoint_input",
+      "path": "/mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_libero-31d453f7/policy_preprocessor.json",
+      "bytes": 2042,
+      "sha256": "122ec5106602b1bf129f49690d05ab2f49748a0ac6119de55ea0677d4e90d248"
+    },
+    {
+      "scope": "checkpoint_input",
+      "path": "/mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_libero-31d453f7/policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "bytes": 5676,
+      "sha256": "b0cdde6e8a6f49a8e19eefb376728e47c09d3b3cc20ce3a97c45619fe7a732d9"
+    },
+    {
+      "scope": "checkpoint_input",
+      "path": "/mnt/NAS/data/hl5757/models/flowspec-vla/smolvla_libero-31d453f7/train_config.json",
+      "bytes": 9631,
+      "sha256": "df25e6fce4cf2161b7a22c495230e332bad5f73f1ca07605b35fa77500917b9c"
+    },
+    {
+      "scope": "dataset_metadata_input",
+      "path": "/mnt/NAS/data/hl5757/datasets/flowspec-vla/lerobot-libero-a1aaacb7/README.md",
+      "bytes": 3457,
+      "sha256": "5a76b1cdc8b0012a048eea96bce7e0a4367537aa3c1acac3a19aae722c1debe6"
+    },
+    {
+      "scope": "dataset_metadata_input",
+      "path": "/mnt/NAS/data/hl5757/datasets/flowspec-vla/lerobot-libero-a1aaacb7/meta/info.json",
+      "bytes": 2968,
+      "sha256": "630630a1a4f07fc9fc1f1b2b7987ed3bd034bd8cffaaf8a0e6939ae9c468445d"
+    },
+    {
+      "scope": "dataset_metadata_input",
+      "path": "/mnt/NAS/data/hl5757/datasets/flowspec-vla/lerobot-libero-a1aaacb7/meta/stats.json",
+      "bytes": 13928,
+      "sha256": "d4e03a22ef5d89a910e32c233a509465ad0d265381a06745917d69fd8924a635"
+    },
+    {
+      "scope": "dataset_metadata_input",
+      "path": "/mnt/NAS/data/hl5757/datasets/flowspec-vla/lerobot-libero-a1aaacb7/meta/tasks.parquet",
+      "bytes": 3316,
+      "sha256": "80bbbcdf623b7447c0f187af8ea70aa3a5c0018aaf56adba1731aeddcf18f5ff"
+    }
+  ]
+}

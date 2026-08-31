@@ -1,0 +1,8 @@
+{
+  "status": "MEASURED_RERUN",
+  "task": "verify_phase1_implementation.py",
+  "gpu_seconds": 32.3,
+  "gpu_hours": 0.008972222222222222,
+  "device_count": 1,
+  "note": "Timed rerun of the frozen implementation/physical-equivalence verification on RTX 3090 after its original untimed pre-training execution."
+}

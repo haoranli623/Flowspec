@@ -1,0 +1,21 @@
+{
+  "status": "LOCALIZED",
+  "update": 1,
+  "last_identical_stage": "loss tensor after the second accumulation microbatch",
+  "first_divergent_stage": "backward gradients before clipping",
+  "fresh_run_gradient_norms": {
+    "fresh_a": 20.319799423217773,
+    "fresh_b": 20.32069969177246,
+    "absolute_difference": 0.0009002685546875
+  },
+  "same_process_default_gradient_difference": {
+    "exact": false,
+    "tensor_count": 489,
+    "differing_tensor_count": 180,
+    "first_differing_tensor": "model.vlm_with_expert.vlm.model.vision_model.embeddings.patch_embedding.bias",
+    "max_abs": 0.000732421875,
+    "l2": 0.04532199335073896
+  },
+  "causal_test": "The same replay becomes bitwise exact under deterministic CUDA/cuBLAS controls, and the result repeats across two independent interpreters.",
+  "diagnosis": "CUDA backward numerical nondeterminism under the official/default kernel configuration."
+}

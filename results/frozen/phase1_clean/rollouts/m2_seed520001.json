@@ -1,0 +1,1816 @@
+{
+  "status": "COMPLETE",
+  "method": "m2",
+  "seed": 520001,
+  "checkpoint": "/mnt/NAS/data/hl5757/models/flowspec-vla/phase1_rerun/runs/m2_seed520001/update_05000",
+  "checkpoint_update": 5000,
+  "tasks": [
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "task_seed": 540001,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540001
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540002
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540003
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540004
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540005
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 444.0597682474181
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "task_seed": 540011,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540011
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540012
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540013
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540014
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540015
+        }
+      ],
+      "successes": 2,
+      "success_rate": 0.4,
+      "seconds": 449.70755651500076
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "task_seed": 540021,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540021
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540022
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540023
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540024
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540025
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 445.8899244815111
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "task_seed": 540031,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540031
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540032
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540033
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540034
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540035
+        }
+      ],
+      "successes": 4,
+      "success_rate": 0.8,
+      "seconds": 464.9650483028963
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "task_seed": 540041,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540041
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540042
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540043
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540044
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540045
+        }
+      ],
+      "successes": 0,
+      "success_rate": 0.0,
+      "seconds": 417.61559520754963
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "task_seed": 540051,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540051
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540052
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540053
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540054
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540055
+        }
+      ],
+      "successes": 1,
+      "success_rate": 0.2,
+      "seconds": 466.85187652893364
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "task_seed": 540061,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540061
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540062
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540063
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540064
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540065
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 447.3867129581049
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "task_seed": 540071,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540071
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540072
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540073
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540074
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540075
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 450.4401322780177
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "task_seed": 540081,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540081
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540082
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540083
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540084
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540085
+        }
+      ],
+      "successes": 4,
+      "success_rate": 0.8,
+      "seconds": 448.4589733565226
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "task_seed": 540091,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540091
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540092
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540093
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 540094
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 540095
+        }
+      ],
+      "successes": 2,
+      "success_rate": 0.4,
+      "seconds": 442.2078443290666
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "task_seed": 541001,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541001
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541002
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541003
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541004
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541005
+        }
+      ],
+      "successes": 4,
+      "success_rate": 0.8,
+      "seconds": 305.4968457715586
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "task_seed": 541011,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541011
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541012
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541013
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541014
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541015
+        }
+      ],
+      "successes": 1,
+      "success_rate": 0.2,
+      "seconds": 286.2192990165204
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "task_seed": 541021,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541021
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541022
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541023
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541024
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541025
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 311.12898943107575
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "task_seed": 541031,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541031
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541032
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541033
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541034
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541035
+        }
+      ],
+      "successes": 2,
+      "success_rate": 0.4,
+      "seconds": 287.2742405459285
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "task_seed": 541041,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541041
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541042
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541043
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541044
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541045
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 291.94354908168316
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "task_seed": 541051,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541051
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541052
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541053
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541054
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541055
+        }
+      ],
+      "successes": 2,
+      "success_rate": 0.4,
+      "seconds": 300.473180770874
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "task_seed": 541061,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541061
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541062
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541063
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541064
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541065
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 301.9681141478941
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "task_seed": 541071,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541071
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541072
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541073
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541074
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541075
+        }
+      ],
+      "successes": 4,
+      "success_rate": 0.8,
+      "seconds": 304.81930526159704
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "task_seed": 541081,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541081
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541082
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541083
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541084
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541085
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 292.4332793382928
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "task_seed": 541091,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541091
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541092
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 541093
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541094
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 541095
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 295.6221581650898
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "task_seed": 542001,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542001
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542002
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542003
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542004
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542005
+        }
+      ],
+      "successes": 2,
+      "success_rate": 0.4,
+      "seconds": 408.43007050454617
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "task_seed": 542011,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542011
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542012
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542013
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542014
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542015
+        }
+      ],
+      "successes": 4,
+      "success_rate": 0.8,
+      "seconds": 437.9621656788513
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "task_seed": 542021,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542021
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542022
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542023
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542024
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542025
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 434.80853477399796
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "task_seed": 542031,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542031
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542032
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542033
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542034
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542035
+        }
+      ],
+      "successes": 2,
+      "success_rate": 0.4,
+      "seconds": 469.2896935781464
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "task_seed": 542041,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542041
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542042
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542043
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542044
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542045
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 437.263959761709
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "task_seed": 542051,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542051
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542052
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542053
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542054
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542055
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 416.4817885244265
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "task_seed": 542061,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542061
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542062
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542063
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542064
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542065
+        }
+      ],
+      "successes": 1,
+      "success_rate": 0.2,
+      "seconds": 430.06952472776175
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "task_seed": 542071,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542071
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542072
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542073
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542074
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542075
+        }
+      ],
+      "successes": 5,
+      "success_rate": 1.0,
+      "seconds": 170.88650195673108
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "task_seed": 542081,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542081
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542082
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542083
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542084
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542085
+        }
+      ],
+      "successes": 4,
+      "success_rate": 0.8,
+      "seconds": 442.5978798875585
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "task_seed": 542091,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542091
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 542092
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542093
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542094
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 542095
+        }
+      ],
+      "successes": 4,
+      "success_rate": 0.8,
+      "seconds": 423.0951670072973
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "task_seed": 543001,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543001
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543002
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543003
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543004
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543005
+        }
+      ],
+      "successes": 0,
+      "success_rate": 0.0,
+      "seconds": 554.4638287546113
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "task_seed": 543011,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543011
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543012
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543013
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543014
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543015
+        }
+      ],
+      "successes": 1,
+      "success_rate": 0.2,
+      "seconds": 562.1190304374322
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "task_seed": 543021,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543021
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543022
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543023
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543024
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543025
+        }
+      ],
+      "successes": 2,
+      "success_rate": 0.4,
+      "seconds": 724.2723902557045
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "task_seed": 543031,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543031
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543032
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543033
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543034
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543035
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 524.7109519541264
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "task_seed": 543041,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543041
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543042
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543043
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543044
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543045
+        }
+      ],
+      "successes": 0,
+      "success_rate": 0.0,
+      "seconds": 393.8430752782151
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "task_seed": 543051,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543051
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543052
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543053
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543054
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543055
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 447.13774465117604
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "task_seed": 543061,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543061
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543062
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543063
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543064
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543065
+        }
+      ],
+      "successes": 3,
+      "success_rate": 0.6,
+      "seconds": 417.7550450153649
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "task_seed": 543071,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543071
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543072
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543073
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543074
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543075
+        }
+      ],
+      "successes": 0,
+      "success_rate": 0.0,
+      "seconds": 491.5505367992446
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "task_seed": 543081,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543081
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543082
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543083
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543084
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543085
+        }
+      ],
+      "successes": 0,
+      "success_rate": 0.0,
+      "seconds": 697.5131726972759
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "task_seed": 543091,
+      "episodes": [
+        {
+          "episode_ix": 0,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543091
+        },
+        {
+          "episode_ix": 1,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543092
+        },
+        {
+          "episode_ix": 2,
+          "sum_reward": 1.0,
+          "max_reward": 1.0,
+          "success": true,
+          "seed": 543093
+        },
+        {
+          "episode_ix": 3,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543094
+        },
+        {
+          "episode_ix": 4,
+          "sum_reward": 0.0,
+          "max_reward": 0.0,
+          "success": false,
+          "seed": 543095
+        }
+      ],
+      "successes": 1,
+      "success_rate": 0.2,
+      "seconds": 472.98036011867225
+    }
+  ],
+  "task_count": 40,
+  "episode_count": 200,
+  "successes": 97,
+  "success_rate": 0.485,
+  "gpu_active_wall_seconds": 16817.403102699667,
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "cuda_visible_devices": "0"
+}
